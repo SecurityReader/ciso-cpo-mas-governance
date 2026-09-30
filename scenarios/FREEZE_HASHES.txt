@@ -1,0 +1,3 @@
+SHA-256 freeze hashes (recorded at freeze time, before the confirmatory run):
+scenarios_min.json              3caa70daefc46943ef9521db06f08fbe86ed61d9b67bc92bfd72a9f8cdf664a9
+scenarios_phase2_hardened.json  318779db5d669253e5f92438fdc77aeb90ae74ea76d3104c691667e1b0a8c3b2

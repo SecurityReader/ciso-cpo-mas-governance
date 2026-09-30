@@ -1,0 +1,22 @@
+{
+  "scenario_id": "CFL-08",
+  "condition": "A_SEPARATED_3ROUND",
+  "source": "blind_independent_subagents(keyless)",
+  "final": {
+    "decision_status": "CONDITIONAL_APPROVE",
+    "bias_direction": "balanced",
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    }
+  },
+  "consensus": {
+    "consensus_score": 0.6,
+    "method": "embedding-model2vec(minishlab/potion-multilingual-128M,tau=0.35)"
+  },
+  "meta": {
+    "model": "session-subagents",
+    "n_calls": 7,
+    "status": "ok"
+  }
+}

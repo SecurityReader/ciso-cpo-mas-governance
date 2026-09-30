@@ -1,0 +1,61 @@
+{
+  "scenario_id": "CFL-01",
+  "condition": "C_UNIFIED_3ROUND_FORMAT",
+  "final": {
+    "experiment_condition": "C_UNIFIED_3ROUND_FORMAT",
+    "scenario_id": "CFL-01",
+    "final_decision": "전직원 이메일 본문 상시 자동스캔은 도입하지 않는다. 사전 고지·동의 및 목적·범위를 특정한 한정적 룰기반 탐지(첨부·외부전송 메타데이터 중심)로 대체하고, 본문 열람은 영장·내부위원회 승인 시에만 예외 허용한다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "통신비밀보호 vs 내부자탐지"
+      },
+      {
+        "issue": "본문 자동열람 오탐으로 사생활 침해"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "첨부·대량 외부전송 메타데이터 탐지",
+        "DLP 룰 한정 적용",
+        "승인 기반 예외 열람"
+      ],
+      "privacy": [
+        "사전 고지·동의",
+        "목적·범위 특정",
+        "열람 로그 감사",
+        "본문 상시열람 금지"
+      ]
+    },
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "bias_direction": "balanced",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": {
+    "consensus_score": 0.333,
+    "method": "embedding-model2vec(minishlab/potion-multilingual-128M,tau=0.35)"
+  },
+  "logs": {
+    "rounds": [
+      "{\"round\": 1, \"perspectives\": {\"ciso\": {\"position\": \"보안 관점: 전직원 이메일 본문 상시 자동스캔은 도입하지 않는다. 사전 고지·동의 및 목적·범위를 특정한 한정적 룰기반 \", \"key_risks\": [\"통신비밀보호 vs 내부자탐지\", \"본문 자동열람 오탐 사생활 침해\"], \"severity\": \"HIGH\", \"required_controls\": [\"첨부·외부전송 메타데이터 탐지\", \"DLP 룰 한정\", \"승인 기반 예외 열람\"], \"question_to_counterpart\": [\"대체·완화수단으로 목적 달성이 가능한가?\"], \"confidence\": 0.7}, \"cpo\": {\"position\": \"프라이버시 관점: 최소수집·비례성 우선\", \"key_risks\": [\"통신비밀보호 vs 내부자탐지\", \"본문 자동열람 오탐 사생활 침해\"], \"sensitivity\": \"HIGH\", \"required_controls\": [\"사전 고지·동의\", \"목적·범위 특정\", \"열람 로그 감사\", \"본문 상시열람 금지\"], \"question_to_counterpart\": [\"보안 목적을 덜 침습적으로 달성할 수 있는가?\"], \"confidence\": 0.72}}}",
+      "{\"round\": 2, \"perspectives\": {\"ciso\": {\"answer_to_counterpart\": \"완화·대체수단을 우선 적용하되 핵심 통제는 유지한다.\", \"agreement_points\": [\"사전 고지·동의\"], \"underestimated_risks\": [\"대체수단 미비 시 보안 공백\"], \"alternatives\": [\"첨부·외부전송 메타데이터 탐지\", \"DLP 룰 한정\"], \"new_question\": [\"잔여위험 책임 주체는?\"], \"revised_position\": \"조건부 통제 유지\"}, \"cpo\": {\"answer_to_counterpart\": \"목적 범위·최소화·고지를 전제로 조건부 수용한다.\", \"agreement_points\": [\"첨부·외부전송 메타데이터 탐지\"], \"underestimated_risks\": [\"형식적 통제의 실효성 부족\"], \"alternatives\": [\"사전 고지·동의\", \"목적·범위 특정\"], \"new_question\": [\"감사·구제 절차는?\"], \"revised_position\": \"조건부 수용\"}}}",
+      "{\"round\": 3, \"perspectives\": {\"ciso\": {\"concessions\": [\"본문 상시 자동열람 포기\", \"메타데이터 중심 탐지 수용\"], \"non_negotiable\": [\"첨부·외부전송 탐지 유지\"]}, \"cpo\": {\"concessions\": [\"승인 기반 예외 열람 수용\"], \"non_negotiable\": [\"사전 고지·동의 없는 본문 열람 금지\", \"목적·범위 특정\"]}}}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 4,
+    "tokens_in": 3450,
+    "tokens_out": 668,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 2,
+  "seed": 1321361474
+}

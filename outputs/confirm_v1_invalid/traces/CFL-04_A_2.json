@@ -1,0 +1,67 @@
+{
+  "scenario_id": "CFL-04",
+  "condition": "A_SEPARATED_3ROUND",
+  "final": {
+    "experiment_condition": "A_SEPARATED_3ROUND",
+    "scenario_id": "CFL-04",
+    "final_decision": "IP·위치·단말·행동 결합 이상탐지는 도입하되, 자동 계정잠금은 고위험 신호에 한정하고 오탐 구제(재인증·이의절차)를 의무화한다. 프로파일링 고지와 최소보존을 병행한다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "이상탐지 vs 프로파일링 규제"
+      },
+      {
+        "issue": "오탐 대량잠금 위험"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "결합 이상탐지",
+        "고위험 신호 한정 자동조치",
+        "이상징후 로깅"
+      ],
+      "privacy": [
+        "프로파일링 고지",
+        "오탐 구제·이의절차",
+        "신호 데이터 최소보존"
+      ]
+    },
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "bias_direction": "balanced",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": {
+    "consensus_score": 0.0,
+    "method": "embedding-model2vec(minishlab/potion-multilingual-128M,tau=0.35)"
+  },
+  "logs": {
+    "rounds": {
+      "ciso": [
+        "{\"role\": \"CISO\", \"round\": 1, \"position\": \"보안 관점: IP·위치·단말·행동 결합 이상탐지 도입하되 자동 계정잠금은 고위험 신호 한정, 오탐 구제(재인증·이의절차)\", \"key_risks\": [\"이상탐지 vs 프로파일링 규제\", \"오탐 대량잠금\"], \"severity\": \"HIGH\", \"required_controls\": [\"결합 이상탐지\", \"고위험 한정 자동조치\", \"이상징후 로깅\"], \"question_to_counterpart\": [\"대체·완화수단으로 목적 달성이 가능한가?\"], \"confidence\": 0.7}",
+        "{\"role\": \"CISO\", \"round\": 2, \"answer_to_counterpart\": \"완화·대체수단을 우선 적용하되 핵심 통제는 유지한다.\", \"agreement_points\": [\"프로파일링 고지\"], \"underestimated_risks\": [\"대체수단 미비 시 보안 공백\"], \"alternatives\": [\"결합 이상탐지\", \"고위험 한정 자동조치\"], \"new_question\": [\"잔여위험 책임 주체는?\"], \"revised_position\": \"조건부 통제 유지\", \"confidence\": 0.74}",
+        "{\"role\": \"CISO\", \"round\": 3, \"concessions\": [\"자동잠금을 고위험 한정으로 축소\"], \"non_negotiable\": [\"결합 이상탐지 유지\"], \"acceptable_policy\": \"조건부 수용\", \"residual_risk\": \"medium\", \"final_stance\": \"CONDITIONAL_ACCEPT\", \"confidence\": 0.75}"
+      ],
+      "cpo": [
+        "{\"role\": \"CPO\", \"round\": 1, \"position\": \"프라이버시 관점: 최소수집·비례성 우선\", \"key_risks\": [\"이상탐지 vs 프로파일링 규제\", \"오탐 대량잠금\"], \"data_sensitivity\": \"HIGH\", \"required_controls\": [\"프로파일링 고지\", \"오탐 구제·이의절차\", \"신호 최소보존\"], \"question_to_counterpart\": [\"보안 목적을 덜 침습적으로 달성할 수 있는가?\"], \"confidence\": 0.72}",
+        "{\"role\": \"CPO\", \"round\": 2, \"answer_to_counterpart\": \"목적 범위·최소화·고지를 전제로 조건부 수용한다.\", \"agreement_points\": [\"결합 이상탐지\"], \"underestimated_risks\": [\"형식적 통제의 실효성 부족\"], \"alternatives\": [\"프로파일링 고지\", \"오탐 구제·이의절차\"], \"new_question\": [\"감사·구제 절차는?\"], \"revised_position\": \"조건부 수용\", \"confidence\": 0.75}",
+        "{\"role\": \"CPO\", \"round\": 3, \"concessions\": [\"고위험 한정 자동조치 수용\"], \"non_negotiable\": [\"프로파일링 고지\", \"오탐 구제절차 필수\"], \"acceptable_policy\": \"조건부 수용\", \"residual_risk\": \"medium\", \"final_stance\": \"CONDITIONAL_ACCEPT\", \"confidence\": 0.75}"
+      ]
+    }
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 7,
+    "tokens_in": 4807,
+    "tokens_out": 718,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 2,
+  "seed": 2230624149
+}

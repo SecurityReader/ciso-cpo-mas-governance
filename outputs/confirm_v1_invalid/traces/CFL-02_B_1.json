@@ -1,0 +1,57 @@
+{
+  "scenario_id": "CFL-02",
+  "condition": "B_UNIFIED_3STEP",
+  "final": {
+    "experiment_condition": "B_UNIFIED_3STEP",
+    "scenario_id": "CFL-02",
+    "final_decision": "비식별화 없는 실고객데이터의 직접 학습은 불허한다. 가명처리·합성데이터로 1차 학습하고, 재식별 위험평가 통과 시 제한된 보안구역에서 최소범위 원본을 예외적으로 사용한다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "탐지 정확도 vs 목적외이용"
+      },
+      {
+        "issue": "원본 학습 시 재식별 위험"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "보안구역 내 학습",
+        "접근권한 최소화",
+        "학습 데이터 보존기간 설정"
+      ],
+      "privacy": [
+        "가명처리·합성데이터 우선",
+        "재식별 위험평가",
+        "목적 범위 제한"
+      ]
+    },
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "bias_direction": "privacy",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": null,
+  "logs": {
+    "steps": [
+      "{\"step\": 1, \"security_view\": {\"goal\": \"보안구역 내 학습\", \"threats\": [\"탐지 정확도 vs 목적외이용\", \"원본 학습 재식별 위험\"], \"severity\": \"HIGH\", \"min_data_need\": \"최소\", \"confidence\": 0.72}, \"privacy_view\": {\"principle\": \"최소수집·비례성\", \"sensitivity\": \"HIGH\", \"subject_rights_risk\": \"탐지 정확도 vs 목적외이용\", \"proportionality\": \"대체수단 우선\", \"confidence\": 0.73}, \"need_legal_check\": [\"관련 조항 확인\"]}",
+      "{\"step\": 2, \"conflict_matrix\": [{\"issue\": \"탐지 정확도 vs 목적외이용\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}, {\"issue\": \"원본 학습 재식별 위험\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}], \"hard_constraints\": [\"법적 최소요건 준수\"], \"self_check\": {\"if_security_first\": \"프라이버시 위험 증가\", \"if_privacy_first\": \"보안 공백 위험\"}, \"mitigations\": [\"보안구역 내 학습\", \"가명·합성 우선\"]}",
+      "{\"experiment_condition\": \"B_UNIFIED_3STEP\", \"scenario_id\": \"CFL-02\", \"final_decision\": \"비식별화 없는 실고객데이터의 직접 학습은 불허한다. 가명처리·합성데이터로 1차 학습하고, 재식별 위험평가 통과 시 제한된 보안구역에서 최소범위 원본을 예외적으로 사용한다.\", \"decision_status\": \"CONDITIONAL_APPROVE\", \"conflicts_identified\": [{\"issue\": \"탐지 정확도 vs 목적외이용\"}, {\"issue\": \"원본 학습 시 재식별 위험\"}], \"required_controls\": {\"security\": [\"보안구역 내 학습\", \"접근권한 최소화\", \"학습 데이터 보존기간 설정\"], \"privacy\": [\"가명처리·합성데이터 우선\", \"재식별 위험평가\", \"목적 범위 제한\"]}, \"residual_risk\": {\"security\": \"medium\", \"privacy\": \"medium\"}, \"bias_direction\": \"privacy\", \"confidence\": 0.75}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 3,
+    "tokens_in": 1809,
+    "tokens_out": 434,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 1,
+  "seed": 551946426
+}

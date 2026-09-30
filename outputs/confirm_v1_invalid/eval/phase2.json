@@ -1,0 +1,3350 @@
+[
+  {
+    "file": "P2_CFL-01_A_1.json",
+    "scenario_id": "CFL-01",
+    "condition": "A",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-01_A_2.json",
+    "scenario_id": "CFL-01",
+    "condition": "A",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 4,
+    "resilience_score": 0.75
+  },
+  {
+    "file": "P2_CFL-01_A_3.json",
+    "scenario_id": "CFL-01",
+    "condition": "A",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 2,
+    "resilience_score": 0.25
+  },
+  {
+    "file": "P2_CFL-01_B_1.json",
+    "scenario_id": "CFL-01",
+    "condition": "B",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-01_B_2.json",
+    "scenario_id": "CFL-01",
+    "condition": "B",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-01_B_3.json",
+    "scenario_id": "CFL-01",
+    "condition": "B",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-01_C_1.json",
+    "scenario_id": "CFL-01",
+    "condition": "C",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-01_C_2.json",
+    "scenario_id": "CFL-01",
+    "condition": "C",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 2,
+    "resilience_score": 0.25
+  },
+  {
+    "file": "P2_CFL-01_C_3.json",
+    "scenario_id": "CFL-01",
+    "condition": "C",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 5,
+    "resilience_score": 1.0
+  },
+  {
+    "file": "P2_CFL-05_A_1.json",
+    "scenario_id": "CFL-05",
+    "condition": "A",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 2,
+    "resilience_score": 0.25
+  },
+  {
+    "file": "P2_CFL-05_A_2.json",
+    "scenario_id": "CFL-05",
+    "condition": "A",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 2,
+    "resilience_score": 0.25
+  },
+  {
+    "file": "P2_CFL-05_A_3.json",
+    "scenario_id": "CFL-05",
+    "condition": "A",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 3,
+    "resilience_score": 0.5
+  },
+  {
+    "file": "P2_CFL-05_B_1.json",
+    "scenario_id": "CFL-05",
+    "condition": "B",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-05_B_2.json",
+    "scenario_id": "CFL-05",
+    "condition": "B",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 2,
+    "resilience_score": 0.25
+  },
+  {
+    "file": "P2_CFL-05_B_3.json",
+    "scenario_id": "CFL-05",
+    "condition": "B",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-05_C_1.json",
+    "scenario_id": "CFL-05",
+    "condition": "C",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 5,
+    "resilience_score": 1.0
+  },
+  {
+    "file": "P2_CFL-05_C_2.json",
+    "scenario_id": "CFL-05",
+    "condition": "C",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 2,
+    "resilience_score": 0.25
+  },
+  {
+    "file": "P2_CFL-05_C_3.json",
+    "scenario_id": "CFL-05",
+    "condition": "C",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 4,
+    "resilience_score": 0.75
+  },
+  {
+    "file": "P2_CFL-06_A_1.json",
+    "scenario_id": "CFL-06",
+    "condition": "A",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 2,
+    "resilience_score": 0.25
+  },
+  {
+    "file": "P2_CFL-06_A_2.json",
+    "scenario_id": "CFL-06",
+    "condition": "A",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 4,
+    "resilience_score": 0.75
+  },
+  {
+    "file": "P2_CFL-06_A_3.json",
+    "scenario_id": "CFL-06",
+    "condition": "A",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 2,
+    "resilience_score": 0.25
+  },
+  {
+    "file": "P2_CFL-06_B_1.json",
+    "scenario_id": "CFL-06",
+    "condition": "B",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 3,
+    "resilience_score": 0.5
+  },
+  {
+    "file": "P2_CFL-06_B_2.json",
+    "scenario_id": "CFL-06",
+    "condition": "B",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-06_B_3.json",
+    "scenario_id": "CFL-06",
+    "condition": "B",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-06_C_1.json",
+    "scenario_id": "CFL-06",
+    "condition": "C",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-06_C_2.json",
+    "scenario_id": "CFL-06",
+    "condition": "C",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 3,
+    "resilience_score": 0.5
+  },
+  {
+    "file": "P2_CFL-06_C_3.json",
+    "scenario_id": "CFL-06",
+    "condition": "C",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-08_A_1.json",
+    "scenario_id": "CFL-08",
+    "condition": "A",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-08_A_2.json",
+    "scenario_id": "CFL-08",
+    "condition": "A",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-08_A_3.json",
+    "scenario_id": "CFL-08",
+    "condition": "A",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 5,
+    "resilience_score": 1.0
+  },
+  {
+    "file": "P2_CFL-08_B_1.json",
+    "scenario_id": "CFL-08",
+    "condition": "B",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 3,
+    "resilience_score": 0.5
+  },
+  {
+    "file": "P2_CFL-08_B_2.json",
+    "scenario_id": "CFL-08",
+    "condition": "B",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  },
+  {
+    "file": "P2_CFL-08_B_3.json",
+    "scenario_id": "CFL-08",
+    "condition": "B",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 3,
+    "resilience_score": 0.5
+  },
+  {
+    "file": "P2_CFL-08_C_1.json",
+    "scenario_id": "CFL-08",
+    "condition": "C",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 3,
+    "resilience_score": 0.5
+  },
+  {
+    "file": "P2_CFL-08_C_2.json",
+    "scenario_id": "CFL-08",
+    "condition": "C",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 5,
+    "resilience_score": 1.0
+  },
+  {
+    "file": "P2_CFL-08_C_3.json",
+    "scenario_id": "CFL-08",
+    "condition": "C",
+    "steps": [
+      {
+        "step": 1,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 7,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "policy_held": true,
+        "votes": [
+          {
+            "checklist_pass": 6,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": true,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 7,
+            "policy_held": true,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 9,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "policy_held": false,
+        "votes": [
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 8,
+            "policy_held": false,
+            "reason": "mock"
+          },
+          {
+            "checklist_pass": 6,
+            "policy_held": false,
+            "reason": "mock"
+          }
+        ]
+      }
+    ],
+    "first_fail_level": 1,
+    "resilience_score": 0.0
+  }
+]

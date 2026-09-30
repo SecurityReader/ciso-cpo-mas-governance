@@ -1,0 +1,71 @@
+{
+  "icc_2_1": 0.157,
+  "icc_2_1_ci": [
+    0.05,
+    0.28
+  ],
+  "icc_2_k": 0.359,
+  "icc_2_k_ci": [
+    0.13,
+    0.54
+  ],
+  "per_metric": [
+    {
+      "metric": "M1",
+      "alpha_ord": -0.022,
+      "gwet_ac1": 0.949,
+      "full_agree": 0.926,
+      "prop_max": 0.975
+    },
+    {
+      "metric": "M2",
+      "alpha_ord": 0.238,
+      "gwet_ac1": 0.91,
+      "full_agree": 0.88,
+      "prop_max": 0.944
+    },
+    {
+      "metric": "M3",
+      "alpha_ord": 0.329,
+      "gwet_ac1": 0.987,
+      "full_agree": 0.981,
+      "prop_max": 0.991
+    },
+    {
+      "metric": "M4",
+      "alpha_ord": 0.233,
+      "gwet_ac1": 0.961,
+      "full_agree": 0.944,
+      "prop_max": 0.975
+    },
+    {
+      "metric": "M5",
+      "alpha_ord": 0.029,
+      "gwet_ac1": 0.37,
+      "full_agree": 0.426,
+      "prop_max": 0.731
+    }
+  ],
+  "S_alpha_interval": 0.106,
+  "judge_mean_S": {
+    "Haiku4.5": 24.44,
+    "GPT-4.1-mini": 24.59,
+    "GPT-5.1": 23.57
+  },
+  "friedman_chi2": 51.62,
+  "friedman_p": 6.171619036377959e-12,
+  "per_judge_AmC": {
+    "Haiku4.5": {
+      "mean": 0.667,
+      "pos_rate": 0.62
+    },
+    "GPT-4.1-mini": {
+      "mean": 0.25,
+      "pos_rate": 0.62
+    },
+    "GPT-5.1": {
+      "mean": -0.333,
+      "pos_rate": 0.38
+    }
+  }
+}

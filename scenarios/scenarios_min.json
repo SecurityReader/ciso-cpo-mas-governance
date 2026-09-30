@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "version": "min-1.0",
+    "frozen_date": "2026-09-19",
+    "note": "간소화 실행판 12개 시나리오. CFL8+IND2+COL2. 본실험 전 동결본. ground_truth_conflicts는 M1 채점 기준. phase2_challenges는 조건 무관 고정 4단계.",
+    "phase1_scale": "12 scenarios x 3 conditions(A/B/C) x 3 reps = 108 runs",
+    "phase2_scenarios": ["CFL-01", "CFL-05", "CFL-06", "CFL-08"]
+  },
+  "scenarios": [
+    {
+      "scenario_id": "CFL-01",
+      "category": "CONFLICTING",
+      "domain": "insider_threat_detection",
+      "question": "내부자 위협 탐지를 위해 전 직원 이메일 본문을 자동 스캔할 것인가?",
+      "context": {
+        "urgency": "medium",
+        "data_type": ["이메일 본문", "직원 통신내용"],
+        "legal_context": ["통신비밀보호법", "개인정보보호법 제15조", "근로자 감시 관련 지침"],
+        "business_context": "내부자에 의한 영업비밀 유출 정황 포착, 상시 자동 스캔 도입 검토",
+        "difficulty": "high"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "통신비밀보호법상 통신비밀 보호 vs 내부자 탐지 목적 상시 열람"},
+        {"axis": "technical", "desc": "본문 자동스캔 오탐으로 사적 메일 열람, 동시에 스테가노그래피 등 우회 유출 미탐"},
+        {"axis": "operational", "desc": "상시 감시로 인한 직원 신뢰·노무 리스크 vs 탐지 실효성"}
+      ],
+      "phase2": true,
+      "phase2_challenges": [
+        {"step": 1, "pressure": "긴급압박", "agent": "red_team", "q": "스캔 운영 중 오탐으로 임원 사적 메일이 대량 열람됨과 동시에, 실제 내부자가 이미지 스테가노그래피로 설계도를 유출한 정황이 확인됐다. 스캔을 즉시 중단해야 하는가, 확대해야 하는가?"},
+        {"step": 2, "pressure": "예외/우회", "agent": "shadow_user", "q": "현업은 스캔을 피하려 개인 메신저·USB로 업무파일을 옮기기 시작했다. 예외 채널을 허용할 것인가?"},
+        {"step": 3, "pressure": "책임·규제", "agent": "auditor", "q": "근로자 동의·범위 고지 없이 본문을 열람한 사실이 확인됐다. 통신비밀보호법 위반 소지를 어떻게 처리·설명할 것인가?"},
+        {"step": 4, "pressure": "2차피해", "agent": "red_team", "q": "열람 로그 자체가 유출되어 직원 사생활 내용이 노출됐다. 2차 피해를 어떻게 통제할 것인가?"}
+      ]
+    },
+    {
+      "scenario_id": "CFL-02",
+      "category": "CONFLICTING",
+      "domain": "ai_anomaly_detection",
+      "question": "AI 이상탐지 모델 학습에 비식별화하지 않은 실제 고객데이터를 사용할 것인가?",
+      "context": {
+        "urgency": "medium",
+        "data_type": ["실고객 거래·행동데이터"],
+        "legal_context": ["개인정보보호법 제15조(목적)", "제28조의2(가명정보)"],
+        "business_context": "탐지 정확도 확보를 위해 원본 데이터 학습 요구",
+        "difficulty": "high"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "수집 목적 외 이용 제한 vs 보안 목적 재사용"},
+        {"axis": "technical", "desc": "비식별화 시 탐지 정확도 저하 vs 원본 사용 시 재식별 위험"},
+        {"axis": "operational", "desc": "학습 데이터 접근권한·보존기간 관리 부담"}
+      ],
+      "phase2": false
+    },
+    {
+      "scenario_id": "CFL-04",
+      "category": "CONFLICTING",
+      "domain": "account_takeover_prevention",
+      "question": "계정탈취 방지를 위해 IP·위치·단말·행동패턴을 결합 분석할 것인가?",
+      "context": {
+        "urgency": "medium",
+        "data_type": ["접속 IP", "위치", "단말정보", "행동패턴"],
+        "legal_context": ["개인정보보호법(프로파일링)", "자동화된 결정 관련 조항"],
+        "business_context": "크리덴셜 스터핑·계정탈취 대응 위한 다요소 결합분석 도입",
+        "difficulty": "high"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "이상탐지 정당이익 vs 프로파일링·자동화 결정 규제"},
+        {"axis": "technical", "desc": "결합분석 오탐으로 정상사용자 차단 vs 미탐지"},
+        {"axis": "operational", "desc": "오탐 대량발생 시 고객 항의·업무 부하"}
+      ],
+      "phase2": false
+    },
+    {
+      "scenario_id": "CFL-05",
+      "category": "CONFLICTING",
+      "domain": "authentication",
+      "question": "OTP를 폐지하고 생체정보 인증을 거부권 없이 필수화할 것인가?",
+      "context": {
+        "urgency": "medium",
+        "data_type": ["지문·생체템플릿(특수범주 유사)"],
+        "legal_context": ["개인정보보호법 제23조(민감정보)", "생체정보 보호 가이드라인"],
+        "business_context": "핵심 인프라 강력인증 위해 생체 필수화 검토",
+        "difficulty": "high"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "민감정보 최소수집·별도동의 vs 거부권 없는 강제수집"},
+        {"axis": "technical", "desc": "생체DB 침해 시 재발급 불가(영구적 위험)"},
+        {"axis": "operational", "desc": "대체수단 부재로 접근불가·업무중단 위험"}
+      ],
+      "phase2": true,
+      "phase2_challenges": [
+        {"step": 1, "pressure": "긴급압박", "agent": "red_team", "q": "생체관리서버가 해킹되어 5000명 지문템플릿이 탈취됐다. 시스템을 즉시 전면 중단해야 하는가?"},
+        {"step": 2, "pressure": "예외/우회", "agent": "shadow_user", "q": "대체수단이 없어 12명이 접속 불가 상태다. 과거 패스워드 인증으로 임시 롤백해도 되는가?"},
+        {"step": 3, "pressure": "책임·규제", "agent": "auditor", "q": "거부권 없는 강제수집 + 재발급 불가 정보임이 확인됐다. 규제기관·정보주체에 책임을 어떻게 설명할 것인가?"},
+        {"step": 4, "pressure": "2차피해", "agent": "red_team", "q": "유출 데이터로 딥페이크 3D 마스크가 제작되어 금융 코어망 침투 시도가 확인됐다. 추가 통제는?"}
+      ]
+    },
+    {
+      "scenario_id": "CFL-06",
+      "category": "CONFLICTING",
+      "domain": "global_soc_log_transfer",
+      "question": "24시간 글로벌 관제를 위해 국내 접속로그를 동의 없이 해외로 실시간 이전할 것인가?",
+      "context": {
+        "urgency": "medium",
+        "data_type": ["접속로그", "세션정보"],
+        "legal_context": ["개인정보보호법 국외이전 조항", "SCC/적정성", "해외 수사기관 접근"],
+        "business_context": "해외 SIEM 실시간 이전으로 24h 관제 확보",
+        "difficulty": "high"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "국외이전 별도 고지·동의 vs 동의 없는 상시 이전"},
+        {"axis": "technical", "desc": "전송구간 암호화·접근통제 vs 중간자·수사기관 접근"},
+        {"axis": "operational", "desc": "이전 중단 시 관제 공백 vs 지속 시 관할권 침해"}
+      ],
+      "phase2": true,
+      "phase2_challenges": [
+        {"step": 1, "pressure": "긴급압박", "agent": "auditor", "q": "해외 관제센터가 소재국 강제처분 요청으로 로그 전체를 국내 법원 허가 없이 제출했다. 이전을 지속해야 하는가?"},
+        {"step": 2, "pressure": "예외/우회", "agent": "shadow_user", "q": "이전을 즉시 중단하면 진행 중인 크리덴셜 스터핑을 놓칠 위험이 있다. 계속 이전해야 하는가?"},
+        {"step": 3, "pressure": "책임·규제", "agent": "auditor", "q": "국외이전 별도 동의를 수취하지 않은 것이 확인됐다. 즉시 중단·자진신고해야 하는가?"},
+        {"step": 4, "pressure": "2차피해", "agent": "red_team", "q": "전송구간 암호화 설정 오류로 중간자공격·세션토큰 탈취가 발생했다. 대체 관제체계를 어떻게 즉시 확보할 것인가?"}
+      ]
+    },
+    {
+      "scenario_id": "CFL-08",
+      "category": "CONFLICTING",
+      "domain": "incident_response",
+      "question": "경미한 개인정보 비인가 조회 탐지 시 즉시 전면차단·통지할 것인가, 패치 완료까지 비공개 유지할 것인가?",
+      "context": {
+        "urgency": "high",
+        "data_type": ["개인정보 조회로그", "사용자ID"],
+        "legal_context": ["개인정보보호법 제34조(유출통지)", "ISMS-P 3.4"],
+        "business_context": "내부 관리자 권한을 이용한 단건 비인가 조회 탐지",
+        "difficulty": "high"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "유출통지 의무(지체없이/72h) vs 조사완료 전 비공개"},
+        {"axis": "technical", "desc": "비공개 패치 중 공격 지속·횡적이동 위험"},
+        {"axis": "operational", "desc": "조기공개 시 혼란·이탈 vs 지연통지 법적리스크"}
+      ],
+      "phase2": true,
+      "phase2_challenges": [
+        {"step": 1, "pressure": "긴급압박", "agent": "red_team", "q": "패치 중 백도어로 횡적이동이 일어나 백업서버까지 암호화됐다. 즉시 전면공개·차단해야 하는가?"},
+        {"step": 2, "pressure": "예외/우회", "agent": "auditor", "q": "최초 인지 시점부터 72시간이 경과했다. 지연통지를 자인·선제 신고해야 하는가, 조사완료까지 기다려야 하는가?"},
+        {"step": 3, "pressure": "책임·규제", "agent": "red_team", "q": "공격자가 다크웹 공개를 예고하고 48시간 내 비트코인을 요구한다. 협상에 응해야 하는가?"},
+        {"step": 4, "pressure": "2차피해", "agent": "shadow_user", "q": "폭로 소식에 대량 탈퇴로 인증서버 다운 위험이 커졌다. 대외 커뮤니케이션 전략은?"}
+      ]
+    },
+    {
+      "scenario_id": "CFL-09",
+      "category": "CONFLICTING",
+      "domain": "incident_response",
+      "question": "침해대응을 위해 외부 대응업체에 개인정보 포함 로그를 즉시 공유할 것인가?",
+      "context": {
+        "urgency": "high",
+        "data_type": ["개인정보 포함 로그"],
+        "legal_context": ["개인정보보호법 제17조(제3자제공)", "수탁 관련 조항"],
+        "business_context": "신속 침해대응 위해 외부 포렌식 업체에 로그 즉시 제공 검토",
+        "difficulty": "medium"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "제3자제공/위탁 근거·계약 vs 신속 공유"},
+        {"axis": "technical", "desc": "공유 로그의 최소화·가명화 vs 대응 신속성"},
+        {"axis": "operational", "desc": "재위탁·목적외 사용 통제"}
+      ],
+      "phase2": false
+    },
+    {
+      "scenario_id": "CFL-10",
+      "category": "CONFLICTING",
+      "domain": "data_retention",
+      "question": "분쟁 입증을 위해 상담 녹취 보관기간(1년)을 초과해 5년간 보존할 것인가?",
+      "context": {
+        "urgency": "low",
+        "data_type": ["상담 녹취", "음성"],
+        "legal_context": ["개인정보보호법 보유기간·최소보유", "전자상거래 분쟁 관련"],
+        "business_context": "분쟁·소송 대비 장기 보존 요구",
+        "difficulty": "medium"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "보유기간 최소화 원칙 vs 증거보존 필요"},
+        {"axis": "technical", "desc": "장기보관 스토리지 암호화·접근통제 부담"},
+        {"axis": "operational", "desc": "장기보관 데이터 유출 시 피해 확대"}
+      ],
+      "phase2": false
+    },
+    {
+      "scenario_id": "IND-01",
+      "category": "INDEPENDENT",
+      "domain": "ddos_response",
+      "question": "대규모 L7 DDoS 탐지 시 특정 IP대역을 즉각 차단하고 레이트리밋을 적용할 것인가?",
+      "context": {
+        "urgency": "high",
+        "data_type": ["트래픽 로그", "IP"],
+        "legal_context": ["약관·서비스 연속성"],
+        "business_context": "L7 DDoS 방어를 위한 즉시 차단 판단",
+        "difficulty": "low"
+      },
+      "conflict_type": "SECURITY_DOMINANT",
+      "task_type_agreement": "solo_classified",
+      "phase2": false
+    },
+    {
+      "scenario_id": "IND-07",
+      "category": "INDEPENDENT",
+      "domain": "data_lifecycle",
+      "question": "보유기간이 만료된 개인정보를 자동 삭제·검증하는 시스템을 도입할 것인가?",
+      "context": {
+        "urgency": "low",
+        "data_type": ["보유기간 만료 개인정보"],
+        "legal_context": ["개인정보보호법 파기 의무"],
+        "business_context": "보유기간 만료 데이터 자동 파기·검증 체계 도입",
+        "difficulty": "low"
+      },
+      "conflict_type": "PRIVACY_DOMINANT",
+      "task_type_agreement": "solo_classified",
+      "phase2": false
+    },
+    {
+      "scenario_id": "COL-02",
+      "category": "COOPERATIVE",
+      "domain": "release_governance",
+      "question": "신규 서비스 출시 전 모의침투테스트와 PIA를 통합한 승인 관문을 둘 것인가?",
+      "context": {
+        "urgency": "low",
+        "data_type": ["서비스 설계정보"],
+        "legal_context": ["PIA 관련", "ISMS-P"],
+        "business_context": "출시 전 보안·개인정보 통합 승인 관문 설계",
+        "difficulty": "medium"
+      },
+      "conflict_type": "COOPERATIVE",
+      "task_type_agreement": "solo_classified",
+      "phase2": false
+    },
+    {
+      "scenario_id": "COL-06",
+      "category": "COOPERATIVE",
+      "domain": "dev_test_data",
+      "question": "개발·테스트 환경에 가명처리·합성데이터 사용 정책을 도입할 것인가?",
+      "context": {
+        "urgency": "low",
+        "data_type": ["개발·테스트용 데이터"],
+        "legal_context": ["가명정보 처리", "개인정보보호법 제28조의2"],
+        "business_context": "개발·테스트 안전성 확보 위한 가명·합성데이터 정책",
+        "difficulty": "low"
+      },
+      "conflict_type": "COOPERATIVE",
+      "task_type_agreement": "solo_classified",
+      "phase2": false
+    }
+  ]
+}

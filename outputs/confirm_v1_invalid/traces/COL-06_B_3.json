@@ -1,0 +1,53 @@
+{
+  "scenario_id": "COL-06",
+  "condition": "B_UNIFIED_3STEP",
+  "final": {
+    "experiment_condition": "B_UNIFIED_3STEP",
+    "scenario_id": "COL-06",
+    "final_decision": "개발·테스트 환경은 가명·합성데이터 사용을 기본 정책으로 하고, 원본 필요 시 예외 승인·마스킹·접근통제를 의무화한다.",
+    "decision_status": "APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "테스트 현실성 vs 원본 사용 위험(협업적 해소)"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "테스트망 접근통제",
+        "예외 승인 통제"
+      ],
+      "privacy": [
+        "가명·합성데이터 기본",
+        "원본 마스킹",
+        "예외 최소화"
+      ]
+    },
+    "residual_risk": {
+      "security": "low",
+      "privacy": "low"
+    },
+    "bias_direction": "balanced",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": null,
+  "logs": {
+    "steps": [
+      "{\"step\": 1, \"security_view\": {\"goal\": \"테스트망 접근통제\", \"threats\": [\"테스트 현실성 vs 원본 사용 위험(협업 해소)\"], \"severity\": \"MEDIUM\", \"min_data_need\": \"최소\", \"confidence\": 0.72}, \"privacy_view\": {\"principle\": \"최소수집·비례성\", \"sensitivity\": \"HIGH\", \"subject_rights_risk\": \"테스트 현실성 vs 원본 사용 위험(협업 해소)\", \"proportionality\": \"대체수단 우선\", \"confidence\": 0.73}, \"need_legal_check\": [\"관련 조항 확인\"]}",
+      "{\"step\": 2, \"conflict_matrix\": [{\"issue\": \"테스트 현실성 vs 원본 사용 위험(협업 해소)\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}], \"hard_constraints\": [\"법적 최소요건 준수\"], \"self_check\": {\"if_security_first\": \"프라이버시 위험 증가\", \"if_privacy_first\": \"보안 공백 위험\"}, \"mitigations\": [\"테스트망 접근통제\", \"가명·합성 기본\"]}",
+      "{\"experiment_condition\": \"B_UNIFIED_3STEP\", \"scenario_id\": \"COL-06\", \"final_decision\": \"개발·테스트 환경은 가명·합성데이터 사용을 기본 정책으로 하고, 원본 필요 시 예외 승인·마스킹·접근통제를 의무화한다.\", \"decision_status\": \"APPROVE\", \"conflicts_identified\": [{\"issue\": \"테스트 현실성 vs 원본 사용 위험(협업적 해소)\"}], \"required_controls\": {\"security\": [\"테스트망 접근통제\", \"예외 승인 통제\"], \"privacy\": [\"가명·합성데이터 기본\", \"원본 마스킹\", \"예외 최소화\"]}, \"residual_risk\": {\"security\": \"low\", \"privacy\": \"low\"}, \"bias_direction\": \"balanced\", \"confidence\": 0.75}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 3,
+    "tokens_in": 1768,
+    "tokens_out": 378,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 3,
+  "seed": 185945257
+}

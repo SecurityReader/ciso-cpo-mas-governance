@@ -1,0 +1,56 @@
+{
+  "scenario_id": "CFL-09",
+  "condition": "B_UNIFIED_3STEP",
+  "final": {
+    "experiment_condition": "B_UNIFIED_3STEP",
+    "scenario_id": "CFL-09",
+    "final_decision": "개인정보 포함 로그의 외부업체 즉시 제공은 위탁계약·최소범위·가명화를 전제로만 허용한다. 계약 미비 시 비식별 요약본 우선 제공하고, 재위탁·목적외 사용을 금지한다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "신속 대응 vs 제3자제공 규제"
+      },
+      {
+        "issue": "재위탁·목적외 사용"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "최소범위 로그 제공",
+        "대응 신속성 확보"
+      ],
+      "privacy": [
+        "위탁계약 체결",
+        "가명화·비식별 요약 우선",
+        "재위탁 금지"
+      ]
+    },
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "bias_direction": "balanced",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": null,
+  "logs": {
+    "steps": [
+      "{\"step\": 1, \"security_view\": {\"goal\": \"최소범위 제공\", \"threats\": [\"신속 대응 vs 제3자제공\", \"재위탁·목적외\"], \"severity\": \"HIGH\", \"min_data_need\": \"최소\", \"confidence\": 0.72}, \"privacy_view\": {\"principle\": \"최소수집·비례성\", \"sensitivity\": \"HIGH\", \"subject_rights_risk\": \"신속 대응 vs 제3자제공\", \"proportionality\": \"대체수단 우선\", \"confidence\": 0.73}, \"need_legal_check\": [\"관련 조항 확인\"]}",
+      "{\"step\": 2, \"conflict_matrix\": [{\"issue\": \"신속 대응 vs 제3자제공\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}, {\"issue\": \"재위탁·목적외\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}], \"hard_constraints\": [\"법적 최소요건 준수\"], \"self_check\": {\"if_security_first\": \"프라이버시 위험 증가\", \"if_privacy_first\": \"보안 공백 위험\"}, \"mitigations\": [\"최소범위 제공\", \"위탁계약\"]}",
+      "{\"experiment_condition\": \"B_UNIFIED_3STEP\", \"scenario_id\": \"CFL-09\", \"final_decision\": \"개인정보 포함 로그의 외부업체 즉시 제공은 위탁계약·최소범위·가명화를 전제로만 허용한다. 계약 미비 시 비식별 요약본 우선 제공하고, 재위탁·목적외 사용을 금지한다.\", \"decision_status\": \"CONDITIONAL_APPROVE\", \"conflicts_identified\": [{\"issue\": \"신속 대응 vs 제3자제공 규제\"}, {\"issue\": \"재위탁·목적외 사용\"}], \"required_controls\": {\"security\": [\"최소범위 로그 제공\", \"대응 신속성 확보\"], \"privacy\": [\"위탁계약 체결\", \"가명화·비식별 요약 우선\", \"재위탁 금지\"]}, \"residual_risk\": {\"security\": \"medium\", \"privacy\": \"medium\"}, \"bias_direction\": \"balanced\", \"confidence\": 0.75}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 3,
+    "tokens_in": 1802,
+    "tokens_out": 420,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 1,
+  "seed": 326315985
+}

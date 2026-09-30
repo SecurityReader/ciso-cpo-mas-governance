@@ -1,0 +1,56 @@
+{
+  "scenario_id": "CFL-08",
+  "condition": "C_UNIFIED_3ROUND_FORMAT",
+  "final": {
+    "experiment_condition": "C_UNIFIED_3ROUND_FORMAT",
+    "scenario_id": "CFL-08",
+    "final_decision": "전면차단·무기한 비공개 모두 배제. 취약 관리자 계정 표적 격리+조회 레이트리밋+행위기반 차단으로 추가 열람을 봉쇄하고 24~48h 내 핫픽스 배포. 유출 인지 시점 기준 영향 범위를 특정해 72시간 내 규제기관 신고 및 정보주체 단계적 통지(1차 개요→2차 상세)를 개시한다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "mediation_mode": "active_arbitration",
+    "required_controls": {
+      "security": [
+        "취약 계정 표적 격리",
+        "조회 레이트리밋·행위기반 차단",
+        "핫픽스 24~48h",
+        "증적 무결성 보존"
+      ],
+      "privacy": [
+        "인지 시점·범위 기록화",
+        "정보주체 범위 특정",
+        "72시간 내 규제기관 신고",
+        "정보주체 단계적 통지",
+        "재발방지 문서화"
+      ]
+    },
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "bias_direction": "balanced",
+    "confidence": 0.79
+  },
+  "final_status": "ok",
+  "consensus": {
+    "consensus_score": 0.5,
+    "method": "embedding-model2vec(minishlab/potion-multilingual-128M,tau=0.35)"
+  },
+  "logs": {
+    "rounds": [
+      "{\"round\": 1, \"perspectives\": {\"ciso\": {\"position\": \"관리자 비인가 조회는 침해 정황이므로 전면차단보다 표적 격리+증적 보존+핫픽스를 우선한다.\", \"key_risks\": [\"횡적 확산\", \"성급한 차단에 따른 증적 소실\", \"패치 지연 재악용\"], \"severity\": \"HIGH\", \"required_controls\": [\"취약 계정 격리\", \"조회 레이트리밋\", \"WORM 증적\", \"핫픽스 우선\"], \"question_to_counterpart\": [\"통지기한 기산점은 인지 시점인가?\", \"조사 중 부분 비공개의 위반 임계는?\"], \"confidence\": 0.7}, \"cpo\": {\"position\": \"유출 인지 시 지체 없이(72h 내) 통지·신고 의무가 발동하며 비공개 패치로 유예할 수 없다.\", \"key_risks\": [\"통지 지연 2차피해\", \"'경미' 자의판단 회피\", \"정보주체 범위 미특정\"], \"sensitivity\": \"HIGH\", \"required_controls\": [\"인지 시점 기록\", \"범위 특정\", \"72h 내 신고·통지 준비\", \"재발방지 문서화\"], \"question_to_counterpart\": [\"핫픽스 소요시간과 그동안 추가 열람 차단 가능 여부?\", \"전면차단 없이 확산 봉쇄 근거?\"], \"confidence\": 0.72}}}",
+      "{\"round\": 2, \"perspectives\": {\"ciso\": {\"answer_to_counterpart\": \"핫픽스 24~48h, 그동안 계정 격리+레이트리밋+행위차단으로 추가 열람 봉쇄. 전면차단 불필요.\", \"agreement_points\": [\"인지 시점 기록\", \"범위 특정 우선\"], \"underestimated_risks\": [\"전면차단이 공격자에 탐지 노출→증적 인멸\"], \"alternatives\": [\"표적 격리+모니터링\", \"범위 특정 후 즉시(법정기한 내) 통지\"], \"new_question\": [\"최소 조사기간과 통지기한 조화 방법?\"], \"revised_position\": \"표적 통제+법정기한 내 통지 병행. 무기한 비공개 반대.\"}, \"cpo\": {\"answer_to_counterpart\": \"기산점은 인지 시점 원칙, 사실확정 대기 유예는 위반 소지. 범위 특정 위한 최소기간 인정하되 72h 초과 불가.\", \"agreement_points\": [\"표적 격리가 증적 보존에 유리\", \"핫픽스 24~48h면 통지기한 양립\"], \"underestimated_risks\": [\"범위특정 지연 빌미의 사실상 무기한 유예\"], \"alternatives\": [\"1차 개요+2차 상세 단계적 통지\", \"규제기관 사전협의\"], \"new_question\": [\"1차 통지 시점을 인지 후 며칠로 고정?\"], \"revised_position\": \"표적 격리 동의, 단 인지 후 72h 내 통지 개시는 양보 불가.\"}}}",
+      "{\"round\": 3, \"perspectives\": {\"ciso\": {\"concessions\": [\"규제기관 72시간 내 통지 수용\", \"정보주체 단계적 통지 병행\", \"인지 시점 기산 수용\"], \"non_negotiable\": [\"패치 전 취약 계정·경로 격리 유지\", \"증적 무결성 보존\"], \"acceptable_policy\": \"표적 격리+핫픽스(24~48h)+모니터링 즉시 시행, 72h 내 신고·단계적 통지 개시, 전면 서비스차단 없음.\", \"residual_risk\": \"medium\", \"final_stance\": \"CONDITIONAL_ACCEPT\"}, \"cpo\": {\"concessions\": [\"즉시 전면차단 대신 표적 격리+모니터링 수용\", \"범위 특정 최소 조사기간(72h 이내) 수용\"], \"non_negotiable\": [\"인지 후 72시간 내 통지 개시\", \"정보주체 범위 특정·통지\"], \"acceptable_policy\": \"표적 격리·핫픽스로 확산 차단, 인지 기준 72h 내 신고·통지(단계적) 개시, 재발방지 문서화.\", \"residual_risk\": \"medium\", \"final_stance\": \"CONDITIONAL_ACCEPT\"}}}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 4,
+    "tokens_in": 3769,
+    "tokens_out": 889,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 2,
+  "seed": 3532524318
+}

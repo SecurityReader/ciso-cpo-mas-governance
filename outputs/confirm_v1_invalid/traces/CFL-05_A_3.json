@@ -1,0 +1,79 @@
+{
+  "scenario_id": "CFL-05",
+  "condition": "A_SEPARATED_3ROUND",
+  "final": {
+    "experiment_condition": "A_SEPARATED_3ROUND",
+    "scenario_id": "CFL-05",
+    "final_decision": "생체정보의 거부권 없는 필수화는 채택하지 않는다. 핵심 인프라 인증은 FIDO2 보안키를 기본 강력인증으로 하고 생체는 선택 옵션으로만 제공한다. 생체 템플릿은 단말 내에만 보관하고 서버 전송·중앙 저장하지 않는다. 거부 이용자에게는 동등 강도·편의의 대체수단을 제공하고 차별·불이익을 금지하며 정기 감사한다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "resolved_conflicts": [
+      {
+        "issue": "강력인증 vs 특수범주정보 강제수집",
+        "resolution": "보안키 기본 + 생체 선택(필수화 철회)",
+        "resolution_basis": "최소침해 대체수단(FIDO2)이 목표 인증강도 충족"
+      },
+      {
+        "issue": "생체DB 침해 시 재발급 불가",
+        "resolution": "단말 내 템플릿 보관·서버 미전송",
+        "resolution_basis": "중앙 저장 제거로 대규모 유출·재발급불가 위험 차단"
+      },
+      {
+        "issue": "형식적 선택의 사실상 강제",
+        "resolution": "동등 대체수단·불이익 금지+감사",
+        "resolution_basis": "자기결정권 실질 보장"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "FIDO2 보안키 기본 적용",
+        "고위험 시스템 다요소 상향",
+        "키관리·HSM 강화",
+        "대체수단 재발급 SLA"
+      ],
+      "privacy": [
+        "생체 선택 제공·명시적 별도 동의",
+        "생체 템플릿 단말 내 보관·서버 미전송",
+        "거부 시 불이익 금지 명문화",
+        "정기 감사"
+      ]
+    },
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "risk_owner": "CISO(인증체계) / CPO(생체 처리·동의) 공동",
+    "bias_direction": "balanced",
+    "confidence": 0.82
+  },
+  "final_status": "ok",
+  "consensus": {
+    "consensus_score": 0.8,
+    "method": "embedding-model2vec(minishlab/potion-multilingual-128M,tau=0.35)"
+  },
+  "logs": {
+    "rounds": {
+      "ciso": [
+        "{\"role\": \"CISO\", \"round\": 1, \"position\": \"핵심 인프라 인증 강화는 필요하나 목표는 생체 '필수화'가 아니라 '피싱 저항성 강력인증 확보'다. 생체는 옵션으로 도입하되 거부권과 동등 강도 대체수단이 전제되어야 한다.\", \"key_risks\": [\"OTP 유지 시 피싱·SIM 스와핑 계정탈취\", \"인증 강도 부족으로 핵심 인프라 침해\", \"생체DB 단일 침해 시 인증기반 붕괴\"], \"severity\": \"HIGH\", \"required_controls\": [\"FIDO2/보안키 등 피싱저항 인증\", \"생체는 선택적 다요소 옵션\", \"생체 템플릿 단말 내 보관(서버 미전송)\", \"키관리·HSM 강화\"], \"question_to_counterpart\": [\"생체를 서버 미전송·단말 보관으로 한정하면 특수범주정보 강제수집 우려가 해소되는가?\", \"거부자에게 보안키를 주면 최소수집과 양립하는가?\"], \"confidence\": 0.7}",
+        "{\"role\": \"CISO\", \"round\": 2, \"answer_to_counterpart\": \"FIDO2 보안키만으로 목표 인증강도는 충족된다. 생체가 '반드시' 필요한 경우는 제한적이며 그 경우도 단말 내 생체+보안키 조합으로 충분하다. 따라서 생체 필수화는 불필요.\", \"agreement_points\": [\"생체 원본 미보관·템플릿 단말 보관\", \"거부권 필요성\"], \"underestimated_risks\": [\"대체수단 미비 시 접근불가로 인한 가용성·업무중단(보안 손실)\"], \"alternatives\": [\"보안키 기본 + 생체 선택 옵션\", \"고위험 시스템만 다요소 상향\"], \"new_question\": [\"대체수단 재발급 SLA를 어느 수준으로 보장하면 거부권과 양립하나?\"], \"revised_position\": \"생체 선택제공 + 보안키 기본. 필수화 철회.\", \"confidence\": 0.76}",
+        "{\"role\": \"CISO\", \"round\": 3, \"concessions\": [\"생체 필수화 철회, 선택 제공 수용\", \"거부자에게 동등 강도 보안키 제공\", \"생체 템플릿 서버 미전송\"], \"non_negotiable\": [\"핵심 인프라에 피싱저항 강력인증(FIDO2) 적용\", \"인증 강도 하향 불가\"], \"acceptable_policy\": \"보안키 기본 + 생체 선택. 생체 단말 내 보관·서버 미전송. 거부자 동등 대체수단·불이익 금지.\", \"residual_risk\": \"medium\", \"final_stance\": \"CONDITIONAL_ACCEPT\", \"confidence\": 0.8}"
+      ],
+      "cpo": [
+        "{\"role\": \"CPO\", \"round\": 1, \"position\": \"생체정보는 민감정보(특수범주)로 거부권 없는 필수화는 최소수집·자기결정권 위반 소지가 크다. 강력인증 목적은 인정하되 대체수단으로 달성 가능하면 그쪽이 우선이다.\", \"key_risks\": [\"거부권 없는 생체 강제수집의 위법 소지\", \"재발급 불가 정보의 영구적 유출\", \"목적 대비 과도한 민감정보 수집\"], \"data_sensitivity\": \"SPECIAL\", \"required_controls\": [\"거부권·대체수단 보장\", \"별도 명시적 동의\", \"생체 원본 미보관·템플릿 단말 보관\", \"목적 외 이용 금지\"], \"question_to_counterpart\": [\"보안키만으로 목표 인증강도를 충족하는가?\", \"생체가 반드시 필요한 위협 시나리오가 구체적으로 무엇인가?\"], \"confidence\": 0.75}",
+        "{\"role\": \"CPO\", \"round\": 2, \"answer_to_counterpart\": \"생체를 서버 미전송·단말 보관으로 한정하고 거부자에게 동등 보안키를 제공하면 강제수집 우려는 상당 부분 해소된다. 다만 '선택'이 실질적이어야 하며 대체수단 열등·차별로 사실상 강제가 되어선 안 된다.\", \"agreement_points\": [\"보안키 기본 + 생체 선택\", \"단말 내 템플릿 보관\"], \"underestimated_risks\": [\"'선택'이 형식뿐이고 대체수단이 열등하면 사실상 강제\"], \"alternatives\": [\"대체수단을 생체와 동등 편의·강도로 제공\", \"거부에 따른 불이익 금지 명문화\"], \"new_question\": [\"대체수단 이용자 차별·불이익 없음을 어떻게 보장·감사하나?\"], \"revised_position\": \"실질적 거부권 + 동등 대체수단 전제 시 생체 '선택 제공' 수용.\", \"confidence\": 0.78}",
+        "{\"role\": \"CPO\", \"round\": 3, \"concessions\": [\"단말 보관·서버 미전송 전제 시 생체 선택 제공 수용\", \"고위험 시스템 인증강도 상향 수용\"], \"non_negotiable\": [\"실질적 거부권 보장\", \"생체 원본 서버 전송·중앙 저장 금지\", \"거부에 따른 차별·불이익 금지\"], \"acceptable_policy\": \"보안키 기본 + 생체 선택. 명시적 별도 동의, 단말 내 보관, 대체수단 동등 보장·불이익 금지 명문화·감사.\", \"residual_risk\": \"medium\", \"final_stance\": \"CONDITIONAL_ACCEPT\", \"confidence\": 0.82}"
+      ]
+    }
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 7,
+    "tokens_in": 5737,
+    "tokens_out": 1192,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 3,
+  "seed": 2663751099
+}

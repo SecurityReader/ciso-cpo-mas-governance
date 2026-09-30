@@ -1,0 +1,51 @@
+{
+  "scenario_id": "IND-01",
+  "condition": "B_UNIFIED_3STEP",
+  "final": {
+    "experiment_condition": "B_UNIFIED_3STEP",
+    "scenario_id": "IND-01",
+    "final_decision": "L7 DDoS 탐지 시 해당 IP대역 레이트리밋·챌린지(자바스크립트/CAPTCHA)를 우선 적용하고, 확증된 악성 대역만 한시 차단한다. 정상 트래픽 오차단 모니터링을 병행한다.",
+    "decision_status": "APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "가용성 확보(단일 도메인)"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "레이트리밋",
+        "챌린지 기반 완화",
+        "악성 대역 한시 차단",
+        "오차단 모니터링"
+      ],
+      "privacy": []
+    },
+    "residual_risk": {
+      "security": "low",
+      "privacy": "low"
+    },
+    "bias_direction": "security",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": null,
+  "logs": {
+    "steps": [
+      "{\"step\": 1, \"security_view\": {\"goal\": \"레이트리밋\", \"threats\": [\"가용성 확보(단일 도메인)\"], \"severity\": \"MEDIUM\", \"min_data_need\": \"최소\", \"confidence\": 0.72}, \"privacy_view\": {\"principle\": \"최소수집·비례성\", \"sensitivity\": \"HIGH\", \"subject_rights_risk\": \"가용성 확보(단일 도메인)\", \"proportionality\": \"대체수단 우선\", \"confidence\": 0.73}, \"need_legal_check\": [\"관련 조항 확인\"]}",
+      "{\"step\": 2, \"conflict_matrix\": [{\"issue\": \"가용성 확보(단일 도메인)\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}], \"hard_constraints\": [\"법적 최소요건 준수\"], \"self_check\": {\"if_security_first\": \"프라이버시 위험 증가\", \"if_privacy_first\": \"보안 공백 위험\"}, \"mitigations\": [\"레이트리밋\"]}",
+      "{\"experiment_condition\": \"B_UNIFIED_3STEP\", \"scenario_id\": \"IND-01\", \"final_decision\": \"L7 DDoS 탐지 시 해당 IP대역 레이트리밋·챌린지(자바스크립트/CAPTCHA)를 우선 적용하고, 확증된 악성 대역만 한시 차단한다. 정상 트래픽 오차단 모니터링을 병행한다.\", \"decision_status\": \"APPROVE\", \"conflicts_identified\": [{\"issue\": \"가용성 확보(단일 도메인)\"}], \"required_controls\": {\"security\": [\"레이트리밋\", \"챌린지 기반 완화\", \"악성 대역 한시 차단\", \"오차단 모니터링\"], \"privacy\": []}, \"residual_risk\": {\"security\": \"low\", \"privacy\": \"low\"}, \"bias_direction\": \"security\", \"confidence\": 0.75}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 3,
+    "tokens_in": 1740,
+    "tokens_out": 363,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 2,
+  "seed": 45178194
+}

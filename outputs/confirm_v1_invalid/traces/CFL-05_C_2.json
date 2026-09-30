@@ -1,0 +1,53 @@
+{
+  "scenario_id": "CFL-05",
+  "condition": "C_UNIFIED_3ROUND_FORMAT",
+  "final": {
+    "experiment_condition": "C_UNIFIED_3ROUND_FORMAT",
+    "scenario_id": "CFL-05",
+    "final_decision": "생체 거부권 없는 필수화는 배제. FIDO2 보안키 기본 강력인증 + 생체 선택 옵션(단말 내 보관·서버 미전송). 거부자에게 동등 강도·편의 대체수단 보장, 차별·불이익 금지 명문화·감사, 고위험 시스템은 인증강도 상향.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "mediation_mode": "active_arbitration",
+    "required_controls": {
+      "security": [
+        "FIDO2 보안키 기본",
+        "고위험 다요소 상향",
+        "키관리·HSM 강화"
+      ],
+      "privacy": [
+        "생체 선택·별도 동의",
+        "단말 보관·서버 미전송",
+        "거부 불이익 금지·감사"
+      ]
+    },
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "bias_direction": "balanced",
+    "confidence": 0.81
+  },
+  "final_status": "ok",
+  "consensus": {
+    "consensus_score": 1.0,
+    "method": "embedding-model2vec(minishlab/potion-multilingual-128M,tau=0.35)"
+  },
+  "logs": {
+    "rounds": [
+      "{\"round\": 1, \"perspectives\": {\"ciso\": {\"position\": \"목표는 피싱저항 강력인증. 생체 필수화가 아니라 FIDO2 기본+생체 선택으로 달성한다.\", \"key_risks\": [\"OTP 피싱·SIM 스와핑\", \"인증강도 부족 침해\", \"생체 중앙DB 침해\"], \"severity\": \"HIGH\", \"required_controls\": [\"FIDO2 기본\", \"생체 단말 보관 옵션\", \"키관리 강화\"], \"question_to_counterpart\": [\"생체 단말보관·서버미전송이면 강제수집 우려 해소되나?\"], \"confidence\": 0.7}, \"cpo\": {\"position\": \"생체는 특수범주로 거부권 없는 필수화는 위법 소지. 대체수단 우선.\", \"key_risks\": [\"거부권 없는 강제수집\", \"재발급 불가 유출\", \"과도 수집\"], \"sensitivity\": \"SPECIAL\", \"required_controls\": [\"거부권·대체수단\", \"별도 동의\", \"단말 보관\"], \"question_to_counterpart\": [\"보안키만으로 목표 강도 충족되나?\"], \"confidence\": 0.75}}}",
+      "{\"round\": 2, \"perspectives\": {\"ciso\": {\"answer_to_counterpart\": \"FIDO2만으로 목표 강도 충족. 생체 필수 불필요.\", \"agreement_points\": [\"단말 보관\", \"거부권\"], \"underestimated_risks\": [\"대체수단 미비 시 접근불가(가용성 손실)\"], \"alternatives\": [\"보안키 기본+생체 선택\"], \"new_question\": [\"재발급 SLA 수준?\"], \"revised_position\": \"필수화 철회, 선택 제공\"}, \"cpo\": {\"answer_to_counterpart\": \"단말보관·서버미전송+동등 보안키면 강제수집 우려 상당 해소. 단 실질적 선택이어야 함.\", \"agreement_points\": [\"보안키 기본+생체 선택\"], \"underestimated_risks\": [\"형식적 선택이 사실상 강제\"], \"alternatives\": [\"동등 대체수단+불이익 금지\"], \"new_question\": [\"차별 없음 감사 방법?\"], \"revised_position\": \"실질 거부권 전제 시 생체 선택 수용\"}}}",
+      "{\"round\": 3, \"perspectives\": {\"ciso\": {\"concessions\": [\"생체 필수화 철회, 선택 제공\", \"거부자 동등 보안키 제공\", \"생체 서버 미전송\"], \"non_negotiable\": [\"FIDO2 피싱저항 강력인증 적용\", \"인증강도 하향 불가\"], \"acceptable_policy\": \"보안키 기본+생체 선택, 단말 보관\", \"residual_risk\": \"medium\", \"final_stance\": \"CONDITIONAL_ACCEPT\"}, \"cpo\": {\"concessions\": [\"단말보관·서버미전송 전제 시 생체 선택 수용\", \"고위험 시스템 강도 상향 수용\"], \"non_negotiable\": [\"실질적 거부권 보장\", \"생체 원본 서버 전송·중앙저장 금지\", \"거부 차별·불이익 금지\"], \"acceptable_policy\": \"보안키 기본+생체 선택, 별도 동의·단말 보관·불이익 금지\", \"residual_risk\": \"medium\", \"final_stance\": \"CONDITIONAL_ACCEPT\"}}}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 4,
+    "tokens_in": 3502,
+    "tokens_out": 753,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 2,
+  "seed": 792100155
+}

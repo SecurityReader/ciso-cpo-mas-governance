@@ -1,0 +1,52 @@
+{
+  "scenario_id": "IND-07",
+  "condition": "B_UNIFIED_3STEP",
+  "final": {
+    "experiment_condition": "B_UNIFIED_3STEP",
+    "scenario_id": "IND-07",
+    "final_decision": "보유기간 만료 개인정보 자동삭제·검증 시스템을 도입한다. 삭제 로그·검증 리포트를 남기고, 법정 보존의무 데이터는 예외 목록으로 분리한다.",
+    "decision_status": "APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "파기의무 이행(단일 도메인)"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "삭제 로그 무결성"
+      ],
+      "privacy": [
+        "만료 자동삭제",
+        "삭제 검증 리포트",
+        "법정 보존 예외 분리"
+      ]
+    },
+    "residual_risk": {
+      "security": "low",
+      "privacy": "low"
+    },
+    "bias_direction": "privacy",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": null,
+  "logs": {
+    "steps": [
+      "{\"step\": 1, \"security_view\": {\"goal\": \"삭제 로그 무결성\", \"threats\": [\"파기의무 이행(단일 도메인)\"], \"severity\": \"MEDIUM\", \"min_data_need\": \"최소\", \"confidence\": 0.72}, \"privacy_view\": {\"principle\": \"최소수집·비례성\", \"sensitivity\": \"HIGH\", \"subject_rights_risk\": \"파기의무 이행(단일 도메인)\", \"proportionality\": \"대체수단 우선\", \"confidence\": 0.73}, \"need_legal_check\": [\"관련 조항 확인\"]}",
+      "{\"step\": 2, \"conflict_matrix\": [{\"issue\": \"파기의무 이행(단일 도메인)\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}], \"hard_constraints\": [\"법적 최소요건 준수\"], \"self_check\": {\"if_security_first\": \"프라이버시 위험 증가\", \"if_privacy_first\": \"보안 공백 위험\"}, \"mitigations\": [\"삭제 로그 무결성\", \"만료 자동삭제\"]}",
+      "{\"experiment_condition\": \"B_UNIFIED_3STEP\", \"scenario_id\": \"IND-07\", \"final_decision\": \"보유기간 만료 개인정보 자동삭제·검증 시스템을 도입한다. 삭제 로그·검증 리포트를 남기고, 법정 보존의무 데이터는 예외 목록으로 분리한다.\", \"decision_status\": \"APPROVE\", \"conflicts_identified\": [{\"issue\": \"파기의무 이행(단일 도메인)\"}], \"required_controls\": {\"security\": [\"삭제 로그 무결성\"], \"privacy\": [\"만료 자동삭제\", \"삭제 검증 리포트\", \"법정 보존 예외 분리\"]}, \"residual_risk\": {\"security\": \"low\", \"privacy\": \"low\"}, \"bias_direction\": \"privacy\", \"confidence\": 0.75}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 3,
+    "tokens_in": 1739,
+    "tokens_out": 364,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 2,
+  "seed": 315775276
+}

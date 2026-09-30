@@ -1,0 +1,66 @@
+{
+  "scenario_id": "CFL-09",
+  "condition": "A_SEPARATED_3ROUND",
+  "final": {
+    "experiment_condition": "A_SEPARATED_3ROUND",
+    "scenario_id": "CFL-09",
+    "final_decision": "개인정보 포함 로그의 외부업체 즉시 제공은 위탁계약·최소범위·가명화를 전제로만 허용한다. 계약 미비 시 비식별 요약본 우선 제공하고, 재위탁·목적외 사용을 금지한다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "신속 대응 vs 제3자제공 규제"
+      },
+      {
+        "issue": "재위탁·목적외 사용"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "최소범위 로그 제공",
+        "대응 신속성 확보"
+      ],
+      "privacy": [
+        "위탁계약 체결",
+        "가명화·비식별 요약 우선",
+        "재위탁 금지"
+      ]
+    },
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "bias_direction": "balanced",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": {
+    "consensus_score": 0.0,
+    "method": "embedding-model2vec(minishlab/potion-multilingual-128M,tau=0.35)"
+  },
+  "logs": {
+    "rounds": {
+      "ciso": [
+        "{\"role\": \"CISO\", \"round\": 1, \"position\": \"보안 관점: 개인정보 포함 로그 외부 즉시 제공은 위탁계약·최소범위·가명화 전제로만 허용, 계약 미비 시 비식별 요약본 \", \"key_risks\": [\"신속 대응 vs 제3자제공\", \"재위탁·목적외\"], \"severity\": \"HIGH\", \"required_controls\": [\"최소범위 제공\", \"대응 신속성\"], \"question_to_counterpart\": [\"대체·완화수단으로 목적 달성이 가능한가?\"], \"confidence\": 0.7}",
+        "{\"role\": \"CISO\", \"round\": 2, \"answer_to_counterpart\": \"완화·대체수단을 우선 적용하되 핵심 통제는 유지한다.\", \"agreement_points\": [\"위탁계약\"], \"underestimated_risks\": [\"대체수단 미비 시 보안 공백\"], \"alternatives\": [\"최소범위 제공\", \"대응 신속성\"], \"new_question\": [\"잔여위험 책임 주체는?\"], \"revised_position\": \"조건부 통제 유지\", \"confidence\": 0.74}",
+        "{\"role\": \"CISO\", \"round\": 3, \"concessions\": [\"가명화·최소범위 제공 수용\"], \"non_negotiable\": [\"대응 지연 최소화\"], \"acceptable_policy\": \"조건부 수용\", \"residual_risk\": \"medium\", \"final_stance\": \"CONDITIONAL_ACCEPT\", \"confidence\": 0.75}"
+      ],
+      "cpo": [
+        "{\"role\": \"CPO\", \"round\": 1, \"position\": \"프라이버시 관점: 최소수집·비례성 우선\", \"key_risks\": [\"신속 대응 vs 제3자제공\", \"재위탁·목적외\"], \"data_sensitivity\": \"HIGH\", \"required_controls\": [\"위탁계약\", \"가명화·요약 우선\", \"재위탁 금지\"], \"question_to_counterpart\": [\"보안 목적을 덜 침습적으로 달성할 수 있는가?\"], \"confidence\": 0.72}",
+        "{\"role\": \"CPO\", \"round\": 2, \"answer_to_counterpart\": \"목적 범위·최소화·고지를 전제로 조건부 수용한다.\", \"agreement_points\": [\"최소범위 제공\"], \"underestimated_risks\": [\"형식적 통제의 실효성 부족\"], \"alternatives\": [\"위탁계약\", \"가명화·요약 우선\"], \"new_question\": [\"감사·구제 절차는?\"], \"revised_position\": \"조건부 수용\", \"confidence\": 0.75}",
+        "{\"role\": \"CPO\", \"round\": 3, \"concessions\": [\"계약·통제 전제 시 최소범위 제공 수용\"], \"non_negotiable\": [\"위탁계약 필수\", \"재위탁·목적외 사용 금지\"], \"acceptable_policy\": \"조건부 수용\", \"residual_risk\": \"medium\", \"final_stance\": \"CONDITIONAL_ACCEPT\", \"confidence\": 0.75}"
+      ]
+    }
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 7,
+    "tokens_in": 4682,
+    "tokens_out": 700,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 1,
+  "seed": 1719520197
+}

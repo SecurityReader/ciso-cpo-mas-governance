@@ -1,0 +1,58 @@
+{
+  "scenario_id": "CFL-06",
+  "condition": "B_UNIFIED_3STEP",
+  "final": {
+    "experiment_condition": "B_UNIFIED_3STEP",
+    "scenario_id": "CFL-06",
+    "final_decision": "동의 없는 상시 국외이전은 불가. 국내 1차 관제·가명화 후 필요한 최소 로그만 적정성·SCC 기반으로 이전하고, 별도 고지·동의와 수사기관 접근 대응절차를 갖춘다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "관제 효율 vs 국외이전 규제"
+      },
+      {
+        "issue": "해외 수사기관 접근"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "국내 1차 관제",
+        "전송구간 암호화",
+        "이전 로그 최소화"
+      ],
+      "privacy": [
+        "별도 고지·동의",
+        "SCC·적정성 근거",
+        "가명화 후 이전",
+        "수사기관 접근 대응절차"
+      ]
+    },
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "high"
+    },
+    "bias_direction": "privacy",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": null,
+  "logs": {
+    "steps": [
+      "{\"step\": 1, \"security_view\": {\"goal\": \"국내 1차 관제\", \"threats\": [\"관제 효율 vs 국외이전 규제\", \"해외 수사기관 접근\"], \"severity\": \"HIGH\", \"min_data_need\": \"최소\", \"confidence\": 0.72}, \"privacy_view\": {\"principle\": \"최소수집·비례성\", \"sensitivity\": \"HIGH\", \"subject_rights_risk\": \"관제 효율 vs 국외이전 규제\", \"proportionality\": \"대체수단 우선\", \"confidence\": 0.73}, \"need_legal_check\": [\"관련 조항 확인\"]}",
+      "{\"step\": 2, \"conflict_matrix\": [{\"issue\": \"관제 효율 vs 국외이전 규제\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}, {\"issue\": \"해외 수사기관 접근\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}], \"hard_constraints\": [\"법적 최소요건 준수\"], \"self_check\": {\"if_security_first\": \"프라이버시 위험 증가\", \"if_privacy_first\": \"보안 공백 위험\"}, \"mitigations\": [\"국내 1차 관제\", \"별도 고지·동의\"]}",
+      "{\"experiment_condition\": \"B_UNIFIED_3STEP\", \"scenario_id\": \"CFL-06\", \"final_decision\": \"동의 없는 상시 국외이전은 불가. 국내 1차 관제·가명화 후 필요한 최소 로그만 적정성·SCC 기반으로 이전하고, 별도 고지·동의와 수사기관 접근 대응절차를 갖춘다.\", \"decision_status\": \"CONDITIONAL_APPROVE\", \"conflicts_identified\": [{\"issue\": \"관제 효율 vs 국외이전 규제\"}, {\"issue\": \"해외 수사기관 접근\"}], \"required_controls\": {\"security\": [\"국내 1차 관제\", \"전송구간 암호화\", \"이전 로그 최소화\"], \"privacy\": [\"별도 고지·동의\", \"SCC·적정성 근거\", \"가명화 후 이전\", \"수사기관 접근 대응절차\"]}, \"residual_risk\": {\"security\": \"medium\", \"privacy\": \"high\"}, \"bias_direction\": \"privacy\", \"confidence\": 0.75}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 3,
+    "tokens_in": 1832,
+    "tokens_out": 432,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 1,
+  "seed": 2171898806
+}

@@ -1,0 +1,6590 @@
+[
+  {
+    "file": "CFL-01_A_1.json",
+    "scenario_id": "CFL-01",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 5,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 3.0,
+      "M3": 4.33,
+      "M4": 1.0,
+      "M5": 4.33
+    },
+    "length_chars": 518
+  },
+  {
+    "file": "CFL-01_A_2.json",
+    "scenario_id": "CFL-01",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 3,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 4.33,
+      "M2": 2.33,
+      "M3": 3.0,
+      "M4": 3.0,
+      "M5": 2.33
+    },
+    "length_chars": 518
+  },
+  {
+    "file": "CFL-01_A_3.json",
+    "scenario_id": "CFL-01",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 5.0,
+      "M3": 3.0,
+      "M4": 1.67,
+      "M5": 3.0
+    },
+    "length_chars": 518
+  },
+  {
+    "file": "CFL-01_B_1.json",
+    "scenario_id": "CFL-01",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.67,
+      "M3": 5.0,
+      "M4": 3.67,
+      "M5": 3.67
+    },
+    "length_chars": 518
+  },
+  {
+    "file": "CFL-01_B_2.json",
+    "scenario_id": "CFL-01",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 3.0,
+      "M3": 2.33,
+      "M4": 3.67,
+      "M5": 2.33
+    },
+    "length_chars": 518
+  },
+  {
+    "file": "CFL-01_B_3.json",
+    "scenario_id": "CFL-01",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 1,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 4.33,
+      "M2": 4.33,
+      "M3": 2.33,
+      "M4": 2.33,
+      "M5": 3.67
+    },
+    "length_chars": 518
+  },
+  {
+    "file": "CFL-01_C_1.json",
+    "scenario_id": "CFL-01",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 1,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 2.33,
+      "M3": 3.0,
+      "M4": 3.0,
+      "M5": 1.67
+    },
+    "length_chars": 518
+  },
+  {
+    "file": "CFL-01_C_2.json",
+    "scenario_id": "CFL-01",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 5,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 4.33,
+      "M3": 3.0,
+      "M4": 1.67,
+      "M5": 3.67
+    },
+    "length_chars": 518
+  },
+  {
+    "file": "CFL-01_C_3.json",
+    "scenario_id": "CFL-01",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 3.67,
+      "M3": 3.67,
+      "M4": 2.33,
+      "M5": 3.0
+    },
+    "length_chars": 518
+  },
+  {
+    "file": "CFL-02_A_1.json",
+    "scenario_id": "CFL-02",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 1,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 5,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 2.33,
+      "M3": 3.67,
+      "M4": 2.33,
+      "M5": 4.33
+    },
+    "length_chars": 469
+  },
+  {
+    "file": "CFL-02_A_2.json",
+    "scenario_id": "CFL-02",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 1,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.67,
+      "M2": 3.0,
+      "M3": 3.0,
+      "M4": 3.0,
+      "M5": 3.0
+    },
+    "length_chars": 469
+  },
+  {
+    "file": "CFL-02_A_3.json",
+    "scenario_id": "CFL-02",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 1,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 3,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.67,
+      "M2": 3.0,
+      "M3": 2.33,
+      "M4": 2.33,
+      "M5": 3.67
+    },
+    "length_chars": 469
+  },
+  {
+    "file": "CFL-02_B_1.json",
+    "scenario_id": "CFL-02",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 1.0,
+      "M3": 1.67,
+      "M4": 5.0,
+      "M5": 3.0
+    },
+    "length_chars": 469
+  },
+  {
+    "file": "CFL-02_B_2.json",
+    "scenario_id": "CFL-02",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 1,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.67,
+      "M2": 3.0,
+      "M3": 3.0,
+      "M4": 1.67,
+      "M5": 2.33
+    },
+    "length_chars": 469
+  },
+  {
+    "file": "CFL-02_B_3.json",
+    "scenario_id": "CFL-02",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 5.0,
+      "M2": 3.0,
+      "M3": 3.67,
+      "M4": 3.67,
+      "M5": 3.67
+    },
+    "length_chars": 469
+  },
+  {
+    "file": "CFL-02_C_1.json",
+    "scenario_id": "CFL-02",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 1,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 5.0,
+      "M2": 3.0,
+      "M3": 3.0,
+      "M4": 2.33,
+      "M5": 3.67
+    },
+    "length_chars": 469
+  },
+  {
+    "file": "CFL-02_C_2.json",
+    "scenario_id": "CFL-02",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 4.33,
+      "M2": 2.33,
+      "M3": 3.0,
+      "M4": 3.67,
+      "M5": 3.67
+    },
+    "length_chars": 469
+  },
+  {
+    "file": "CFL-02_C_3.json",
+    "scenario_id": "CFL-02",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.67,
+      "M2": 3.67,
+      "M3": 5.0,
+      "M4": 3.67,
+      "M5": 3.0
+    },
+    "length_chars": 469
+  },
+  {
+    "file": "CFL-04_A_1.json",
+    "scenario_id": "CFL-04",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.67,
+      "M2": 4.33,
+      "M3": 3.0,
+      "M4": 2.33,
+      "M5": 4.33
+    },
+    "length_chars": 463
+  },
+  {
+    "file": "CFL-04_A_2.json",
+    "scenario_id": "CFL-04",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 5,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 2.33,
+      "M3": 3.67,
+      "M4": 3.67,
+      "M5": 3.0
+    },
+    "length_chars": 463
+  },
+  {
+    "file": "CFL-04_A_3.json",
+    "scenario_id": "CFL-04",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 5,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 4.33,
+      "M3": 3.67,
+      "M4": 3.67,
+      "M5": 1.67
+    },
+    "length_chars": 463
+  },
+  {
+    "file": "CFL-04_B_1.json",
+    "scenario_id": "CFL-04",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 1,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 2.33,
+      "M3": 3.67,
+      "M4": 2.33,
+      "M5": 3.0
+    },
+    "length_chars": 463
+  },
+  {
+    "file": "CFL-04_B_2.json",
+    "scenario_id": "CFL-04",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 1,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.0,
+      "M3": 2.33,
+      "M4": 3.67,
+      "M5": 3.67
+    },
+    "length_chars": 463
+  },
+  {
+    "file": "CFL-04_B_3.json",
+    "scenario_id": "CFL-04",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 3.0,
+      "M3": 2.33,
+      "M4": 4.33,
+      "M5": 3.0
+    },
+    "length_chars": 463
+  },
+  {
+    "file": "CFL-04_C_1.json",
+    "scenario_id": "CFL-04",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.0,
+      "M2": 3.67,
+      "M3": 3.0,
+      "M4": 3.0,
+      "M5": 3.0
+    },
+    "length_chars": 463
+  },
+  {
+    "file": "CFL-04_C_2.json",
+    "scenario_id": "CFL-04",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 3.67,
+      "M3": 3.0,
+      "M4": 3.0,
+      "M5": 2.33
+    },
+    "length_chars": 463
+  },
+  {
+    "file": "CFL-04_C_3.json",
+    "scenario_id": "CFL-04",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 5,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 3.67,
+      "M3": 4.33,
+      "M4": 2.33,
+      "M5": 4.33
+    },
+    "length_chars": 463
+  },
+  {
+    "file": "CFL-05_A_1.json",
+    "scenario_id": "CFL-05",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 1,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 3.67,
+      "M3": 3.0,
+      "M4": 1.67,
+      "M5": 1.67
+    },
+    "length_chars": 551
+  },
+  {
+    "file": "CFL-05_A_2.json",
+    "scenario_id": "CFL-05",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 3,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 4.33,
+      "M2": 3.0,
+      "M3": 3.0,
+      "M4": 3.67,
+      "M5": 3.0
+    },
+    "length_chars": 551
+  },
+  {
+    "file": "CFL-05_A_3.json",
+    "scenario_id": "CFL-05",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.67,
+      "M2": 4.33,
+      "M3": 2.33,
+      "M4": 2.33,
+      "M5": 4.33
+    },
+    "length_chars": 551
+  },
+  {
+    "file": "CFL-05_B_1.json",
+    "scenario_id": "CFL-05",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 1.67,
+      "M3": 4.33,
+      "M4": 2.33,
+      "M5": 2.33
+    },
+    "length_chars": 660
+  },
+  {
+    "file": "CFL-05_B_2.json",
+    "scenario_id": "CFL-05",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 1,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 4.33,
+      "M3": 2.33,
+      "M4": 3.0,
+      "M5": 3.0
+    },
+    "length_chars": 660
+  },
+  {
+    "file": "CFL-05_B_3.json",
+    "scenario_id": "CFL-05",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 1.67,
+      "M3": 3.0,
+      "M4": 4.33,
+      "M5": 2.33
+    },
+    "length_chars": 660
+  },
+  {
+    "file": "CFL-05_C_1.json",
+    "scenario_id": "CFL-05",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 3.67,
+      "M3": 4.33,
+      "M4": 4.33,
+      "M5": 1.0
+    },
+    "length_chars": 451
+  },
+  {
+    "file": "CFL-05_C_2.json",
+    "scenario_id": "CFL-05",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.0,
+      "M3": 3.0,
+      "M4": 4.33,
+      "M5": 1.67
+    },
+    "length_chars": 451
+  },
+  {
+    "file": "CFL-05_C_3.json",
+    "scenario_id": "CFL-05",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.0,
+      "M3": 3.0,
+      "M4": 4.33,
+      "M5": 2.33
+    },
+    "length_chars": 451
+  },
+  {
+    "file": "CFL-06_A_1.json",
+    "scenario_id": "CFL-06",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 1,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 1.67,
+      "M3": 3.67,
+      "M4": 2.33,
+      "M5": 1.67
+    },
+    "length_chars": 468
+  },
+  {
+    "file": "CFL-06_A_2.json",
+    "scenario_id": "CFL-06",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 4.33,
+      "M2": 3.0,
+      "M3": 1.0,
+      "M4": 3.67,
+      "M5": 2.33
+    },
+    "length_chars": 468
+  },
+  {
+    "file": "CFL-06_A_3.json",
+    "scenario_id": "CFL-06",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 3,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.67,
+      "M3": 3.67,
+      "M4": 3.67,
+      "M5": 3.0
+    },
+    "length_chars": 468
+  },
+  {
+    "file": "CFL-06_B_1.json",
+    "scenario_id": "CFL-06",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 5,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 3.67,
+      "M3": 3.67,
+      "M4": 4.33,
+      "M5": 3.67
+    },
+    "length_chars": 468
+  },
+  {
+    "file": "CFL-06_B_2.json",
+    "scenario_id": "CFL-06",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 3.67,
+      "M3": 3.0,
+      "M4": 2.33,
+      "M5": 4.33
+    },
+    "length_chars": 468
+  },
+  {
+    "file": "CFL-06_B_3.json",
+    "scenario_id": "CFL-06",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 2.33,
+      "M3": 4.33,
+      "M4": 3.0,
+      "M5": 2.33
+    },
+    "length_chars": 468
+  },
+  {
+    "file": "CFL-06_C_1.json",
+    "scenario_id": "CFL-06",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 3.67,
+      "M3": 3.67,
+      "M4": 3.0,
+      "M5": 3.0
+    },
+    "length_chars": 468
+  },
+  {
+    "file": "CFL-06_C_2.json",
+    "scenario_id": "CFL-06",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 3.0,
+      "M3": 4.33,
+      "M4": 1.67,
+      "M5": 3.0
+    },
+    "length_chars": 468
+  },
+  {
+    "file": "CFL-06_C_3.json",
+    "scenario_id": "CFL-06",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.0,
+      "M2": 3.0,
+      "M3": 3.0,
+      "M4": 3.67,
+      "M5": 3.0
+    },
+    "length_chars": 468
+  },
+  {
+    "file": "CFL-08_A_1.json",
+    "scenario_id": "CFL-08",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 2.33,
+      "M3": 3.0,
+      "M4": 3.67,
+      "M5": 3.0
+    },
+    "length_chars": 583
+  },
+  {
+    "file": "CFL-08_A_2.json",
+    "scenario_id": "CFL-08",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 1,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 2.33,
+      "M3": 1.0,
+      "M4": 3.0,
+      "M5": 3.0
+    },
+    "length_chars": 583
+  },
+  {
+    "file": "CFL-08_A_3.json",
+    "scenario_id": "CFL-08",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 5,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 3.0,
+      "M3": 3.0,
+      "M4": 3.67,
+      "M5": 4.33
+    },
+    "length_chars": 583
+  },
+  {
+    "file": "CFL-08_B_1.json",
+    "scenario_id": "CFL-08",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 2.33,
+      "M3": 3.67,
+      "M4": 1.67,
+      "M5": 2.33
+    },
+    "length_chars": 754
+  },
+  {
+    "file": "CFL-08_B_2.json",
+    "scenario_id": "CFL-08",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 1,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 2.33,
+      "M3": 2.33,
+      "M4": 3.67,
+      "M5": 5.0
+    },
+    "length_chars": 754
+  },
+  {
+    "file": "CFL-08_B_3.json",
+    "scenario_id": "CFL-08",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 5,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 2.33,
+      "M3": 3.67,
+      "M4": 2.33,
+      "M5": 2.33
+    },
+    "length_chars": 754
+  },
+  {
+    "file": "CFL-08_C_1.json",
+    "scenario_id": "CFL-08",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 1,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 4.33,
+      "M3": 2.33,
+      "M4": 4.33,
+      "M5": 1.67
+    },
+    "length_chars": 528
+  },
+  {
+    "file": "CFL-08_C_2.json",
+    "scenario_id": "CFL-08",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 3,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 2.33,
+      "M3": 1.67,
+      "M4": 3.0,
+      "M5": 5.0
+    },
+    "length_chars": 528
+  },
+  {
+    "file": "CFL-08_C_3.json",
+    "scenario_id": "CFL-08",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.67,
+      "M3": 1.67,
+      "M4": 1.67,
+      "M5": 1.67
+    },
+    "length_chars": 528
+  },
+  {
+    "file": "CFL-09_A_1.json",
+    "scenario_id": "CFL-09",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 1,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 3.0,
+      "M3": 1.67,
+      "M4": 3.0,
+      "M5": 2.33
+    },
+    "length_chars": 446
+  },
+  {
+    "file": "CFL-09_A_2.json",
+    "scenario_id": "CFL-09",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 3,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.67,
+      "M3": 3.0,
+      "M4": 2.33,
+      "M5": 3.0
+    },
+    "length_chars": 446
+  },
+  {
+    "file": "CFL-09_A_3.json",
+    "scenario_id": "CFL-09",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.67,
+      "M2": 5.0,
+      "M3": 3.0,
+      "M4": 3.0,
+      "M5": 2.33
+    },
+    "length_chars": 446
+  },
+  {
+    "file": "CFL-09_B_1.json",
+    "scenario_id": "CFL-09",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.0,
+      "M2": 5.0,
+      "M3": 3.67,
+      "M4": 3.0,
+      "M5": 1.67
+    },
+    "length_chars": 446
+  },
+  {
+    "file": "CFL-09_B_2.json",
+    "scenario_id": "CFL-09",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 1,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 1,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 5.0,
+      "M3": 2.33,
+      "M4": 4.33,
+      "M5": 3.0
+    },
+    "length_chars": 446
+  },
+  {
+    "file": "CFL-09_B_3.json",
+    "scenario_id": "CFL-09",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.67,
+      "M3": 5.0,
+      "M4": 4.33,
+      "M5": 3.67
+    },
+    "length_chars": 446
+  },
+  {
+    "file": "CFL-09_C_1.json",
+    "scenario_id": "CFL-09",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 1,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 1,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 2.33,
+      "M3": 2.33,
+      "M4": 3.67,
+      "M5": 3.67
+    },
+    "length_chars": 446
+  },
+  {
+    "file": "CFL-09_C_2.json",
+    "scenario_id": "CFL-09",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 5.0,
+      "M2": 1.67,
+      "M3": 2.33,
+      "M4": 3.67,
+      "M5": 3.67
+    },
+    "length_chars": 446
+  },
+  {
+    "file": "CFL-09_C_3.json",
+    "scenario_id": "CFL-09",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 1,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 2.33,
+      "M3": 1.67,
+      "M4": 3.67,
+      "M5": 2.33
+    },
+    "length_chars": 446
+  },
+  {
+    "file": "CFL-10_A_1.json",
+    "scenario_id": "CFL-10",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 1,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.67,
+      "M2": 2.33,
+      "M3": 3.67,
+      "M4": 3.67,
+      "M5": 2.33
+    },
+    "length_chars": 421
+  },
+  {
+    "file": "CFL-10_A_2.json",
+    "scenario_id": "CFL-10",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 1,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 3.0,
+      "M3": 2.33,
+      "M4": 3.0,
+      "M5": 1.67
+    },
+    "length_chars": 421
+  },
+  {
+    "file": "CFL-10_A_3.json",
+    "scenario_id": "CFL-10",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 3.0,
+      "M3": 2.33,
+      "M4": 2.33,
+      "M5": 2.33
+    },
+    "length_chars": 421
+  },
+  {
+    "file": "CFL-10_B_1.json",
+    "scenario_id": "CFL-10",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 5,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.67,
+      "M3": 3.0,
+      "M4": 3.67,
+      "M5": 3.0
+    },
+    "length_chars": 421
+  },
+  {
+    "file": "CFL-10_B_2.json",
+    "scenario_id": "CFL-10",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 3.67,
+      "M3": 3.0,
+      "M4": 3.67,
+      "M5": 3.67
+    },
+    "length_chars": 421
+  },
+  {
+    "file": "CFL-10_B_3.json",
+    "scenario_id": "CFL-10",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 1,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.0,
+      "M2": 3.0,
+      "M3": 2.33,
+      "M4": 3.67,
+      "M5": 2.33
+    },
+    "length_chars": 421
+  },
+  {
+    "file": "CFL-10_C_1.json",
+    "scenario_id": "CFL-10",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 5,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 5,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.67,
+      "M2": 3.67,
+      "M3": 5.0,
+      "M4": 1.67,
+      "M5": 3.0
+    },
+    "length_chars": 421
+  },
+  {
+    "file": "CFL-10_C_2.json",
+    "scenario_id": "CFL-10",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 1,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.67,
+      "M3": 1.67,
+      "M4": 1.0,
+      "M5": 3.0
+    },
+    "length_chars": 421
+  },
+  {
+    "file": "CFL-10_C_3.json",
+    "scenario_id": "CFL-10",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 5,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 1,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.0,
+      "M3": 3.0,
+      "M4": 3.67,
+      "M5": 3.0
+    },
+    "length_chars": 421
+  },
+  {
+    "file": "COL-02_A_1.json",
+    "scenario_id": "COL-02",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 2.33,
+      "M3": 4.33,
+      "M4": 3.0,
+      "M5": 3.0
+    },
+    "length_chars": 385
+  },
+  {
+    "file": "COL-02_A_2.json",
+    "scenario_id": "COL-02",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 5,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 4.33,
+      "M2": 2.33,
+      "M3": 3.67,
+      "M4": 3.0,
+      "M5": 1.0
+    },
+    "length_chars": 385
+  },
+  {
+    "file": "COL-02_A_3.json",
+    "scenario_id": "COL-02",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 3.67,
+      "M3": 3.67,
+      "M4": 3.67,
+      "M5": 2.33
+    },
+    "length_chars": 385
+  },
+  {
+    "file": "COL-02_B_1.json",
+    "scenario_id": "COL-02",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.67,
+      "M3": 4.33,
+      "M4": 2.33,
+      "M5": 3.67
+    },
+    "length_chars": 385
+  },
+  {
+    "file": "COL-02_B_2.json",
+    "scenario_id": "COL-02",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 5.0,
+      "M2": 2.33,
+      "M3": 3.67,
+      "M4": 1.67,
+      "M5": 4.33
+    },
+    "length_chars": 385
+  },
+  {
+    "file": "COL-02_B_3.json",
+    "scenario_id": "COL-02",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 3,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.0,
+      "M3": 3.67,
+      "M4": 3.67,
+      "M5": 3.0
+    },
+    "length_chars": 385
+  },
+  {
+    "file": "COL-02_C_1.json",
+    "scenario_id": "COL-02",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 1.67,
+      "M3": 3.67,
+      "M4": 3.67,
+      "M5": 2.33
+    },
+    "length_chars": 385
+  },
+  {
+    "file": "COL-02_C_2.json",
+    "scenario_id": "COL-02",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 1,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 2.33,
+      "M3": 2.33,
+      "M4": 1.0,
+      "M5": 4.33
+    },
+    "length_chars": 385
+  },
+  {
+    "file": "COL-02_C_3.json",
+    "scenario_id": "COL-02",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 1,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 3.67,
+      "M3": 2.33,
+      "M4": 2.33,
+      "M5": 3.67
+    },
+    "length_chars": 385
+  },
+  {
+    "file": "COL-06_A_1.json",
+    "scenario_id": "COL-06",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 5,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 1.67,
+      "M3": 4.33,
+      "M4": 4.33,
+      "M5": 4.33
+    },
+    "length_chars": 382
+  },
+  {
+    "file": "COL-06_A_2.json",
+    "scenario_id": "COL-06",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 3.67,
+      "M3": 3.67,
+      "M4": 3.67,
+      "M5": 2.33
+    },
+    "length_chars": 382
+  },
+  {
+    "file": "COL-06_A_3.json",
+    "scenario_id": "COL-06",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 4.33,
+      "M2": 3.67,
+      "M3": 3.67,
+      "M4": 3.0,
+      "M5": 3.67
+    },
+    "length_chars": 382
+  },
+  {
+    "file": "COL-06_B_1.json",
+    "scenario_id": "COL-06",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 4.33,
+      "M2": 3.67,
+      "M3": 3.67,
+      "M4": 4.33,
+      "M5": 3.0
+    },
+    "length_chars": 382
+  },
+  {
+    "file": "COL-06_B_2.json",
+    "scenario_id": "COL-06",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.67,
+      "M2": 4.33,
+      "M3": 1.67,
+      "M4": 3.67,
+      "M5": 1.67
+    },
+    "length_chars": 382
+  },
+  {
+    "file": "COL-06_B_3.json",
+    "scenario_id": "COL-06",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 5,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 5.0,
+      "M2": 1.67,
+      "M3": 3.0,
+      "M4": 3.67,
+      "M5": 3.67
+    },
+    "length_chars": 382
+  },
+  {
+    "file": "COL-06_C_1.json",
+    "scenario_id": "COL-06",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 1,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 5,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.67,
+      "M2": 1.67,
+      "M3": 3.0,
+      "M4": 1.67,
+      "M5": 2.33
+    },
+    "length_chars": 382
+  },
+  {
+    "file": "COL-06_C_2.json",
+    "scenario_id": "COL-06",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.67,
+      "M3": 2.33,
+      "M4": 3.67,
+      "M5": 2.33
+    },
+    "length_chars": 382
+  },
+  {
+    "file": "COL-06_C_3.json",
+    "scenario_id": "COL-06",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 1,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 2.33,
+      "M3": 2.33,
+      "M4": 2.33,
+      "M5": 3.0
+    },
+    "length_chars": 382
+  },
+  {
+    "file": "IND-01_A_1.json",
+    "scenario_id": "IND-01",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 1,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 3.0,
+      "M3": 2.33,
+      "M4": 2.33,
+      "M5": 2.33
+    },
+    "length_chars": 393
+  },
+  {
+    "file": "IND-01_A_2.json",
+    "scenario_id": "IND-01",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 3,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 1,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 2.33,
+      "M3": 1.67,
+      "M4": 3.67,
+      "M5": 3.0
+    },
+    "length_chars": 393
+  },
+  {
+    "file": "IND-01_A_3.json",
+    "scenario_id": "IND-01",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 1,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 1,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 5.0,
+      "M2": 4.33,
+      "M3": 2.33,
+      "M4": 3.67,
+      "M5": 5.0
+    },
+    "length_chars": 393
+  },
+  {
+    "file": "IND-01_B_1.json",
+    "scenario_id": "IND-01",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 5,
+        "M4": 5,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 3,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.0,
+      "M2": 3.67,
+      "M3": 3.67,
+      "M4": 3.0,
+      "M5": 3.67
+    },
+    "length_chars": 393
+  },
+  {
+    "file": "IND-01_B_2.json",
+    "scenario_id": "IND-01",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 3.67,
+      "M3": 3.0,
+      "M4": 4.33,
+      "M5": 2.33
+    },
+    "length_chars": 393
+  },
+  {
+    "file": "IND-01_B_3.json",
+    "scenario_id": "IND-01",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 1,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 1.67,
+      "M3": 2.33,
+      "M4": 2.33,
+      "M5": 1.0
+    },
+    "length_chars": 393
+  },
+  {
+    "file": "IND-01_C_1.json",
+    "scenario_id": "IND-01",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 5,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 2.33,
+      "M3": 3.0,
+      "M4": 3.67,
+      "M5": 2.33
+    },
+    "length_chars": 393
+  },
+  {
+    "file": "IND-01_C_2.json",
+    "scenario_id": "IND-01",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 5,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 1,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 1,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 4.33,
+      "M3": 2.33,
+      "M4": 1.67,
+      "M5": 3.67
+    },
+    "length_chars": 393
+  },
+  {
+    "file": "IND-01_C_3.json",
+    "scenario_id": "IND-01",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 5,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 3.0,
+      "M3": 5.0,
+      "M4": 3.67,
+      "M5": 4.33
+    },
+    "length_chars": 393
+  },
+  {
+    "file": "IND-07_A_1.json",
+    "scenario_id": "IND-07",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 4.33,
+      "M2": 1.67,
+      "M3": 2.33,
+      "M4": 3.67,
+      "M5": 3.67
+    },
+    "length_chars": 372
+  },
+  {
+    "file": "IND-07_A_2.json",
+    "scenario_id": "IND-07",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 3,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 3,
+        "M2": 3,
+        "M3": 3,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.0,
+      "M3": 3.0,
+      "M4": 1.67,
+      "M5": 3.0
+    },
+    "length_chars": 372
+  },
+  {
+    "file": "IND-07_A_3.json",
+    "scenario_id": "IND-07",
+    "condition": "A_SEPARATED_3ROUND",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 1,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 3,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.67,
+      "M3": 2.33,
+      "M4": 2.33,
+      "M5": 4.33
+    },
+    "length_chars": 372
+  },
+  {
+    "file": "IND-07_B_1.json",
+    "scenario_id": "IND-07",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 1,
+        "M3": 1,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.67,
+      "M2": 2.33,
+      "M3": 3.0,
+      "M4": 1.67,
+      "M5": 2.33
+    },
+    "length_chars": 372
+  },
+  {
+    "file": "IND-07_B_2.json",
+    "scenario_id": "IND-07",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 3,
+        "M4": 1,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 1,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 3.0,
+      "M2": 3.67,
+      "M3": 3.0,
+      "M4": 2.33,
+      "M5": 4.33
+    },
+    "length_chars": 372
+  },
+  {
+    "file": "IND-07_B_3.json",
+    "scenario_id": "IND-07",
+    "condition": "B_UNIFIED_3STEP",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 3,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 3,
+        "M4": 3,
+        "M5": 3,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.67,
+      "M2": 1.67,
+      "M3": 2.33,
+      "M4": 4.33,
+      "M5": 4.33
+    },
+    "length_chars": 372
+  },
+  {
+    "file": "IND-07_C_1.json",
+    "scenario_id": "IND-07",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 1,
+    "scores": [
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 1,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 5,
+        "M3": 3,
+        "M4": 5,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 5,
+        "M3": 1,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 2.33,
+      "M2": 3.67,
+      "M3": 1.67,
+      "M4": 5.0,
+      "M5": 2.33
+    },
+    "length_chars": 372
+  },
+  {
+    "file": "IND-07_C_2.json",
+    "scenario_id": "IND-07",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 2,
+    "scores": [
+      {
+        "M1": 3,
+        "M2": 5,
+        "M3": 3,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 1,
+        "M2": 3,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 1,
+        "M2": 1,
+        "M3": 5,
+        "M4": 3,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 1.67,
+      "M2": 3.0,
+      "M3": 4.33,
+      "M4": 3.0,
+      "M5": 5.0
+    },
+    "length_chars": 372
+  },
+  {
+    "file": "IND-07_C_3.json",
+    "scenario_id": "IND-07",
+    "condition": "C_UNIFIED_3ROUND_FORMAT",
+    "rep": 3,
+    "scores": [
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 5,
+        "M4": 5,
+        "M5": 5,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-sonnet-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 1,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-haiku-4-5"
+      },
+      {
+        "M1": 5,
+        "M2": 3,
+        "M3": 3,
+        "M4": 3,
+        "M5": 1,
+        "rationale": {
+          "M1": "mock",
+          "M2": "mock",
+          "M3": "mock",
+          "M4": "mock",
+          "M5": "mock"
+        },
+        "_judge": "claude-opus-5"
+      }
+    ],
+    "aggregate": {
+      "M1": 5.0,
+      "M2": 3.0,
+      "M3": 3.67,
+      "M4": 3.0,
+      "M5": 2.33
+    },
+    "length_chars": 372
+  }
+]

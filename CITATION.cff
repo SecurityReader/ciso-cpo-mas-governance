@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the following."
+title: "Confound-Controlled Evaluation of Multi-Agent LLM Governance (CISO–CPO)"
+authors:
+  - family-names: Moon
+    given-names: Kwangsuk
+year: 2026
+version: "1.0.0"
+license: "MIT AND CC-BY-4.0"

@@ -1,0 +1,30 @@
+{
+  "median_tok_total": {
+    "A": 60932,
+    "B": 10269,
+    "C": 37648
+  },
+  "median_tok_out": {
+    "A": 14035,
+    "B": 3926,
+    "C": 10794
+  },
+  "median_ncalls": {
+    "A": 7,
+    "B": 3,
+    "C": 4
+  },
+  "ratio_A_over_C": 1.55,
+  "ratio_A_over_B": 5.06,
+  "spearman_len_S_overall": -0.027,
+  "cond_coef_unadj": {
+    "C(cond)[T.A]": -0.037,
+    "C(cond)[T.B]": 0.093
+  },
+  "cond_coef_adj": {
+    "C(cond)[T.A]": -0.092,
+    "C(cond)[T.B]": 0.249
+  },
+  "log_tok_beta": 0.127,
+  "hit_max_count": 108
+}

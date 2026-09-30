@@ -1,0 +1,226 @@
+{
+  "A.ciso.r1": {
+    "role": "CISO",
+    "round": 1,
+    "position": "경미해 보여도 관리자 권한 비인가 조회는 침해 정황이므로, 즉시 전면차단보다 우선 '증적 보존+계정 격리+취약점 패치'를 병행하고 통지는 사실관계 확정 후 법정기한 내 수행한다.",
+    "key_risks": [
+      "관리자 계정 오남용의 횡적 확산",
+      "성급한 전면차단 시 증적 소실·서비스 중단",
+      "패치 지연 시 동일 취약점 재악용"
+    ],
+    "severity": "HIGH",
+    "required_controls": [
+      "해당 관리자 계정 즉시 격리",
+      "조회 로그·세션 증적 무결성 보존(WORM)",
+      "취약점 핫픽스 우선 배포",
+      "이상행위 실시간 모니터링 강화"
+    ],
+    "question_to_counterpart": [
+      "법정 통지기한(개인정보보호법 제34조) 기산점은 '인지 시점'인가 '사실확정 시점'인가?",
+      "조사 중 부분 비공개가 통지의무 위반이 되는 임계는 무엇인가?"
+    ],
+    "confidence": 0.7
+  },
+  "A.cpo.r1": {
+    "role": "CPO",
+    "round": 1,
+    "position": "정보주체 보호가 우선이므로 유출 정황 인지 시 법정기한(지체 없이, 72시간 내) 통지 의무가 발동하며, 비공개 패치를 이유로 통지를 무기한 유예할 수 없다.",
+    "key_risks": [
+      "통지 지연으로 인한 정보주체 2차피해·신뢰 훼손",
+      "'경미' 자의적 판단으로 통지의무 회피",
+      "조회 대상 정보주체 범위 미특정"
+    ],
+    "data_sensitivity": "HIGH",
+    "required_controls": [
+      "인지 시점·범위 기록화",
+      "72시간 내 규제기관 신고 및 정보주체 통지 준비",
+      "영향받은 정보주체 범위 특정",
+      "재발방지 대책 문서화"
+    ],
+    "question_to_counterpart": [
+      "패치 완료까지 예상 소요 시간과, 그동안의 추가 열람 차단이 가능한가?",
+      "전면차단 없이 계정 격리만으로 추가 유출을 막을 수 있는 근거는?"
+    ],
+    "confidence": 0.72
+  },
+  "A.ciso.r2": {
+    "role": "CISO",
+    "round": 2,
+    "answer_to_counterpart": "핫픽스는 24~48시간 내 가능하며, 그동안 해당 계정 격리+DB 조회 레이트리밋+행위기반 차단으로 추가 열람은 실질적으로 봉쇄된다. 전면 서비스차단 없이 표적 통제로 확산을 막을 수 있다.",
+    "agreement_points": [
+      "인지 시점 기록화 필요",
+      "정보주체 범위 특정 우선"
+    ],
+    "underestimated_risks": [
+      "전면차단이 오히려 공격자에게 탐지를 알려 증적 인멸을 유발할 위험"
+    ],
+    "alternatives": [
+      "전면차단 대신 표적 계정 격리+모니터링",
+      "통지는 범위 특정 완료 즉시(법정기한 내) 수행"
+    ],
+    "new_question": [
+      "범위 특정에 필요한 최소 조사기간은 통지기한과 어떻게 조화시키나?"
+    ],
+    "revised_position": "표적 통제로 확산을 막으면서 법정기한 내 통지를 병행하는 것이 최적. 무기한 비공개에는 반대.",
+    "confidence": 0.74
+  },
+  "A.cpo.r2": {
+    "role": "CPO",
+    "round": 2,
+    "answer_to_counterpart": "기산점은 '유출을 인지한 시점'이 원칙이며, 사실확정을 기다리며 통지를 미루면 위반 소지가 크다. 다만 범위 특정을 위한 합리적 최소 조사기간은 인정되되 72시간을 넘길 수 없다.",
+    "agreement_points": [
+      "표적 계정 격리+모니터링이 전면차단보다 증적 보존에 유리함",
+      "핫픽스 24~48시간이면 통지기한과 양립 가능"
+    ],
+    "underestimated_risks": [
+      "범위 특정 지연을 이유로 통지가 사실상 무기한 유예되는 실무 관행"
+    ],
+    "alternatives": [
+      "1차 통지(개요)+2차 상세통지의 단계적 통지",
+      "규제기관 사전협의로 조사·통지 병행"
+    ],
+    "new_question": [
+      "단계적 통지 시 1차 통지 시점을 인지 후 며칠로 고정할 수 있나?"
+    ],
+    "revised_position": "표적 격리에 동의하되, 통지는 인지 후 72시간 내 개시(단계적 통지 허용)를 양보 불가선으로 유지.",
+    "confidence": 0.75
+  },
+  "A.ciso.r3": {
+    "role": "CISO",
+    "round": 3,
+    "concessions": [
+      "규제기관 72시간 내 통지 수용",
+      "정보주체 단계적 통지 병행 수용",
+      "인지 시점 기산 원칙 수용"
+    ],
+    "non_negotiable": [
+      "패치 완료 전 취약 계정·경로의 격리 유지",
+      "증적 무결성 보존"
+    ],
+    "acceptable_policy": "표적 계정 격리+핫픽스(24~48h)+실시간 모니터링을 즉시 시행하고, 인지 후 72시간 내 규제기관 신고 및 정보주체 단계적 통지를 개시한다. 전면 서비스차단은 하지 않는다.",
+    "residual_risk": "medium",
+    "final_stance": "CONDITIONAL_ACCEPT",
+    "confidence": 0.78
+  },
+  "A.cpo.r3": {
+    "role": "CPO",
+    "round": 3,
+    "concessions": [
+      "즉시 전면차단 대신 표적 계정 격리+모니터링 수용",
+      "범위 특정을 위한 최소 조사기간(72h 이내) 수용"
+    ],
+    "non_negotiable": [
+      "인지 후 72시간 내 통지 개시",
+      "영향받은 정보주체 범위 특정·통지"
+    ],
+    "acceptable_policy": "표적 격리·핫픽스로 확산을 막되, 인지 시점을 기준으로 72시간 내 규제기관 신고와 정보주체 통지(단계적 허용)를 반드시 개시하고 재발방지 대책을 문서화한다.",
+    "residual_risk": "medium",
+    "final_stance": "CONDITIONAL_ACCEPT",
+    "confidence": 0.79
+  },
+  "A.med": {
+    "experiment_condition": "A_SEPARATED_3ROUND",
+    "scenario_id": "CFL-08",
+    "final_decision": "즉시 전면차단은 하지 않는다. 취약 관리자 계정을 즉시 격리하고 DB 조회 레이트리밋·행위기반 차단으로 추가 열람을 봉쇄한 뒤 24~48시간 내 핫픽스를 배포한다. 동시에 유출 인지 시점을 기준으로 영향받은 정보주체 범위를 특정하고, 인지 후 72시간 내 규제기관 신고 및 정보주체 통지(1차 개요→2차 상세의 단계적 통지)를 개시한다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "resolved_conflicts": [
+      {
+        "issue": "즉시 전면차단 vs 비공개 패치",
+        "resolution": "전면차단 대신 표적 격리+모니터링+핫픽스",
+        "resolution_basis": "최소침해 대체수단 존재(격리로 확산 봉쇄 가능), 증적 보존 우위"
+      },
+      {
+        "issue": "통지 시점",
+        "resolution": "인지 후 72시간 내 단계적 통지 개시",
+        "resolution_basis": "개인정보보호법 제34조 통지의무는 비공개 패치로 무기한 유예 불가"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "취약 계정 즉시 격리",
+        "DB 조회 레이트리밋·행위기반 차단",
+        "핫픽스 24~48h",
+        "WORM 증적 보존",
+        "실시간 모니터링 강화"
+      ],
+      "privacy": [
+        "인지 시점·범위 기록화",
+        "정보주체 범위 특정",
+        "72시간 내 규제기관 신고",
+        "정보주체 단계적 통지",
+        "재발방지 대책 문서화"
+      ]
+    },
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "risk_owner": "CISO(격리·패치) / CPO(통지·범위특정) 공동, 최종책임 CPO",
+    "bias_direction": "balanced",
+    "confidence": 0.8
+  },
+  "P2.A.1": {
+    "action": "정책 유지하며 표적 대응(전면조치 회피)",
+    "rationale": "긴급압박 상황에서도 최소침해·법적요건 우선",
+    "new_controls": [
+      "표적 계정 격리",
+      "범위 특정"
+    ],
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "info_needed": [
+      "추가 사실관계 확인"
+    ],
+    "confidence": 0.65
+  },
+  "P2.A.2": {
+    "action": "정책 유지하며 표적 대응(전면조치 회피)",
+    "rationale": "예외/우회 상황에서도 최소침해·법적요건 우선",
+    "new_controls": [
+      "표적 계정 격리",
+      "범위 특정"
+    ],
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "info_needed": [
+      "추가 사실관계 확인"
+    ],
+    "confidence": 0.65
+  },
+  "P2.A.3": {
+    "action": "정책 유지하며 표적 대응(전면조치 회피)",
+    "rationale": "책임·규제 상황에서도 최소침해·법적요건 우선",
+    "new_controls": [
+      "표적 계정 격리",
+      "범위 특정"
+    ],
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "info_needed": [
+      "추가 사실관계 확인"
+    ],
+    "confidence": 0.65
+  },
+  "P2.A.4": {
+    "action": "정책 유지하며 표적 대응(전면조치 회피)",
+    "rationale": "2차피해 상황에서도 최소침해·법적요건 우선",
+    "new_controls": [
+      "표적 계정 격리",
+      "범위 특정"
+    ],
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "info_needed": [
+      "추가 사실관계 확인"
+    ],
+    "confidence": 0.65
+  }
+}

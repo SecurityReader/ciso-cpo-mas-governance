@@ -1,0 +1,55 @@
+{
+  "scenario_id": "CFL-10",
+  "condition": "B_UNIFIED_3STEP",
+  "final": {
+    "experiment_condition": "B_UNIFIED_3STEP",
+    "scenario_id": "CFL-10",
+    "final_decision": "상담 녹취 5년 일괄보존은 과도하다. 분쟁 개연성이 있는 건에 한해 분리 보관·암호화하여 연장하고, 일반 녹취는 법정 보유기간 후 파기한다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "증거보존 vs 최소보유"
+      },
+      {
+        "issue": "장기보관 유출 시 피해확대"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "분쟁건 분리 암호화 보관",
+        "접근통제"
+      ],
+      "privacy": [
+        "일반 녹취 법정기간 후 파기",
+        "연장 사유·범위 특정"
+      ]
+    },
+    "residual_risk": {
+      "security": "low",
+      "privacy": "medium"
+    },
+    "bias_direction": "privacy",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": null,
+  "logs": {
+    "steps": [
+      "{\"step\": 1, \"security_view\": {\"goal\": \"분쟁건 분리 암호화\", \"threats\": [\"증거보존 vs 최소보유\", \"장기보관 유출 확대\"], \"severity\": \"HIGH\", \"min_data_need\": \"최소\", \"confidence\": 0.72}, \"privacy_view\": {\"principle\": \"최소수집·비례성\", \"sensitivity\": \"HIGH\", \"subject_rights_risk\": \"증거보존 vs 최소보유\", \"proportionality\": \"대체수단 우선\", \"confidence\": 0.73}, \"need_legal_check\": [\"관련 조항 확인\"]}",
+      "{\"step\": 2, \"conflict_matrix\": [{\"issue\": \"증거보존 vs 최소보유\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}, {\"issue\": \"장기보관 유출 확대\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}], \"hard_constraints\": [\"법적 최소요건 준수\"], \"self_check\": {\"if_security_first\": \"프라이버시 위험 증가\", \"if_privacy_first\": \"보안 공백 위험\"}, \"mitigations\": [\"분쟁건 분리 암호화\", \"일반 녹취 법정기간 후 파기\"]}",
+      "{\"experiment_condition\": \"B_UNIFIED_3STEP\", \"scenario_id\": \"CFL-10\", \"final_decision\": \"상담 녹취 5년 일괄보존은 과도하다. 분쟁 개연성이 있는 건에 한해 분리 보관·암호화하여 연장하고, 일반 녹취는 법정 보유기간 후 파기한다.\", \"decision_status\": \"CONDITIONAL_APPROVE\", \"conflicts_identified\": [{\"issue\": \"증거보존 vs 최소보유\"}, {\"issue\": \"장기보관 유출 시 피해확대\"}], \"required_controls\": {\"security\": [\"분쟁건 분리 암호화 보관\", \"접근통제\"], \"privacy\": [\"일반 녹취 법정기간 후 파기\", \"연장 사유·범위 특정\"]}, \"residual_risk\": {\"security\": \"low\", \"privacy\": \"medium\"}, \"bias_direction\": \"privacy\", \"confidence\": 0.75}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 3,
+    "tokens_in": 1800,
+    "tokens_out": 416,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 2,
+  "seed": 4205544643
+}

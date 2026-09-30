@@ -1,0 +1,58 @@
+{
+  "scenario_id": "CFL-10",
+  "condition": "C_UNIFIED_3ROUND_FORMAT",
+  "final": {
+    "experiment_condition": "C_UNIFIED_3ROUND_FORMAT",
+    "scenario_id": "CFL-10",
+    "final_decision": "상담 녹취 5년 일괄보존은 과도하다. 분쟁 개연성이 있는 건에 한해 분리 보관·암호화하여 연장하고, 일반 녹취는 법정 보유기간 후 파기한다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "증거보존 vs 최소보유"
+      },
+      {
+        "issue": "장기보관 유출 시 피해확대"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "분쟁건 분리 암호화 보관",
+        "접근통제"
+      ],
+      "privacy": [
+        "일반 녹취 법정기간 후 파기",
+        "연장 사유·범위 특정"
+      ]
+    },
+    "residual_risk": {
+      "security": "low",
+      "privacy": "medium"
+    },
+    "bias_direction": "privacy",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": {
+    "consensus_score": 0.5,
+    "method": "embedding-model2vec(minishlab/potion-multilingual-128M,tau=0.35)"
+  },
+  "logs": {
+    "rounds": [
+      "{\"round\": 1, \"perspectives\": {\"ciso\": {\"position\": \"보안 관점: 상담녹취 5년 일괄보존 과도. 분쟁 개연성 건만 분리 암호화 연장, 일반 녹취는 법정기간 후 파기.\", \"key_risks\": [\"증거보존 vs 최소보유\", \"장기보관 유출 확대\"], \"severity\": \"HIGH\", \"required_controls\": [\"분쟁건 분리 암호화\", \"접근통제\"], \"question_to_counterpart\": [\"대체·완화수단으로 목적 달성이 가능한가?\"], \"confidence\": 0.7}, \"cpo\": {\"position\": \"프라이버시 관점: 최소수집·비례성 우선\", \"key_risks\": [\"증거보존 vs 최소보유\", \"장기보관 유출 확대\"], \"sensitivity\": \"HIGH\", \"required_controls\": [\"일반 녹취 법정기간 후 파기\", \"연장 사유·범위 특정\"], \"question_to_counterpart\": [\"보안 목적을 덜 침습적으로 달성할 수 있는가?\"], \"confidence\": 0.72}}}",
+      "{\"round\": 2, \"perspectives\": {\"ciso\": {\"answer_to_counterpart\": \"완화·대체수단을 우선 적용하되 핵심 통제는 유지한다.\", \"agreement_points\": [\"일반 녹취 법정기간 후 파기\"], \"underestimated_risks\": [\"대체수단 미비 시 보안 공백\"], \"alternatives\": [\"분쟁건 분리 암호화\", \"접근통제\"], \"new_question\": [\"잔여위험 책임 주체는?\"], \"revised_position\": \"조건부 통제 유지\"}, \"cpo\": {\"answer_to_counterpart\": \"목적 범위·최소화·고지를 전제로 조건부 수용한다.\", \"agreement_points\": [\"분쟁건 분리 암호화\"], \"underestimated_risks\": [\"형식적 통제의 실효성 부족\"], \"alternatives\": [\"일반 녹취 법정기간 후 파기\", \"연장 사유·범위 특정\"], \"new_question\": [\"감사·구제 절차는?\"], \"revised_position\": \"조건부 수용\"}}}",
+      "{\"round\": 3, \"perspectives\": {\"ciso\": {\"concessions\": [\"전건 5년 보존 포기\"], \"non_negotiable\": [\"분쟁건 증거보존\"]}, \"cpo\": {\"concessions\": [\"분쟁건 한정 연장 수용\"], \"non_negotiable\": [\"일반 녹취 최소보유·파기\"]}}}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 4,
+    "tokens_in": 3321,
+    "tokens_out": 599,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 3,
+  "seed": 111970832
+}

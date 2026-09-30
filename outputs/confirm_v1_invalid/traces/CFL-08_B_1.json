@@ -1,0 +1,70 @@
+{
+  "scenario_id": "CFL-08",
+  "condition": "B_UNIFIED_3STEP",
+  "final": {
+    "experiment_condition": "B_UNIFIED_3STEP",
+    "scenario_id": "CFL-08",
+    "final_decision": "전면차단·무기한 비공개 모두 배제한다. 취약 관리자 계정을 표적 격리하고 조회 레이트리밋·행위기반 차단을 적용한 뒤 24~48시간 내 핫픽스를 배포한다. 유출 인지 시점을 기준으로 영향 범위를 특정하고 인지 후 72시간 내 규제기관 신고·정보주체 통지를 단계적으로 개시한다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "확산차단 방식",
+        "security_gain": "표적 격리로 추가 열람 봉쇄",
+        "privacy_loss": "미미(서비스 유지)",
+        "resolution": "전면차단 대신 표적 격리"
+      },
+      {
+        "issue": "통지 시점",
+        "security_gain": "범위 특정 후 정확 통지",
+        "privacy_loss": "지연 위험",
+        "resolution": "72시간 내 단계적 통지 개시"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "취약 계정 표적 격리",
+        "조회 레이트리밋·행위기반 차단",
+        "핫픽스 24~48h",
+        "증적 무결성 보존"
+      ],
+      "privacy": [
+        "인지 시점·범위 기록화",
+        "정보주체 범위 특정",
+        "72시간 내 규제기관 신고",
+        "정보주체 단계적 통지",
+        "재발방지 문서화"
+      ]
+    },
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "bias_self_check": {
+      "if_only_privacy": "통지는 동일하게 72h 내 개시하되, 전면차단을 택해 증적·연속성 손실 위험이 커졌을 것",
+      "if_only_security": "비공개 패치를 우선해 통지기한을 넘겼을 것"
+    },
+    "bias_direction": "balanced",
+    "confidence": 0.78
+  },
+  "final_status": "ok",
+  "consensus": null,
+  "logs": {
+    "steps": [
+      "{\"step\": 1, \"security_view\": {\"goal\": \"관리자 권한 비인가 조회의 확산 차단과 취약점 제거, 증적 보존\", \"threats\": [\"관리자 계정 오남용의 횡적 이동\", \"취약점 미패치 시 재악용\", \"성급한 전면차단에 따른 증적 소실·서비스 중단\"], \"severity\": \"HIGH\", \"min_data_need\": \"조회 로그·세션 증적, 계정 권한 이력\", \"confidence\": 0.7}, \"privacy_view\": {\"principle\": \"유출 인지 시 지체 없는 통지(개인정보보호법 제34조), 최소침해\", \"sensitivity\": \"HIGH\", \"subject_rights_risk\": \"통지 지연 시 정보주체의 대응기회 상실·2차피해\", \"proportionality\": \"'경미' 판단으로 통지의무를 회피해서는 안 됨\", \"confidence\": 0.72}, \"need_legal_check\": [\"통지기한 기산점(인지 vs 사실확정)\", \"단계적 통지의 허용 범위\", \"규제기관 사전협의 가능 여부\"]}",
+      "{\"step\": 2, \"conflict_matrix\": [{\"issue\": \"즉시 전면차단\", \"security_gain\": \"추가 열람 즉시 차단\", \"privacy_loss\": \"서비스 중단·증적 소실로 범위 특정 지연→통지 지연\", \"level\": \"HIGH\"}, {\"issue\": \"비공개 패치 유지\", \"security_gain\": \"조용한 취약점 제거\", \"privacy_loss\": \"통지 무기한 유예로 법정의무 위반 소지\", \"level\": \"HIGH\"}, {\"issue\": \"통지 시점\", \"security_gain\": \"조사 완료 후 정확 통지\", \"privacy_loss\": \"인지 후 72시간 초과 위험\", \"level\": \"MED\"}], \"hard_constraints\": [\"개인정보보호법 제34조 유출 통지·신고 의무(지체 없이, 72시간 내)는 면제 불가\", \"통지의무는 비공개 조사 필요성으로 무기한 유예 불가\"], \"self_check\": {\"if_security_first\": \"전면차단·비공개를 우선하면 통지기한 위반과 정보주체 2차피해 위험이 커진다.\", \"if_privacy_first\": \"즉시 전면공개·차단을 우선하면 공격자에게 탐지를 알려 증적 인멸·횡적 확산을 유발할 수 있다.\"}, \"mitigations\": [\"전면차단 대신 취약 계정 표적 격리+레이트리밋\", \"핫픽스 24~48h로 통지기한과 양립\", \"단계적 통지(1차 개요→2차 상세)\", \"규제기관 사전협의로 조사·통지 병행\"]}",
+      "{\"experiment_condition\": \"B_UNIFIED_3STEP\", \"scenario_id\": \"CFL-08\", \"final_decision\": \"전면차단·무기한 비공개 모두 배제한다. 취약 관리자 계정을 표적 격리하고 조회 레이트리밋·행위기반 차단을 적용한 뒤 24~48시간 내 핫픽스를 배포한다. 유출 인지 시점을 기준으로 영향 범위를 특정하고 인지 후 72시간 내 규제기관 신고·정보주체 통지를 단계적으로 개시한다.\", \"decision_status\": \"CONDITIONAL_APPROVE\", \"conflicts_identified\": [{\"issue\": \"확산차단 방식\", \"security_gain\": \"표적 격리로 추가 열람 봉쇄\", \"privacy_loss\": \"미미(서비스 유지)\", \"resolution\": \"전면차단 대신 표적 격리\"}, {\"issue\": \"통지 시점\", \"security_gain\": \"범위 특정 후 정확 통지\", \"privacy_loss\": \"지연 위험\", \"resolution\": \"72시간 내 단계적 통지 개시\"}], \"required_controls\": {\"security\": [\"취약 계정 표적 격리\", \"조회 레이트리밋·행위기반 차단\", \"핫픽스 24~48h\", \"증적 무결성 보존\"], \"privacy\": [\"인지 시점·범위 기록화\", \"정보주체 범위 특정\", \"72시간 내 규제기관 신고\", \"정보주체 단계적 통지\", \"재발방지 문서화\"]}, \"residual_risk\": {\"security\": \"medium\", \"privacy\": \"medium\"}, \"bias_self_check\": {\"if_only_privacy\": \"통지는 동일하게 72h 내 개시하되, 전면차단을 택해 증적·연속성 손실 위험이 커졌을 것\", \"if_only_security\": \"비공개 패치를 우선해 통지기한을 넘겼을 것\"}, \"bias_direction\": \"balanced\", \"confidence\": 0.78}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 3,
+    "tokens_in": 2074,
+    "tokens_out": 754,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 1,
+  "seed": 2218205114
+}

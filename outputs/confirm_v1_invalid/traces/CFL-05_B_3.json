@@ -1,0 +1,67 @@
+{
+  "scenario_id": "CFL-05",
+  "condition": "B_UNIFIED_3STEP",
+  "final": {
+    "experiment_condition": "B_UNIFIED_3STEP",
+    "scenario_id": "CFL-05",
+    "final_decision": "생체 필수화·중앙저장 모두 배제한다. FIDO2 보안키를 기본 강력인증으로 도입하고 생체는 단말 내 보관 선택 옵션으로 제공한다. 거부자에게 동등 강도·편의의 대체수단을 보장하고 불이익을 금지한다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "강력인증 vs 생체 강제수집",
+        "security_gain": "피싱저항 인증",
+        "privacy_loss": "민감정보 강제",
+        "resolution": "보안키 기본+생체 선택"
+      },
+      {
+        "issue": "생체 중앙저장 위험",
+        "security_gain": "검증 편의",
+        "privacy_loss": "재발급불가 유출",
+        "resolution": "단말 내 보관·서버 미전송"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "FIDO2 보안키 기본",
+        "고위험 시스템 다요소 상향",
+        "키관리 강화"
+      ],
+      "privacy": [
+        "생체 선택·별도 동의",
+        "단말 내 보관·서버 미전송",
+        "거부 시 불이익 금지"
+      ]
+    },
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "bias_self_check": {
+      "if_only_privacy": "OTP 유지에 그쳐 인증강도 부족 위험을 남겼을 것",
+      "if_only_security": "생체 필수·중앙저장으로 위법·대량유출 위험을 키웠을 것"
+    },
+    "bias_direction": "balanced",
+    "confidence": 0.8
+  },
+  "final_status": "ok",
+  "consensus": null,
+  "logs": {
+    "steps": [
+      "{\"step\": 1, \"security_view\": {\"goal\": \"핵심 인프라에 피싱저항 강력인증 확보(계정탈취 차단)\", \"threats\": [\"OTP 피싱·SIM 스와핑\", \"인증강도 부족 침해\", \"생체 중앙DB 침해 시 인증기반 붕괴\"], \"severity\": \"HIGH\", \"min_data_need\": \"인증 자격증명(보안키 공개키). 생체는 필수 아님\", \"confidence\": 0.72}, \"privacy_view\": {\"principle\": \"민감정보 최소수집·별도동의·자기결정권(거부권)\", \"sensitivity\": \"SPECIAL\", \"subject_rights_risk\": \"거부권 없는 강제수집·재발급 불가 정보의 영구 위험\", \"proportionality\": \"인증 목적에 생체 강제는 과도, 대체수단으로 달성 가능\", \"confidence\": 0.75}, \"need_legal_check\": [\"민감정보 처리 별도동의 요건\", \"거부에 따른 서비스 제한의 적법성\"]}",
+      "{\"step\": 2, \"conflict_matrix\": [{\"issue\": \"생체 필수화\", \"security_gain\": \"분실·공유 방지 인증\", \"privacy_loss\": \"거부권 없는 민감정보 강제수집\", \"level\": \"HIGH\"}, {\"issue\": \"생체 중앙 저장\", \"security_gain\": \"서버측 검증 편의\", \"privacy_loss\": \"단일 침해 시 재발급 불가 대량 유출\", \"level\": \"HIGH\"}, {\"issue\": \"OTP 유지\", \"security_gain\": \"추가 수집 없음\", \"privacy_loss\": \"없음(단 보안 약함)\", \"level\": \"MED\"}], \"hard_constraints\": [\"민감정보(생체)는 별도 동의 없이 강제 수집 불가\", \"거부에 따른 부당한 차별 금지\"], \"self_check\": {\"if_security_first\": \"생체 필수·중앙저장을 택하면 위법 소지와 재발급불가 대량유출 위험\", \"if_privacy_first\": \"OTP 유지만 하면 피싱·탈취 위험이 방치됨(대체수단 필요)\"}, \"mitigations\": [\"FIDO2 보안키 기본\", \"생체는 단말 내 보관 선택 옵션\", \"거부자 동등 대체수단·불이익 금지\"]}",
+      "{\"experiment_condition\": \"B_UNIFIED_3STEP\", \"scenario_id\": \"CFL-05\", \"final_decision\": \"생체 필수화·중앙저장 모두 배제한다. FIDO2 보안키를 기본 강력인증으로 도입하고 생체는 단말 내 보관 선택 옵션으로 제공한다. 거부자에게 동등 강도·편의의 대체수단을 보장하고 불이익을 금지한다.\", \"decision_status\": \"CONDITIONAL_APPROVE\", \"conflicts_identified\": [{\"issue\": \"강력인증 vs 생체 강제수집\", \"security_gain\": \"피싱저항 인증\", \"privacy_loss\": \"민감정보 강제\", \"resolution\": \"보안키 기본+생체 선택\"}, {\"issue\": \"생체 중앙저장 위험\", \"security_gain\": \"검증 편의\", \"privacy_loss\": \"재발급불가 유출\", \"resolution\": \"단말 내 보관·서버 미전송\"}], \"required_controls\": {\"security\": [\"FIDO2 보안키 기본\", \"고위험 시스템 다요소 상향\", \"키관리 강화\"], \"privacy\": [\"생체 선택·별도 동의\", \"단말 내 보관·서버 미전송\", \"거부 시 불이익 금지\"]}, \"residual_risk\": {\"security\": \"medium\", \"privacy\": \"medium\"}, \"bias_self_check\": {\"if_only_privacy\": \"OTP 유지에 그쳐 인증강도 부족 위험을 남겼을 것\", \"if_only_security\": \"생체 필수·중앙저장으로 위법·대량유출 위험을 키웠을 것\"}, \"bias_direction\": \"balanced\", \"confidence\": 0.8}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 3,
+    "tokens_in": 1987,
+    "tokens_out": 668,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 3,
+  "seed": 714979014
+}

@@ -1,0 +1,3242 @@
+[
+  {
+    "scenario_id": "CFL-01",
+    "comparison": "A_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-01",
+    "comparison": "A_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-01",
+    "comparison": "A_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-01",
+    "comparison": "B_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-01",
+    "comparison": "B_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-01",
+    "comparison": "B_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-02",
+    "comparison": "A_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-02",
+    "comparison": "A_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-02",
+    "comparison": "A_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-02",
+    "comparison": "B_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "B",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-02",
+    "comparison": "B_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-02",
+    "comparison": "B_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "B",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-04",
+    "comparison": "A_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-04",
+    "comparison": "A_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-04",
+    "comparison": "A_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-04",
+    "comparison": "B_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-04",
+    "comparison": "B_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-04",
+    "comparison": "B_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-05",
+    "comparison": "A_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": true
+  },
+  {
+    "scenario_id": "CFL-05",
+    "comparison": "A_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-05",
+    "comparison": "A_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-05",
+    "comparison": "B_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-05",
+    "comparison": "B_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-05",
+    "comparison": "B_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "B",
+    "position_consistent": true
+  },
+  {
+    "scenario_id": "CFL-06",
+    "comparison": "A_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-06",
+    "comparison": "A_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-06",
+    "comparison": "A_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-06",
+    "comparison": "B_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-06",
+    "comparison": "B_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-06",
+    "comparison": "B_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-08",
+    "comparison": "A_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-08",
+    "comparison": "A_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-08",
+    "comparison": "A_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-08",
+    "comparison": "B_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-08",
+    "comparison": "B_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-08",
+    "comparison": "B_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-09",
+    "comparison": "A_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-09",
+    "comparison": "A_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-09",
+    "comparison": "A_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-09",
+    "comparison": "B_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "B",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-09",
+    "comparison": "B_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-09",
+    "comparison": "B_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "B",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-10",
+    "comparison": "A_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-10",
+    "comparison": "A_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-10",
+    "comparison": "A_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-10",
+    "comparison": "B_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-10",
+    "comparison": "B_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "B",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "CFL-10",
+    "comparison": "B_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "B",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "COL-02",
+    "comparison": "A_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "COL-02",
+    "comparison": "A_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "COL-02",
+    "comparison": "A_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "COL-02",
+    "comparison": "B_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "B",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "COL-02",
+    "comparison": "B_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "COL-02",
+    "comparison": "B_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "COL-06",
+    "comparison": "A_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "COL-06",
+    "comparison": "A_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "COL-06",
+    "comparison": "A_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": true
+  },
+  {
+    "scenario_id": "COL-06",
+    "comparison": "B_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "B",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "COL-06",
+    "comparison": "B_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "B",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "COL-06",
+    "comparison": "B_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "IND-01",
+    "comparison": "A_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "IND-01",
+    "comparison": "A_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "IND-01",
+    "comparison": "A_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "IND-01",
+    "comparison": "B_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "IND-01",
+    "comparison": "B_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "IND-01",
+    "comparison": "B_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "B",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "IND-07",
+    "comparison": "A_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "IND-07",
+    "comparison": "A_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "IND-07",
+    "comparison": "A_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "A",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "A",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "A",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "IND-07",
+    "comparison": "B_vs_C",
+    "rep": 1,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "IND-07",
+    "comparison": "B_vs_C",
+    "rep": 2,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "TIE",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "TIE",
+    "position_consistent": false
+  },
+  {
+    "scenario_id": "IND-07",
+    "comparison": "B_vs_C",
+    "rep": 3,
+    "votes": [
+      {
+        "judge": "claude-sonnet-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-sonnet-5",
+        "order": "BA",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "AB",
+        "winner": "C",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-haiku-4-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "AB",
+        "winner": "TIE",
+        "conf": 0.6
+      },
+      {
+        "judge": "claude-opus-5",
+        "order": "BA",
+        "winner": "B",
+        "conf": 0.6
+      }
+    ],
+    "consensus_winner": "C",
+    "position_consistent": false
+  }
+]

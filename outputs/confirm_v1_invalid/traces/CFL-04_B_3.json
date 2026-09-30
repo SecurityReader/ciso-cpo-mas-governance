@@ -1,0 +1,57 @@
+{
+  "scenario_id": "CFL-04",
+  "condition": "B_UNIFIED_3STEP",
+  "final": {
+    "experiment_condition": "B_UNIFIED_3STEP",
+    "scenario_id": "CFL-04",
+    "final_decision": "IP·위치·단말·행동 결합 이상탐지는 도입하되, 자동 계정잠금은 고위험 신호에 한정하고 오탐 구제(재인증·이의절차)를 의무화한다. 프로파일링 고지와 최소보존을 병행한다.",
+    "decision_status": "CONDITIONAL_APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "이상탐지 vs 프로파일링 규제"
+      },
+      {
+        "issue": "오탐 대량잠금 위험"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "결합 이상탐지",
+        "고위험 신호 한정 자동조치",
+        "이상징후 로깅"
+      ],
+      "privacy": [
+        "프로파일링 고지",
+        "오탐 구제·이의절차",
+        "신호 데이터 최소보존"
+      ]
+    },
+    "residual_risk": {
+      "security": "medium",
+      "privacy": "medium"
+    },
+    "bias_direction": "balanced",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": null,
+  "logs": {
+    "steps": [
+      "{\"step\": 1, \"security_view\": {\"goal\": \"결합 이상탐지\", \"threats\": [\"이상탐지 vs 프로파일링 규제\", \"오탐 대량잠금\"], \"severity\": \"HIGH\", \"min_data_need\": \"최소\", \"confidence\": 0.72}, \"privacy_view\": {\"principle\": \"최소수집·비례성\", \"sensitivity\": \"HIGH\", \"subject_rights_risk\": \"이상탐지 vs 프로파일링 규제\", \"proportionality\": \"대체수단 우선\", \"confidence\": 0.73}, \"need_legal_check\": [\"관련 조항 확인\"]}",
+      "{\"step\": 2, \"conflict_matrix\": [{\"issue\": \"이상탐지 vs 프로파일링 규제\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}, {\"issue\": \"오탐 대량잠금\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}], \"hard_constraints\": [\"법적 최소요건 준수\"], \"self_check\": {\"if_security_first\": \"프라이버시 위험 증가\", \"if_privacy_first\": \"보안 공백 위험\"}, \"mitigations\": [\"결합 이상탐지\", \"프로파일링 고지\"]}",
+      "{\"experiment_condition\": \"B_UNIFIED_3STEP\", \"scenario_id\": \"CFL-04\", \"final_decision\": \"IP·위치·단말·행동 결합 이상탐지는 도입하되, 자동 계정잠금은 고위험 신호에 한정하고 오탐 구제(재인증·이의절차)를 의무화한다. 프로파일링 고지와 최소보존을 병행한다.\", \"decision_status\": \"CONDITIONAL_APPROVE\", \"conflicts_identified\": [{\"issue\": \"이상탐지 vs 프로파일링 규제\"}, {\"issue\": \"오탐 대량잠금 위험\"}], \"required_controls\": {\"security\": [\"결합 이상탐지\", \"고위험 신호 한정 자동조치\", \"이상징후 로깅\"], \"privacy\": [\"프로파일링 고지\", \"오탐 구제·이의절차\", \"신호 데이터 최소보존\"]}, \"residual_risk\": {\"security\": \"medium\", \"privacy\": \"medium\"}, \"bias_direction\": \"balanced\", \"confidence\": 0.75}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 3,
+    "tokens_in": 1836,
+    "tokens_out": 428,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 3,
+  "seed": 1383545734
+}

@@ -1,0 +1,63 @@
+{
+  "scenario_id": "COL-06",
+  "condition": "A_SEPARATED_3ROUND",
+  "final": {
+    "experiment_condition": "A_SEPARATED_3ROUND",
+    "scenario_id": "COL-06",
+    "final_decision": "개발·테스트 환경은 가명·합성데이터 사용을 기본 정책으로 하고, 원본 필요 시 예외 승인·마스킹·접근통제를 의무화한다.",
+    "decision_status": "APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "테스트 현실성 vs 원본 사용 위험(협업적 해소)"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "테스트망 접근통제",
+        "예외 승인 통제"
+      ],
+      "privacy": [
+        "가명·합성데이터 기본",
+        "원본 마스킹",
+        "예외 최소화"
+      ]
+    },
+    "residual_risk": {
+      "security": "low",
+      "privacy": "low"
+    },
+    "bias_direction": "balanced",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": {
+    "consensus_score": 0.0,
+    "method": "embedding-model2vec(minishlab/potion-multilingual-128M,tau=0.35)"
+  },
+  "logs": {
+    "rounds": {
+      "ciso": [
+        "{\"role\": \"CISO\", \"round\": 1, \"position\": \"보안 관점: 개발·테스트는 가명·합성데이터 기본, 원본 필요 시 예외 승인·마스킹·접근통제 의무화.\", \"key_risks\": [\"테스트 현실성 vs 원본 사용 위험(협업 해소)\"], \"severity\": \"MEDIUM\", \"required_controls\": [\"테스트망 접근통제\", \"예외 승인 통제\"], \"question_to_counterpart\": [\"대체·완화수단으로 목적 달성이 가능한가?\"], \"confidence\": 0.7}",
+        "{\"role\": \"CISO\", \"round\": 2, \"answer_to_counterpart\": \"완화·대체수단을 우선 적용하되 핵심 통제는 유지한다.\", \"agreement_points\": [\"가명·합성 기본\"], \"underestimated_risks\": [\"대체수단 미비 시 보안 공백\"], \"alternatives\": [\"테스트망 접근통제\", \"예외 승인 통제\"], \"new_question\": [\"잔여위험 책임 주체는?\"], \"revised_position\": \"조건부 통제 유지\", \"confidence\": 0.74}",
+        "{\"role\": \"CISO\", \"round\": 3, \"concessions\": [\"가명·합성 기본 수용\"], \"non_negotiable\": [\"테스트 유효성 확보\"], \"acceptable_policy\": \"조건부 수용\", \"residual_risk\": \"medium\", \"final_stance\": \"CONDITIONAL_ACCEPT\", \"confidence\": 0.75}"
+      ],
+      "cpo": [
+        "{\"role\": \"CPO\", \"round\": 1, \"position\": \"프라이버시 관점: 최소수집·비례성 우선\", \"key_risks\": [\"테스트 현실성 vs 원본 사용 위험(협업 해소)\"], \"data_sensitivity\": \"HIGH\", \"required_controls\": [\"가명·합성 기본\", \"원본 마스킹\", \"예외 최소화\"], \"question_to_counterpart\": [\"보안 목적을 덜 침습적으로 달성할 수 있는가?\"], \"confidence\": 0.72}",
+        "{\"role\": \"CPO\", \"round\": 2, \"answer_to_counterpart\": \"목적 범위·최소화·고지를 전제로 조건부 수용한다.\", \"agreement_points\": [\"테스트망 접근통제\"], \"underestimated_risks\": [\"형식적 통제의 실효성 부족\"], \"alternatives\": [\"가명·합성 기본\", \"원본 마스킹\"], \"new_question\": [\"감사·구제 절차는?\"], \"revised_position\": \"조건부 수용\", \"confidence\": 0.75}",
+        "{\"role\": \"CPO\", \"round\": 3, \"concessions\": [\"예외 승인 시 원본 제한 사용 수용\"], \"non_negotiable\": [\"원본 무통제 사용 금지\"], \"acceptable_policy\": \"조건부 수용\", \"residual_risk\": \"medium\", \"final_stance\": \"CONDITIONAL_ACCEPT\", \"confidence\": 0.75}"
+      ]
+    }
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 7,
+    "tokens_in": 4635,
+    "tokens_out": 678,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 1,
+  "seed": 1332068344
+}

@@ -1,0 +1,7 @@
+# 본실험(확증) 의존성
+anthropic>=0.40          # 생성 + Anthropic 심판
+openai>=1.40             # 비-Anthropic 심판(자기선호편향 통제)
+sentence-transformers>=3.0   # 로컬 consensus 임베딩(bge-m3), API 불필요
+# (선택) 경량 키리스 임베딩 대체
+# model2vec>=0.3
+truststore>=0.9        # 사내 MITM 프록시: OS 인증서 저장소 신뢰

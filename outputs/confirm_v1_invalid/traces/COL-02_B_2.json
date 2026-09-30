@@ -1,0 +1,52 @@
+{
+  "scenario_id": "COL-02",
+  "condition": "B_UNIFIED_3STEP",
+  "final": {
+    "experiment_condition": "B_UNIFIED_3STEP",
+    "scenario_id": "COL-02",
+    "final_decision": "출시 전 모의침투테스트와 PIA를 통합한 단일 승인관문을 운영하되, 이중검증 실효성 유지를 위해 보안·개인정보 체크리스트를 분리 유지하고 상호 서명한다.",
+    "decision_status": "APPROVE",
+    "conflicts_identified": [
+      {
+        "issue": "절차 통합 시 이중검증 약화 우려"
+      }
+    ],
+    "required_controls": {
+      "security": [
+        "모의침투 통과 기준",
+        "보안 체크리스트"
+      ],
+      "privacy": [
+        "PIA 통과 기준",
+        "개인정보 체크리스트"
+      ]
+    },
+    "residual_risk": {
+      "security": "low",
+      "privacy": "low"
+    },
+    "bias_direction": "balanced",
+    "confidence": 0.75
+  },
+  "final_status": "ok",
+  "consensus": null,
+  "logs": {
+    "steps": [
+      "{\"step\": 1, \"security_view\": {\"goal\": \"모의침투 통과 기준\", \"threats\": [\"절차 통합 시 이중검증 약화 우려\"], \"severity\": \"MEDIUM\", \"min_data_need\": \"최소\", \"confidence\": 0.72}, \"privacy_view\": {\"principle\": \"최소수집·비례성\", \"sensitivity\": \"HIGH\", \"subject_rights_risk\": \"절차 통합 시 이중검증 약화 우려\", \"proportionality\": \"대체수단 우선\", \"confidence\": 0.73}, \"need_legal_check\": [\"관련 조항 확인\"]}",
+      "{\"step\": 2, \"conflict_matrix\": [{\"issue\": \"절차 통합 시 이중검증 약화 우려\", \"security_gain\": \"보안 이익\", \"privacy_loss\": \"프라이버시 위험\", \"level\": \"HIGH\"}], \"hard_constraints\": [\"법적 최소요건 준수\"], \"self_check\": {\"if_security_first\": \"프라이버시 위험 증가\", \"if_privacy_first\": \"보안 공백 위험\"}, \"mitigations\": [\"모의침투 통과 기준\", \"PIA 통과 기준\"]}",
+      "{\"experiment_condition\": \"B_UNIFIED_3STEP\", \"scenario_id\": \"COL-02\", \"final_decision\": \"출시 전 모의침투테스트와 PIA를 통합한 단일 승인관문을 운영하되, 이중검증 실효성 유지를 위해 보안·개인정보 체크리스트를 분리 유지하고 상호 서명한다.\", \"decision_status\": \"APPROVE\", \"conflicts_identified\": [{\"issue\": \"절차 통합 시 이중검증 약화 우려\"}], \"required_controls\": {\"security\": [\"모의침투 통과 기준\", \"보안 체크리스트\"], \"privacy\": [\"PIA 통과 기준\", \"개인정보 체크리스트\"]}, \"residual_risk\": {\"security\": \"low\", \"privacy\": \"low\"}, \"bias_direction\": \"balanced\", \"confidence\": 0.75}"
+    ]
+  },
+  "meta": {
+    "model": "claude-3-5-sonnet-latest",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "n_calls": 3,
+    "tokens_in": 1749,
+    "tokens_out": 372,
+    "latency_sec": 0.0,
+    "status": "ok"
+  },
+  "rep": 2,
+  "seed": 1492615283
+}
