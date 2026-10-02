@@ -1,9 +1,10 @@
 cff-version: 1.2.0
-message: "If you use this software or data, please cite the following."
+message: "If you use this software or data, please cite it as below."
 title: "Role-Separated versus Unified LLM Pipelines for Security-Privacy Policy Decisions: A Conditional Equivalence Study"
 authors:
-  - family-names: Moon
-    given-names: Kwangsuk
-year: 2026
+  - family-names: "Moon"
+    given-names: "Kwangsuk"
 version: "1.0.4"
-license: "MIT AND CC-BY-4.0"
+date-released: "2026-10-02"
+license: MIT
+repository-code: "https://github.com/SecurityReader/ciso-cpo-mas-governance"
