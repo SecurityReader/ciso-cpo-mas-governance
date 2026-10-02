@@ -27,6 +27,9 @@ EVAL = BASE / "output" / "eval"
 random.seed(20260927)
 
 Mk = ["M1", "M2", "M3", "M4", "M5"]
+# 동률 허용오차: 심판 평균의 부동소수 잔차(예: 4.333.. 합산 순서차)로 '정확한 동률'이
+# 미세 양/음수로 오판되는 것을 막는다. 표시 반올림과 별개로 비교 시에만 적용.
+TOL = 1e-9
 W = [float(x) for x in os.environ.get("WEIGHTS", "1,1,1,1,1").split(",")]
 TASK_PREFIX = os.environ.get("TASK_PREFIX", "CFL")
 # SESOI(동등성 여백): S척도 점수. 기본 ±1.0점(지표 1스텝=2점의 절반, 보수적). 환경변수 EQ_MARGIN로 조정.
@@ -39,8 +42,8 @@ def mean(v):
     return sum(v) / len(v) if v else float("nan")
 
 def cliffs_delta(x, y):
-    gt = sum(1 for a in x for b in y if a > b)
-    lt = sum(1 for a in x for b in y if a < b)
+    gt = sum(1 for a in x for b in y if a - b > TOL)
+    lt = sum(1 for a in x for b in y if a - b < -TOL)
     n = len(x) * len(y)
     return (gt - lt) / n if n else float("nan")
 
@@ -49,8 +52,8 @@ def binom_cdf(k, n, p=0.5):
     return sum(comb(n, i) * (p ** i) * ((1 - p) ** (n - i)) for i in range(0, k + 1))
 
 def sign_test(diffs, alternative="two-sided"):
-    pos = sum(1 for d in diffs if d > 0)
-    neg = sum(1 for d in diffs if d < 0)
+    pos = sum(1 for d in diffs if d > TOL)
+    neg = sum(1 for d in diffs if d < -TOL)
     n = pos + neg
     if n == 0: return 1.0, pos, neg
     if alternative == "greater":
@@ -198,9 +201,16 @@ def main():
         if c.startswith("B") or "3STEP" in c or "STEP" in c: return "B"
         if c.startswith("C") or "3ROUND_FORMAT" in c or "UNIFIED_3ROUND" in c: return "C"
         return c[:1]
+    def agg_from_scores(r):
+        # 심판별 원점수에서 지표평균을 '무반올림'으로 재계산(T01: 중간 round 제거).
+        js = [sc for sc in (r.get("scores") or [])
+              if all(isinstance(sc.get(k), (int, float)) for k in Mk)]
+        if js:
+            return {k: sum(sc[k] for sc in js) / len(js) for k in Mk}
+        return r.get("aggregate") or {}
     for r in rows:
         sid, cond = r["scenario_id"], norm_cond(r["condition"])
-        s = S_of(r.get("aggregate") or {})
+        s = S_of(agg_from_scores(r))
         cell[(sid, cond)].append(s)
         if isinstance(r.get("length_chars"), (int, float)):
             lengths.append(r["length_chars"]); svals.append(s)

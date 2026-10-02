@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this software or data, please cite the following."
-title: "Confound-Controlled Evaluation of Multi-Agent LLM Governance (CISO–CPO)"
+title: "Role-Separated versus Unified LLM Pipelines for Security-Privacy Policy Decisions: A Conditional Equivalence Study"
 authors:
   - family-names: Moon
     given-names: Kwangsuk
 year: 2026
-version: "1.0.0"
+version: "1.0.4"
 license: "MIT AND CC-BY-4.0"

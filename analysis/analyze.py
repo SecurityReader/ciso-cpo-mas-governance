@@ -23,10 +23,18 @@ from collections import defaultdict
 from math import comb, erfc, sqrt
 
 BASE = Path(__file__).resolve().parent
-EVAL = BASE / "output" / "eval"
+ROOT = BASE.parent  # package root when this file is in analysis/ or harness/
+# Default to the released confirmatory data; override with EVAL_DIR / POINTWISE_NAME / OUT_NAME.
+_dflt = ROOT / "outputs" / "confirm_v2" / "eval"
+EVAL = Path(os.environ.get("EVAL_DIR") or _dflt)
+_PW  = os.environ.get("POINTWISE_NAME", "pointwise.json")
+_OUT = os.environ.get("OUT_NAME", "analysis.json")
 random.seed(20260927)
 
 Mk = ["M1", "M2", "M3", "M4", "M5"]
+# 동률 허용오차: 심판 평균의 부동소수 잔차(예: 4.333.. 합산 순서차)로 '정확한 동률'이
+# 미세 양/음수로 오판되는 것을 막는다. 표시 반올림과 별개로 비교 시에만 적용.
+TOL = 1e-9
 W = [float(x) for x in os.environ.get("WEIGHTS", "1,1,1,1,1").split(",")]
 TASK_PREFIX = os.environ.get("TASK_PREFIX", "CFL")
 # SESOI(동등성 여백): S척도 점수. 기본 ±1.0점(지표 1스텝=2점의 절반, 보수적). 환경변수 EQ_MARGIN로 조정.
@@ -39,8 +47,8 @@ def mean(v):
     return sum(v) / len(v) if v else float("nan")
 
 def cliffs_delta(x, y):
-    gt = sum(1 for a in x for b in y if a > b)
-    lt = sum(1 for a in x for b in y if a < b)
+    gt = sum(1 for a in x for b in y if a - b > TOL)
+    lt = sum(1 for a in x for b in y if a - b < -TOL)
     n = len(x) * len(y)
     return (gt - lt) / n if n else float("nan")
 
@@ -49,8 +57,8 @@ def binom_cdf(k, n, p=0.5):
     return sum(comb(n, i) * (p ** i) * ((1 - p) ** (n - i)) for i in range(0, k + 1))
 
 def sign_test(diffs, alternative="two-sided"):
-    pos = sum(1 for d in diffs if d > 0)
-    neg = sum(1 for d in diffs if d < 0)
+    pos = sum(1 for d in diffs if d > TOL)
+    neg = sum(1 for d in diffs if d < -TOL)
     n = pos + neg
     if n == 0: return 1.0, pos, neg
     if alternative == "greater":
@@ -184,7 +192,7 @@ def pearson(x, y):
     return sum((a - mx) * (b - my) for a, b in zip(x, y)) / sqrt(sx * sy)
 
 def main():
-    p = EVAL / "pointwise.json"
+    p = EVAL / _PW
     if not p.exists():
         raise SystemExit(f"{p} 없음 — 먼저 `python judge.py --mode pointwise` 실행")
     rows = json.loads(p.read_text(encoding="utf-8"))
@@ -198,9 +206,16 @@ def main():
         if c.startswith("B") or "3STEP" in c or "STEP" in c: return "B"
         if c.startswith("C") or "3ROUND_FORMAT" in c or "UNIFIED_3ROUND" in c: return "C"
         return c[:1]
+    def agg_from_scores(r):
+        # 심판별 원점수에서 지표평균을 '무반올림'으로 재계산(T01: 중간 round 제거).
+        js = [sc for sc in (r.get("scores") or [])
+              if all(isinstance(sc.get(k), (int, float)) for k in Mk)]
+        if js:
+            return {k: sum(sc[k] for sc in js) / len(js) for k in Mk}
+        return r.get("aggregate") or {}
     for r in rows:
         sid, cond = r["scenario_id"], norm_cond(r["condition"])
-        s = S_of(r.get("aggregate") or {})
+        s = S_of(agg_from_scores(r))
         cell[(sid, cond)].append(s)
         if isinstance(r.get("length_chars"), (int, float)):
             lengths.append(r["length_chars"]); svals.append(s)
@@ -227,7 +242,7 @@ def main():
             "mean_X": round(mean(xs), 3), "mean_Y": round(mean(ys), 3),
             "mean_diff": round(mean(diffs), 3),
             "cliffs_delta": round(cliffs_delta(xs, ys), 3),
-            "sign_test_p": round(ps, 4), "pos": pos, "neg": neg,
+            "sign_test_p": round(ps, 4), "sign_test_p_raw": ps, "pos": pos, "neg": neg,
             "wilcoxon_p_approx": (round(pw, 4) if pw == pw else None),
             "bootstrap_ci95_diff": bootstrap_ci(diffs),
             "per_scenario_diff": {s: round(d, 3) for s, d in zip(sids, diffs)},
@@ -236,7 +251,8 @@ def main():
 
     H1 = contrast("A", "C", "greater")   # 역할분리
     H3 = contrast("B", "C", "two-sided") # 형식
-    adj = holm([H1["sign_test_p"], H3["sign_test_p"]])
+    # Holm on UNROUNDED sign-test p-values; round only for display/JSON (v1.0.4).
+    adj = holm([H1["sign_test_p_raw"], H3["sign_test_p_raw"]])
     H1["sign_test_p_holm"], H3["sign_test_p_holm"] = round(adj[0], 4), round(adj[1], 4)
 
     verbosity_r = round(pearson(lengths, svals), 3) if len(lengths) >= 2 else None
@@ -270,7 +286,7 @@ def main():
         out["pairwise_summary"] = {k: dict(v) for k, v in agg.items()}
         out["pairwise_position_consistency"] = (round(mean(poscon), 3) if poscon else None)
 
-    (EVAL / "analysis.json").write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+    (EVAL / _OUT).write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
 
     def line(h, c):
         star = "★유의" if c["sign_test_p_holm"] < 0.05 else "n.s."

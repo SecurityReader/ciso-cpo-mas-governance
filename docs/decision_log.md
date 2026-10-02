@@ -34,10 +34,10 @@
 | anthropic | **`<1` 로 고정 설치** | 1.8.0의 `httpx2` 디코더 버그(`process() takes no keyword arguments`) 회피. requirements.txt 표기(`>=0.40`)와 별개로 실제 설치본은 httpx1 계열 강제 |
 | openai | **`<1.60` 로 고정 설치** | httpx2 의존 회피(anthropic 다운그레이드와 정합) |
 | sentence-transformers | `>=3.0` | 로컬 consensus 임베딩 |
-| truststore | `>=0.9` | 사내 MITM 프록시 대응(OS 인증서 저장소 신뢰) |
+| truststore | `>=0.9` | corporate intercepting (MITM) proxy — trust the OS certificate store |
 
 ### 1.3 네트워크
-- 사내 **MITM 프록시** 환경 → `truststore.inject_into_ssl()`로 OS 신뢰저장소 사용(+CA 파일 폴백). `verify=False` 미사용.
+- a corporate intercepting (MITM) proxy environment → `truststore.inject_into_ssl()`로 OS 신뢰저장소 사용(+CA 파일 폴백). `verify=False` 미사용.
 - 일시적 DNS 실패(`getaddrinfo failed`) 대응: 지수 백오프 재시도 `_retry(tries=6, base=3.0)`.
 
 ### 1.4 임베딩 (consensus)
@@ -95,7 +95,7 @@
 | D06 | 준비 | 단일 `run_all.py`로 통합, 완료분 skip(resume), **키는 런타임 getpass 입력(`****` 마스킹)** | 재현성 + 키 비저장 보안 | 확정 |
 | D07 | 실행 | `temperature` 미지원/deprecated 모델 대응: 클라이언트측 폴백 | TypeError 및 400 "temperature" 회피 | 확정 |
 | D08 | 실행 | anthropic `<1`, openai `<1.60` 다운그레이드 | httpx2 디코더 버그 | 확정 |
-| D09 | 실행 | `truststore.inject_into_ssl()` 도입 | 사내 MITM 프록시 SSL 검증 | 확정 |
+| D09 | 실행 | `truststore.inject_into_ssl()` 도입 | corporate intercepting (MITM) proxy TLS verification | 확정 |
 | D10 | 실행 | `_retry` 지수 백오프 도입 | 일시 DNS/네트워크 오류 | 확정 |
 | D11 | 실행 | 심판 incremental save + resume + 진행출력 | 장시간 판정 중단 복구 | 확정 |
 | D12 | 검토 | **1차 확증결과(δ=−1.0)를 실제 발견으로 보고하지 않음** | truncation 아티팩트로 판정 | 확정(무결성) |

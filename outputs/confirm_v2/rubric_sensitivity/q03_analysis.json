@@ -1,0 +1,127 @@
+{
+  "spec": {
+    "weights": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "task_prefix": "CFL",
+    "S_definition": "sum(w_k * M_k), M in {1,3,5}",
+    "analysis_unit": "(scenario x condition) mean over reps",
+    "sesoi_margin_S": 1.0
+  },
+  "H1_roleseparation_AvsC": {
+    "comparison": "A_vs_C",
+    "n_scenarios": 8,
+    "mean_X": 24.056,
+    "mean_Y": 24.028,
+    "mean_diff": 0.028,
+    "cliffs_delta": 0.094,
+    "sign_test_p": 0.7734,
+    "sign_test_p_raw": 0.7734375,
+    "pos": 3,
+    "neg": 4,
+    "wilcoxon_p_approx": 0.7998,
+    "bootstrap_ci95_diff": [
+      -0.278,
+      0.389
+    ],
+    "per_scenario_diff": {
+      "CFL-01": -0.222,
+      "CFL-02": 0.222,
+      "CFL-04": -0.222,
+      "CFL-05": 0.0,
+      "CFL-06": 0.222,
+      "CFL-08": -0.667,
+      "CFL-09": 1.111,
+      "CFL-10": -0.222
+    },
+    "equivalence_TOST": {
+      "sesoi_margin": 1.0,
+      "n": 8,
+      "mean_diff": 0.028,
+      "sd": 0.524,
+      "tost_p_lower": 0.0004,
+      "tost_p_upper": 0.0006,
+      "tost_p": 0.0006,
+      "equivalent_tost(a=0.05)": true,
+      "ci90_parametric": [
+        -0.323,
+        0.379
+      ],
+      "ci90_bootstrap": [
+        -0.222,
+        0.333
+      ],
+      "equivalent_ci90_within_sesoi": true,
+      "verdict": "EQUIVALENT"
+    },
+    "sign_test_p_holm": 0.9062
+  },
+  "H3_format_BvsC": {
+    "comparison": "B_vs_C",
+    "n_scenarios": 8,
+    "mean_X": 23.778,
+    "mean_Y": 24.028,
+    "mean_diff": -0.25,
+    "cliffs_delta": -0.375,
+    "sign_test_p": 0.4531,
+    "sign_test_p_raw": 0.453125,
+    "pos": 2,
+    "neg": 5,
+    "wilcoxon_p_approx": 0.2049,
+    "bootstrap_ci95_diff": [
+      -0.556,
+      0.083
+    ],
+    "per_scenario_diff": {
+      "CFL-01": 0.222,
+      "CFL-02": -0.222,
+      "CFL-04": -0.667,
+      "CFL-05": 0.0,
+      "CFL-06": -0.222,
+      "CFL-08": -0.667,
+      "CFL-09": 0.444,
+      "CFL-10": -0.889
+    },
+    "equivalence_TOST": {
+      "sesoi_margin": 1.0,
+      "n": 8,
+      "mean_diff": -0.25,
+      "sd": 0.467,
+      "tost_p_lower": 0.0013,
+      "tost_p_upper": 0.0001,
+      "tost_p": 0.0013,
+      "equivalent_tost(a=0.05)": true,
+      "ci90_parametric": [
+        -0.563,
+        0.063
+      ],
+      "ci90_bootstrap": [
+        -0.5,
+        0.0
+      ],
+      "equivalent_ci90_within_sesoi": true,
+      "verdict": "EQUIVALENT"
+    },
+    "sign_test_p_holm": 0.9062
+  },
+  "verbosity_length_score_pearson": -0.192,
+  "judge_reliability_snapshot": {
+    "claude-haiku-4-5-20251001": {
+      "n": 108,
+      "mean_S": 24.852
+    },
+    "gpt-4.1-mini": {
+      "n": 108,
+      "mean_S": 24.0
+    },
+    "gpt-5.1": {
+      "n": 108,
+      "mean_S": 21.963
+    }
+  },
+  "note": "sign-test가 일차 p(소표본 강건). Wilcoxon은 정규근사 참고. 무효/약효는 TOST·SESOI로만 '작다/없다' 주장. TOST: SESOI=±%s점, 파라메트릭 t + 부트스트랩 90%%CI 포함."
+}

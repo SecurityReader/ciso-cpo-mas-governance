@@ -203,7 +203,9 @@ def _aggregate_points(scores):
     out = {}
     for k in ("M1","M2","M3","M4","M5"):
         vals = [s.get(k) for s in scores if isinstance(s.get(k),(int,float))]
-        out[k] = round(sum(vals)/len(vals),2) if vals else None
+        # T01: 중간 반올림 제거 — 전정밀 평균을 저장하고 반올림은 표시 시점에만.
+        # (analyze.py는 심판 원점수에서 직접 재계산하므로 이 값은 참고용)
+        out[k] = sum(vals)/len(vals) if vals else None
     return out
 
 # ----------------------------------------------------------------------------

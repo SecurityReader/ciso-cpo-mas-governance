@@ -15,91 +15,93 @@
   "H1_roleseparation_AvsC": {
     "comparison": "A_vs_C",
     "n_scenarios": 8,
-    "mean_X": 24.304,
+    "mean_X": 24.306,
     "mean_Y": 24.111,
-    "mean_diff": 0.193,
-    "cliffs_delta": 0.219,
-    "sign_test_p": 0.6367,
+    "mean_diff": 0.194,
+    "cliffs_delta": 0.297,
+    "sign_test_p": 0.3438,
+    "sign_test_p_raw": 0.34375,
     "pos": 4,
-    "neg": 4,
-    "wilcoxon_p_approx": 0.6241,
+    "neg": 2,
+    "wilcoxon_p_approx": 0.4469,
     "bootstrap_ci95_diff": [
-      -0.195,
-      0.554
+      -0.194,
+      0.556
     ],
     "per_scenario_diff": {
-      "CFL-01": 0.887,
-      "CFL-02": -0.663,
-      "CFL-04": -0.003,
-      "CFL-05": 0.887,
-      "CFL-06": 0.443,
-      "CFL-08": 0.443,
-      "CFL-09": -0.003,
-      "CFL-10": -0.447
+      "CFL-01": 0.889,
+      "CFL-02": -0.667,
+      "CFL-04": 0.0,
+      "CFL-05": 0.889,
+      "CFL-06": 0.444,
+      "CFL-08": 0.444,
+      "CFL-09": -0.0,
+      "CFL-10": -0.444
     },
     "equivalence_TOST": {
       "sesoi_margin": 1.0,
       "n": 8,
-      "mean_diff": 0.193,
-      "sd": 0.574,
+      "mean_diff": 0.194,
+      "sd": 0.575,
       "tost_p_lower": 0.0003,
       "tost_p_upper": 0.0027,
       "tost_p": 0.0027,
       "equivalent_tost(a=0.05)": true,
       "ci90_parametric": [
-        -0.192,
-        0.577
+        -0.191,
+        0.58
       ],
       "ci90_bootstrap": [
         -0.139,
-        0.498
+        0.5
       ],
       "equivalent_ci90_within_sesoi": true,
       "verdict": "EQUIVALENT"
     },
-    "sign_test_p_holm": 1.0
+    "sign_test_p_holm": 0.6875
   },
   "H3_format_BvsC": {
     "comparison": "B_vs_C",
     "n_scenarios": 8,
-    "mean_X": 24.247,
+    "mean_X": 24.25,
     "mean_Y": 24.111,
-    "mean_diff": 0.137,
-    "cliffs_delta": 0.047,
+    "mean_diff": 0.139,
+    "cliffs_delta": 0.188,
     "sign_test_p": 1.0,
+    "sign_test_p_raw": 1.0,
     "pos": 4,
     "neg": 3,
-    "wilcoxon_p_approx": 0.7998,
+    "wilcoxon_p_approx": 0.6726,
     "bootstrap_ci95_diff": [
-      -0.253,
-      0.526
+      -0.25,
+      0.528
     ],
     "per_scenario_diff": {
-      "CFL-01": 0.887,
+      "CFL-01": 0.889,
       "CFL-02": 0.0,
-      "CFL-04": -0.893,
-      "CFL-05": 0.44,
-      "CFL-06": 0.22,
-      "CFL-08": 0.89,
-      "CFL-09": -0.227,
-      "CFL-10": -0.223
+      "CFL-04": -0.889,
+      "CFL-05": 0.444,
+      "CFL-06": 0.222,
+      "CFL-08": 0.889,
+      "CFL-09": -0.222,
+      "CFL-10": -0.222
     },
     "equivalence_TOST": {
       "sesoi_margin": 1.0,
       "n": 8,
-      "mean_diff": 0.137,
-      "sd": 0.606,
-      "tost_p_lower": 0.0006,
+      "mean_diff": 0.139,
+      "sd": 0.605,
+      "tost_p_lower": 0.0005,
       "tost_p_upper": 0.0025,
       "tost_p": 0.0025,
       "equivalent_tost(a=0.05)": true,
       "ci90_parametric": [
-        -0.269,
-        0.543
+        -0.266,
+        0.544
       ],
       "ci90_bootstrap": [
-        -0.198,
-        0.47
+        -0.194,
+        0.472
       ],
       "equivalent_ci90_within_sesoi": true,
       "verdict": "EQUIVALENT"

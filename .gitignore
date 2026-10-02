@@ -1,9 +1,11 @@
+# Secrets / environment-specific — never commit
 .env
-.env.*
-!.env.example
-__pycache__/
+*.env
+corp_ca.pem
+reproduce/corp_ca.pem
+reproduce/_dry_test/
+**/__pycache__/
 *.pyc
-*.bak
-*.bak_*
-.DS_Store
-offline_responses/
+# Local API keys / credentials
+*api_key*
+*.key
