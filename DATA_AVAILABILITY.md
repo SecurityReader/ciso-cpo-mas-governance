@@ -4,9 +4,10 @@ All code, frozen scenarios, raw traces, per-judge scores, token-usage logs, and 
 scripts needed to reproduce the results are provided in this repository and archived at:
 
 - Source code & data (versioned): https://github.com/SecurityReader/ciso-cpo-mas-governance
-- Existing Zenodo record (DOI): https://doi.org/10.5281/zenodo.23094852 — this record archives release **v1.0.4**.
+- Archived snapshot (version DOI): https://doi.org/10.5281/zenodo.23348744 — archives release **v1.0.5** (git tag `v1.0.5`, commit `90f415a`), the replication package for this paper.
+- Earlier record: https://doi.org/10.5281/zenodo.23094852 archives the superseded **v1.0.4** release, which predates and does not include the controlled confirmatory run reported here.
 
-This paper's replication package corresponds to git tag `v1.0.5` (the commit hash identifies the exact snapshot). A dedicated **v1.0.5 version DOI** will be minted when v1.0.5 is archived on Zenodo and added here; until then, cite git tag `v1.0.5`.
+Cite the **v1.0.5 version DOI** (10.5281/zenodo.23348744) for the exact snapshot underlying this paper.
 
 ## What is included
 - `scenarios/` — 12 frozen scenarios + SHA-256 freeze hashes

@@ -1,6 +1,6 @@
 # Role Separation Helps, Conditionally: A Rubric-Sensitive Multi-Agent Large Language Model (LLM) Study of Security–Privacy Policy Decisions under Korea's PIPA
 
-[![DOI](https://zenodo.org/badge/1400227740.svg)](https://doi.org/10.5281/zenodo.23094852)
+[![DOI](https://zenodo.org/badge/1400227740.svg)](https://doi.org/10.5281/zenodo.23348744)
 
 Replication package for the study
 *"Role Separation Helps, Conditionally: A Rubric-Sensitive Multi-Agent Large Language Model (LLM) Study of Security–Privacy Policy Decisions under Korea's PIPA."*
@@ -160,7 +160,7 @@ consensus embedding `BAAI/bge-m3` (local, τ=0.75). Exact identifiers and the pi
 confirmatory distinction are in `docs/model_versions.md`.
 
 ## Data availability / citation
-Archived snapshot: **https://doi.org/10.5281/zenodo.23094852** (Zenodo, tag `v1.0.4`). See `DATA_AVAILABILITY.md` and `CITATION.cff`.
+Archived snapshot: **https://doi.org/10.5281/zenodo.23348744** (Zenodo, release v1.0.5; git tag `v1.0.5`, commit `90f415a`). An earlier record (10.5281/zenodo.23094852) archives the superseded v1.0.4. See `DATA_AVAILABILITY.md` and `CITATION.cff`.
 
 ## License
 See `LICENSE`.
