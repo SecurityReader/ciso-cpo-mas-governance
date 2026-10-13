@@ -1,10 +1,9 @@
-# Role-Separated vs. Unified LLM Pipelines for Security–Privacy Policy Decisions
+# Role Separation Helps, Conditionally: A Rubric-Sensitive Multi-Agent Large Language Model (LLM) Study of Security–Privacy Policy Decisions under Korea's PIPA
 
 [![DOI](https://zenodo.org/badge/1400227740.svg)](https://doi.org/10.5281/zenodo.23094852)
 
 Replication package for the study
-*"Role-Separated versus Unified LLM Pipelines for Security–Privacy Policy Decisions:
-A Conditional Equivalence Study."*
+*"Role Separation Helps, Conditionally: A Rubric-Sensitive Multi-Agent Large Language Model (LLM) Study of Security–Privacy Policy Decisions under Korea's PIPA."*
 
 > **Scope.** This is a confound-controlled **comparison of three LLM pipelines**, not a
 > claim about how human CISO/CPO functions should be organized. Results are conditional
@@ -48,8 +47,8 @@ primary analysis), each ×3 repetitions, and scored blind by a three-model judge
   (CFL-05_A_3, CFL-06_A_2 for gpt-5.1; CFL-09_A_3 for claude-haiku-4-5) that initially failed JSON
   parsing were re-queried and recovered. The corrected-rubric A-C estimate is +0.167 (δ 0.328,
   Holm p 1.0, TOST p 0.0008), equivalent within ±1 point.
-- Compute was **measured, not matched** (A used ~1.6× the tokens of C); the result is not an
-  artifact of A being under-resourced.
+- Compute was **measured, not matched** (A used ~1.9× the total tokens of C, medians); the result
+  is not an artifact of A being under-resourced.
 
 > **Aggregation note.** All reported statistics are computed from the per-judge metric scores
 > **without intermediate rounding**; values are rounded only for display, and the sign test
