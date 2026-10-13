@@ -1,29 +1,29 @@
 {
-  "mdes_sd_diff": 0.575,
+  "mdes_sd_diff": 0.471,
   "n_cfl": 8,
   "mdes_dz": {
     "0.05": 1.16,
     "0.025": 1.34
   },
   "mdes_points": {
-    "0.05": 0.66
+    "0.05": 0.54
   },
   "power_curve": [
     [
       0.0,
-      0.06
+      0.11
     ],
     [
       0.25,
-      0.18
+      0.1
     ],
     [
       0.5,
-      0.4
+      1.0
     ],
     [
       0.75,
-      0.93
+      1.0
     ],
     [
       1.0,
@@ -49,40 +49,40 @@
   "ceiling_by_metric": [
     {
       "metric": "M1",
-      "mean": 4.92,
-      "prop_max": 0.975,
-      "headroom": 0.02,
-      "skew": -6.802
+      "mean": 4.951,
+      "prop_max": 0.985,
+      "headroom": 0.012,
+      "skew": -8.766
     },
     {
       "metric": "M2",
-      "mean": 4.889,
-      "prop_max": 0.944,
-      "headroom": 0.028,
-      "skew": -3.881
+      "mean": 4.907,
+      "prop_max": 0.954,
+      "headroom": 0.023,
+      "skew": -4.318
     },
     {
       "metric": "M3",
-      "mean": 4.981,
-      "prop_max": 0.991,
-      "headroom": 0.005,
-      "skew": -10.247
+      "mean": 4.994,
+      "prop_max": 0.997,
+      "headroom": 0.002,
+      "skew": -17.917
     },
     {
       "metric": "M4",
-      "mean": 4.951,
-      "prop_max": 0.975,
-      "headroom": 0.012,
-      "skew": -6.126
+      "mean": 4.864,
+      "prop_max": 0.932,
+      "headroom": 0.034,
+      "skew": -3.435
     },
     {
       "metric": "M5",
-      "mean": 4.463,
-      "prop_max": 0.731,
-      "headroom": 0.134,
-      "skew": -1.045
+      "mean": 4.525,
+      "prop_max": 0.762,
+      "headroom": 0.119,
+      "skew": -1.233
     }
   ],
-  "prop_S_max": 0.306,
-  "prop_score_max": 0.923
+  "prop_S_max": 0.713,
+  "prop_score_max": 0.926
 }

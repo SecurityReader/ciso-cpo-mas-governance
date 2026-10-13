@@ -131,10 +131,10 @@ def call_llm(system, messages, tag=""):
         text = _offline_lookup(tag)
         if text is None:                       # 저장 응답 없으면 mock로 대체(부분 재생 허용)
             text = json.dumps(_mock_json(tag), ensure_ascii=False)
-        return text, {"in": _approx_tokens_str(system, messages), "out": _approx_tokens(text)}, 0.0
+        return text, {"in": _approx_tokens_str(system, messages), "out": _approx_tokens(text), "stop": "offline"}, 0.0
     if BACKEND == "dry":
         text = json.dumps(_mock_json(tag), ensure_ascii=False)
-        return text, {"in": _approx_tokens_str(system, messages), "out": _approx_tokens(text)}, 0.0
+        return text, {"in": _approx_tokens_str(system, messages), "out": _approx_tokens(text), "stop": "offline"}, 0.0
     t0 = time.time()
     _kw = dict(model=GEN_MODEL, max_tokens=MAX_TOKENS, system=system, messages=messages)
     def _create():
@@ -148,7 +148,7 @@ def call_llm(system, messages, tag=""):
     resp = _retry(_create)
     dt = round(time.time() - t0, 2)
     text = "".join(b.text for b in resp.content if b.type == "text")
-    usage = {"in": resp.usage.input_tokens, "out": resp.usage.output_tokens}
+    usage = {"in": resp.usage.input_tokens, "out": resp.usage.output_tokens, "stop": getattr(resp, "stop_reason", None)}
     return text, usage, dt
 
 def _approx_tokens_str(system, messages):
@@ -165,19 +165,20 @@ def parse_json(text):
         return None
 
 def call_json(system, messages, tag=""):
-    total = {"in": 0, "out": 0}; latency = 0.0; text = ""
+    total = {"in": 0, "out": 0}; latency = 0.0; text = ""; last_stop = None
     for attempt in range(RETRY + 1):
         text, usage, dt = call_llm(system, messages, tag)
         total["in"] += usage["in"]; total["out"] += usage["out"]; latency += dt
+        last_stop = usage.get("stop")
         obj = parse_json(text)
         if obj is not None:
-            return {"ok": True, "data": obj, "raw": text, "tokens": total,
+            return {"ok": True, "data": obj, "raw": text, "tokens": total, "stop": last_stop,
                     "latency_sec": round(latency, 2), "attempts": attempt + 1}
         messages = messages + [
             {"role": "assistant", "content": text},
             {"role": "user", "content": "위 출력이 유효한 JSON이 아니다. 다른 설명 없이 지정된 스키마의 순수 JSON 하나만 출력하라."},
         ]
-    return {"ok": False, "data": None, "raw": text, "tokens": total,
+    return {"ok": False, "data": None, "raw": text, "tokens": total, "stop": last_stop,
             "latency_sec": round(latency, 2), "attempts": RETRY + 1, "status": "확인필요"}
 
 def save_trace(obj, name):
@@ -526,6 +527,8 @@ def assemble(s, condition, final, calls, extra=None):
     tout = sum(c["tokens"]["out"] for c in calls)
     lat = round(sum(c["latency_sec"] for c in calls), 2)
     status = "ok" if all(c["ok"] for c in calls) else "확인필요"
+    _stops = [c.get("stop") for c in calls]
+    _trunc = sum(1 for _s in _stops if _s == "max_tokens")
     return {
         "scenario_id": s["scenario_id"], "condition": condition,
         "final": final.get("data"), "final_status": "ok" if final["ok"] else "확인필요",
@@ -535,6 +538,7 @@ def assemble(s, condition, final, calls, extra=None):
             "model": GEN_MODEL, "temperature": TEMPERATURE, "max_tokens": MAX_TOKENS,
             "n_calls": len(calls), "tokens_in": tin, "tokens_out": tout,
             "latency_sec": lat, "status": status,
+            "stop_reasons": _stops, "truncated_calls": _trunc, "hit_max": 1 if _trunc else 0,
         },
     }
 
@@ -670,12 +674,51 @@ def phase2c(only=None):
     print("Phase2c done →", OUTDIR)
 
 # ----------------------------------------------------------------------------
+def _self_gate():
+    """Phase-1 무결성 게이트: 108/상한균일/잘림0/final정상/n_calls. 전부 PASS면 재생성 중단."""
+    import glob as _g
+    EXP={"A":7,"B":3,"C":4}
+    import re as _re
+    fs=[f for f in _g.glob(str(OUTDIR/"*.json"))
+        if _re.search(r"_[ABC]_[123]\.json$", os.path.basename(f))
+        and not os.path.basename(f).startswith("P2C")
+        and os.path.basename(f).split("-")[0] in ("CFL","IND","COL")]
+    D={}
+    for f in fs:
+        try: D[os.path.basename(f)[:-5]]=json.loads(io.open(f,encoding="utf-8").read())
+        except Exception: pass
+    caps=sorted({d["meta"].get("max_tokens") for d in D.values()})
+    trunc=sum(d["meta"].get("truncated_calls",0) for d in D.values())
+    nullf=[n for n,d in D.items() if d.get("final") in (None,{})]
+    badc=[n for n,d in D.items() if d["meta"].get("n_calls")!=EXP.get(n.split("_")[-2])]
+    R=[("count==108",len(D)==108,len(D)),
+       ("uniform cap",len(caps)==1,caps),
+       ("truncated_calls==0",trunc==0,trunc),
+       ("final!=null all",len(nullf)==0,nullf[:8]),
+       ("n_calls A7/B3/C4",len(badc)==0,badc[:8])]
+    print("\n"+"="*56+"\n  PHASE-1 INTEGRITY GATE\n"+"="*56)
+    ok=True
+    for n,p,d in R:
+        ok&=p; print(f"  [{'PASS' if p else 'FAIL'}] {n}"+(f"  -> {d}" if not p else ""))
+    print("="*56+"\n  RESULT: "+("GREEN (clean; stop regenerating)" if ok else "RED (fix & re-run listed)")+"\n"+"="*56)
+    return ok
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--phase", default="1", choices=["1", "2", "2c"],
                     help="1=Phase1 108, 2=Phase2 기본(P2_), 2c=Phase2 강화판(P2C_, 함정)")
     ap.add_argument("--scenario", default=None,
                     help="쉼표구분 시나리오 ID만 실행(파일럿). 예: --scenario CFL-08")
+    ap.add_argument("--fresh", action="store_true",
+                    help="기존 traces를 백업 후 전체를 현재 MAX_TOKENS로 재생성(혼재 상한 방지)")
     args = ap.parse_args()
     only = set(x.strip() for x in args.scenario.split(",")) if args.scenario else None
+    print(f"[config] GEN_MODEL={GEN_MODEL} MAX_TOKENS={MAX_TOKENS} TEMPERATURE={TEMPERATURE} REPS={REPS} BACKEND={BACKEND}", flush=True)
+    if args.fresh and OUTDIR.exists():
+        import datetime as _dt
+        _bk = OUTDIR.parent / ("traces_backup_" + _dt.datetime.now().strftime("%Y%m%d_%H%M%S"))
+        OUTDIR.rename(_bk); OUTDIR.mkdir(parents=True, exist_ok=True)
+        print(f"[fresh] 기존 traces 백업 -> {_bk}", flush=True)
     {"1": phase1, "2": phase2, "2c": phase2c}[args.phase](only)
+    if args.phase == "1":
+        _self_gate()

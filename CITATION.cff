@@ -4,7 +4,8 @@ title: "Role-Separated versus Unified LLM Pipelines for Security-Privacy Policy 
 authors:
   - family-names: "Moon"
     given-names: "Kwangsuk"
-version: "1.0.4"
-date-released: "2026-10-02"
+version: "1.0.5"
+date-released: "2026-10-13"
 license: MIT
 repository-code: "https://github.com/SecurityReader/ciso-cpo-mas-governance"
+doi: "10.5281/zenodo.23094852"

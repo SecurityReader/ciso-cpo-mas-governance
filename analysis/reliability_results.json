@@ -1,71 +1,71 @@
 {
-  "icc_2_1": 0.157,
+  "icc_2_1": 0.026,
   "icc_2_1_ci": [
-    0.05,
-    0.28
+    -0.05,
+    0.12
   ],
-  "icc_2_k": 0.359,
+  "icc_2_k": 0.073,
   "icc_2_k_ci": [
-    0.13,
-    0.54
+    -0.17,
+    0.29
   ],
   "per_metric": [
     {
       "metric": "M1",
-      "alpha_ord": -0.022,
-      "gwet_ac1": 0.949,
-      "full_agree": 0.926,
-      "prop_max": 0.975
+      "alpha_ord": -0.013,
+      "gwet_ac1": 0.969,
+      "full_agree": 0.954,
+      "prop_max": 0.985
     },
     {
       "metric": "M2",
-      "alpha_ord": 0.238,
-      "gwet_ac1": 0.91,
+      "alpha_ord": 0.094,
+      "gwet_ac1": 0.912,
       "full_agree": 0.88,
-      "prop_max": 0.944
+      "prop_max": 0.954
     },
     {
       "metric": "M3",
-      "alpha_ord": 0.329,
-      "gwet_ac1": 0.987,
-      "full_agree": 0.981,
-      "prop_max": 0.991
+      "alpha_ord": 0.0,
+      "gwet_ac1": 0.994,
+      "full_agree": 0.991,
+      "prop_max": 0.997
     },
     {
       "metric": "M4",
-      "alpha_ord": 0.233,
-      "gwet_ac1": 0.961,
-      "full_agree": 0.944,
-      "prop_max": 0.975
+      "alpha_ord": 0.174,
+      "gwet_ac1": 0.88,
+      "full_agree": 0.843,
+      "prop_max": 0.932
     },
     {
       "metric": "M5",
-      "alpha_ord": 0.029,
-      "gwet_ac1": 0.37,
+      "alpha_ord": -0.053,
+      "gwet_ac1": 0.4,
       "full_agree": 0.426,
-      "prop_max": 0.731
+      "prop_max": 0.762
     }
   ],
-  "S_alpha_interval": 0.106,
+  "S_alpha_interval": -0.061,
   "judge_mean_S": {
     "Haiku4.5": 24.44,
-    "GPT-4.1-mini": 24.59,
-    "GPT-5.1": 23.57
+    "GPT-4.1-mini": 24.83,
+    "GPT-5.1": 23.44
   },
-  "friedman_chi2": 51.62,
-  "friedman_p": 6.171619036377959e-12,
+  "friedman_chi2": 63.99,
+  "friedman_p": 1.2722391495263813e-14,
   "per_judge_AmC": {
     "Haiku4.5": {
-      "mean": 0.667,
+      "mean": 0.583,
       "pos_rate": 0.62
     },
     "GPT-4.1-mini": {
-      "mean": 0.25,
-      "pos_rate": 0.62
+      "mean": 0.333,
+      "pos_rate": 0.38
     },
     "GPT-5.1": {
-      "mean": -0.333,
-      "pos_rate": 0.38
+      "mean": 1.25,
+      "pos_rate": 0.75
     }
   }
 }

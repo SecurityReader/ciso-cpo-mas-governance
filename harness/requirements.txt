@@ -1,7 +1,10 @@
-# 본실험(확증) 의존성
-anthropic>=0.40          # 생성 + Anthropic 심판
-openai>=1.40             # 비-Anthropic 심판(자기선호편향 통제)
-sentence-transformers>=3.0   # 로컬 consensus 임베딩(bge-m3), API 불필요
+# 본실험(확증) 직접 의존성 — 확증 실행 venv에서 확인한 정확한 버전으로 고정.
+# 전체(전이적) 고정 스냅샷은 저장소 루트의 requirements-lock.txt 참조.
+# 환경: Python 3.13.14, Windows 10 Home, Intel Core i7-8565U, CPU 전용.
+anthropic==0.125.0            # 생성 + Anthropic 심판
+openai==1.59.9                # 비-Anthropic 심판(자기선호편향 통제)
+sentence-transformers==6.1.0  # 로컬 consensus 임베딩(bge-m3), API 불필요
+torch==2.14.0                 # sentence-transformers 백엔드(CPU 빌드)
 # (선택) 경량 키리스 임베딩 대체
 # model2vec>=0.3
-truststore>=0.9        # 사내 MITM 프록시: OS 인증서 저장소 신뢰
+truststore==0.10.4            # 사내 MITM 프록시: OS 인증서 저장소 신뢰

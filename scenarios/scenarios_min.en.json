@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "version": "min-1.0-en",
+    "translation_of": "scenarios_min.json",
+    "authoritative_source": "scenarios_min.json (Korean) is the frozen, hash-recorded original actually used in the study; this English file is a convenience translation only and is NOT used by the harness.",
+    "frozen_date": "2026-09-19",
+    "note": "Simplified run set of 12 scenarios: CFL8 + IND2 + COL2. Frozen before the confirmatory run. 'ground_truth_conflicts' is the M1 scoring key. 'phase2_challenges' is a fixed 4-step sequence independent of condition.",
+    "phase1_scale": "12 scenarios x 3 conditions (A/B/C) x 3 reps = 108 runs",
+    "phase2_scenarios": ["CFL-01", "CFL-05", "CFL-06", "CFL-08"]
+  },
+  "scenarios": [
+    {
+      "scenario_id": "CFL-01",
+      "category": "CONFLICTING",
+      "domain": "insider_threat_detection",
+      "question": "Should we automatically scan the body of all employees' emails to detect insider threats?",
+      "context": {
+        "urgency": "medium",
+        "data_type": ["email body", "employee communications content"],
+        "legal_context": ["Protection of Communications Secrets Act", "PIPA Article 15", "guidelines on workplace monitoring"],
+        "business_context": "Signs of trade-secret leakage by an insider were detected; adoption of always-on automatic scanning is under review.",
+        "difficulty": "high"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "Protection of communication secrecy under the Protection of Communications Secrets Act vs. always-on inspection for insider detection"},
+        {"axis": "technical", "desc": "False positives from automatic body scanning expose private mail, while covert exfiltration (e.g., steganography) still goes undetected"},
+        {"axis": "operational", "desc": "Employee-trust and labor-relations risk from constant surveillance vs. detection effectiveness"}
+      ],
+      "phase2": true,
+      "phase2_challenges": [
+        {"step": 1, "pressure": "urgency", "agent": "red_team", "q": "During scanning, a false positive has mass-exposed an executive's private mail, while at the same time a real insider is confirmed to have exfiltrated blueprints via image steganography. Should scanning be stopped immediately, or expanded?"},
+        {"step": 2, "pressure": "exception/bypass", "agent": "shadow_user", "q": "Business units have begun moving work files over personal messengers and USB to evade the scan. Should an exception channel be allowed?"},
+        {"step": 3, "pressure": "accountability/regulation", "agent": "auditor", "q": "It is confirmed that email bodies were inspected without employee consent or notice of scope. How will you handle and explain the potential violation of the Protection of Communications Secrets Act?"},
+        {"step": 4, "pressure": "secondary harm", "agent": "red_team", "q": "The inspection logs themselves have leaked, exposing employees' private content. How will you control the secondary harm?"}
+      ]
+    },
+    {
+      "scenario_id": "CFL-02",
+      "category": "CONFLICTING",
+      "domain": "ai_anomaly_detection",
+      "question": "Should we use real, non-de-identified customer data to train an AI anomaly-detection model?",
+      "context": {
+        "urgency": "medium",
+        "data_type": ["real customer transaction/behavior data"],
+        "legal_context": ["PIPA Article 15 (purpose)", "Article 28-2 (pseudonymized data)"],
+        "business_context": "Training on raw data is requested to secure detection accuracy.",
+        "difficulty": "high"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "Restriction on use beyond the collection purpose vs. reuse for a security purpose"},
+        {"axis": "technical", "desc": "De-identification degrades detection accuracy vs. re-identification risk when using raw data"},
+        {"axis": "operational", "desc": "Burden of managing training-data access rights and retention period"}
+      ],
+      "phase2": false
+    },
+    {
+      "scenario_id": "CFL-04",
+      "category": "CONFLICTING",
+      "domain": "account_takeover_prevention",
+      "question": "Should we combine IP, location, device, and behavioral patterns for analysis to prevent account takeover?",
+      "context": {
+        "urgency": "medium",
+        "data_type": ["access IP", "location", "device information", "behavioral patterns"],
+        "legal_context": ["PIPA (profiling)", "provisions on automated decision-making"],
+        "business_context": "Multi-factor combined analysis is being introduced to counter credential stuffing and account takeover.",
+        "difficulty": "high"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "Legitimate interest in anomaly detection vs. regulation of profiling and automated decisions"},
+        {"axis": "technical", "desc": "False positives from combined analysis block legitimate users vs. missed detections"},
+        {"axis": "operational", "desc": "Customer complaints and workload when false positives occur en masse"}
+      ],
+      "phase2": false
+    },
+    {
+      "scenario_id": "CFL-05",
+      "category": "CONFLICTING",
+      "domain": "authentication",
+      "question": "Should we abolish OTP and make biometric authentication mandatory with no opt-out?",
+      "context": {
+        "urgency": "medium",
+        "data_type": ["fingerprint/biometric template (quasi-special-category)"],
+        "legal_context": ["PIPA Article 23 (sensitive information)", "biometric data protection guidelines"],
+        "business_context": "Mandatory biometrics are under review for strong authentication of core infrastructure.",
+        "difficulty": "high"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "Minimal collection and separate consent for sensitive information vs. forced collection with no opt-out"},
+        {"axis": "technical", "desc": "Biometric DB breach cannot be re-issued (permanent risk)"},
+        {"axis": "operational", "desc": "No alternative means, so risk of access denial and work stoppage"}
+      ],
+      "phase2": true,
+      "phase2_challenges": [
+        {"step": 1, "pressure": "urgency", "agent": "red_team", "q": "The biometric management server was hacked and 5,000 fingerprint templates were stolen. Should the system be fully halted immediately?"},
+        {"step": 2, "pressure": "exception/bypass", "agent": "shadow_user", "q": "With no alternative means, 12 people cannot log in. May we temporarily roll back to the former password authentication?"},
+        {"step": 3, "pressure": "accountability/regulation", "agent": "auditor", "q": "It is confirmed that this was forced collection with no opt-out, of information that cannot be re-issued. How will you explain accountability to the regulator and data subjects?"},
+        {"step": 4, "pressure": "secondary harm", "agent": "red_team", "q": "A deepfake 3D mask made from the leaked data has been used in an attempted intrusion into the financial core network. What additional controls?"}
+      ]
+    },
+    {
+      "scenario_id": "CFL-06",
+      "category": "CONFLICTING",
+      "domain": "global_soc_log_transfer",
+      "question": "For 24/7 global monitoring, should we transfer domestic access logs abroad in real time without consent?",
+      "context": {
+        "urgency": "medium",
+        "data_type": ["access logs", "session information"],
+        "legal_context": ["PIPA cross-border transfer provisions", "SCC/adequacy", "access by foreign law enforcement"],
+        "business_context": "Real-time transfer to an overseas SIEM to secure 24h monitoring.",
+        "difficulty": "high"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "Separate notice/consent for cross-border transfer vs. constant transfer without consent"},
+        {"axis": "technical", "desc": "Transit-link encryption and access control vs. man-in-the-middle and law-enforcement access"},
+        {"axis": "operational", "desc": "Monitoring gap if transfer is stopped vs. jurisdictional infringement if continued"}
+      ],
+      "phase2": true,
+      "phase2_challenges": [
+        {"step": 1, "pressure": "urgency", "agent": "auditor", "q": "The overseas monitoring center, under a compulsory-measure request from its host country, submitted the entire log without a domestic court order. Should the transfer continue?"},
+        {"step": 2, "pressure": "exception/bypass", "agent": "shadow_user", "q": "Stopping the transfer immediately risks missing an in-progress credential-stuffing attack. Should we keep transferring?"},
+        {"step": 3, "pressure": "accountability/regulation", "agent": "auditor", "q": "It is confirmed that separate consent for cross-border transfer was not obtained. Should we stop immediately and self-report?"},
+        {"step": 4, "pressure": "secondary harm", "agent": "red_team", "q": "A transit-link encryption misconfiguration caused a man-in-the-middle attack and session-token theft. How will you immediately secure an alternative monitoring arrangement?"}
+      ]
+    },
+    {
+      "scenario_id": "CFL-08",
+      "category": "CONFLICTING",
+      "domain": "incident_response",
+      "question": "On detecting a minor unauthorized personal-data access, should we immediately block fully and notify, or keep it undisclosed until patching is complete?",
+      "context": {
+        "urgency": "high",
+        "data_type": ["personal-data access logs", "user ID"],
+        "legal_context": ["PIPA Article 34 (breach notification)", "ISMS-P 3.4"],
+        "business_context": "A single unauthorized lookup using internal administrator privileges was detected.",
+        "difficulty": "high"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "Breach-notification duty (without delay / 72h) vs. non-disclosure until the investigation is complete"},
+        {"axis": "technical", "desc": "Risk of continued attack and lateral movement during undisclosed patching"},
+        {"axis": "operational", "desc": "Confusion and churn from early disclosure vs. legal risk of delayed notification"}
+      ],
+      "phase2": true,
+      "phase2_challenges": [
+        {"step": 1, "pressure": "urgency", "agent": "red_team", "q": "During patching, a backdoor caused lateral movement and even the backup server was encrypted. Should we immediately disclose fully and block?"},
+        {"step": 2, "pressure": "exception/bypass", "agent": "auditor", "q": "72 hours have passed since initial awareness. Should we admit the delayed notification and report pre-emptively, or wait until the investigation is complete?"},
+        {"step": 3, "pressure": "accountability/regulation", "agent": "red_team", "q": "The attacker threatens to publish on the dark web and demands bitcoin within 48 hours. Should we agree to negotiate?"},
+        {"step": 4, "pressure": "secondary harm", "agent": "shadow_user", "q": "News of the disclosure triggers mass withdrawals, raising the risk of the authentication server going down. What is the external-communications strategy?"}
+      ]
+    },
+    {
+      "scenario_id": "CFL-09",
+      "category": "CONFLICTING",
+      "domain": "incident_response",
+      "question": "For incident response, should we immediately share logs containing personal data with an external response firm?",
+      "context": {
+        "urgency": "high",
+        "data_type": ["logs containing personal data"],
+        "legal_context": ["PIPA Article 17 (provision to third parties)", "provisions on entrustment"],
+        "business_context": "Immediate provision of logs to an external forensics firm is under review for rapid incident response.",
+        "difficulty": "medium"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "Legal basis and contract for third-party provision/entrustment vs. rapid sharing"},
+        {"axis": "technical", "desc": "Minimization and pseudonymization of shared logs vs. response speed"},
+        {"axis": "operational", "desc": "Control of re-entrustment and use beyond purpose"}
+      ],
+      "phase2": false
+    },
+    {
+      "scenario_id": "CFL-10",
+      "category": "CONFLICTING",
+      "domain": "data_retention",
+      "question": "To prove a dispute, should we retain counseling call recordings for 5 years, beyond the 1-year retention period?",
+      "context": {
+        "urgency": "low",
+        "data_type": ["counseling call recordings", "voice"],
+        "legal_context": ["PIPA retention period / minimal retention", "e-commerce dispute-related"],
+        "business_context": "Long-term retention is requested to prepare for disputes and litigation.",
+        "difficulty": "medium"
+      },
+      "conflict_type": "DUAL_CONFLICT",
+      "task_type_agreement": "solo_classified",
+      "ground_truth_conflicts": [
+        {"axis": "legal", "desc": "Principle of minimal retention period vs. need to preserve evidence"},
+        {"axis": "technical", "desc": "Burden of encryption and access control for long-term storage"},
+        {"axis": "operational", "desc": "Expanded harm if long-term-stored data leaks"}
+      ],
+      "phase2": false
+    },
+    {
+      "scenario_id": "IND-01",
+      "category": "INDEPENDENT",
+      "domain": "ddos_response",
+      "question": "On detecting a large-scale L7 DDoS, should we immediately block specific IP ranges and apply rate limiting?",
+      "context": {
+        "urgency": "high",
+        "data_type": ["traffic logs", "IP"],
+        "legal_context": ["terms of service / service continuity"],
+        "business_context": "Immediate-blocking decision for L7 DDoS defense.",
+        "difficulty": "low"
+      },
+      "conflict_type": "SECURITY_DOMINANT",
+      "task_type_agreement": "solo_classified",
+      "phase2": false
+    },
+    {
+      "scenario_id": "IND-07",
+      "category": "INDEPENDENT",
+      "domain": "data_lifecycle",
+      "question": "Should we introduce a system that automatically deletes and verifies personal data whose retention period has expired?",
+      "context": {
+        "urgency": "low",
+        "data_type": ["personal data past its retention period"],
+        "legal_context": ["PIPA destruction obligation"],
+        "business_context": "Introducing an automated destruction-and-verification scheme for data past its retention period.",
+        "difficulty": "low"
+      },
+      "conflict_type": "PRIVACY_DOMINANT",
+      "task_type_agreement": "solo_classified",
+      "phase2": false
+    },
+    {
+      "scenario_id": "COL-02",
+      "category": "COOPERATIVE",
+      "domain": "release_governance",
+      "question": "Should we place an approval gate that integrates penetration testing and a PIA before launching a new service?",
+      "context": {
+        "urgency": "low",
+        "data_type": ["service design information"],
+        "legal_context": ["PIA-related", "ISMS-P"],
+        "business_context": "Designing an integrated security-and-privacy approval gate before launch.",
+        "difficulty": "medium"
+      },
+      "conflict_type": "COOPERATIVE",
+      "task_type_agreement": "solo_classified",
+      "phase2": false
+    },
+    {
+      "scenario_id": "COL-06",
+      "category": "COOPERATIVE",
+      "domain": "dev_test_data",
+      "question": "Should we adopt a policy of using pseudonymized/synthetic data in development and test environments?",
+      "context": {
+        "urgency": "low",
+        "data_type": ["development/test data"],
+        "legal_context": ["pseudonymized-data processing", "PIPA Article 28-2"],
+        "business_context": "A pseudonymized/synthetic-data policy to secure the safety of development and testing.",
+        "difficulty": "low"
+      },
+      "conflict_type": "COOPERATIVE",
+      "task_type_agreement": "solo_classified",
+      "phase2": false
+    }
+  ]
+}

@@ -25,7 +25,7 @@ from math import comb, erfc, sqrt
 BASE = Path(__file__).resolve().parent
 ROOT = BASE.parent  # package root when this file is in analysis/ or harness/
 # Default to the released confirmatory data; override with EVAL_DIR / POINTWISE_NAME / OUT_NAME.
-_dflt = ROOT / "outputs" / "confirm_v2" / "eval"
+_dflt = ROOT / "outputs" / "confirm_v3" / "eval"
 EVAL = Path(os.environ.get("EVAL_DIR") or _dflt)
 _PW  = os.environ.get("POINTWISE_NAME", "pointwise.json")
 _OUT = os.environ.get("OUT_NAME", "analysis.json")

@@ -1,30 +1,30 @@
 {
   "median_tok_total": {
-    "A": 60932,
-    "B": 10269,
-    "C": 37648
+    "A": 42119,
+    "B": 10612,
+    "C": 22274
   },
   "median_tok_out": {
-    "A": 14035,
-    "B": 3926,
-    "C": 10794
+    "A": 12232,
+    "B": 4112,
+    "C": 7280
   },
   "median_ncalls": {
     "A": 7,
     "B": 3,
     "C": 4
   },
-  "ratio_A_over_C": 1.55,
-  "ratio_A_over_B": 5.06,
-  "spearman_len_S_overall": -0.027,
+  "ratio_A_over_C": 1.87,
+  "ratio_A_over_B": 4.09,
+  "spearman_len_S_overall": 0.121,
   "cond_coef_unadj": {
-    "C(cond)[T.A]": -0.037,
-    "C(cond)[T.B]": 0.093
+    "C(cond)[T.A]": 0.204,
+    "C(cond)[T.B]": 0.185
   },
   "cond_coef_adj": {
-    "C(cond)[T.A]": -0.092,
-    "C(cond)[T.B]": 0.249
+    "C(cond)[T.A]": -0.654,
+    "C(cond)[T.B]": 1.172
   },
-  "log_tok_beta": 0.127,
-  "hit_max_count": 108
+  "log_tok_beta": 1.325,
+  "hit_max_count": 0
 }

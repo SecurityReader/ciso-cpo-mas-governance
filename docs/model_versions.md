@@ -33,7 +33,7 @@ temperature / seed
 ## 2. 본실험 (확정) — 사용한 모델 파라미터
 
 생성 모델(GEN_MODEL)
-: **`claude-sonnet-5`** (temperature=0.7, max_tokens=4000). 하네스 기본값(`claude-3-5-sonnet-latest`)은 실행 시 명시적으로 덮어썼다. 단, 실제 서빙 버전은 런타임 폴백·전환으로 다를 수 있으며, 정확한 설치 SDK 버전은 가용 실험 기록에 보존되어 있지 않다(의존성 범위: `anthropic<1`, `openai<1.60`).
+: **`claude-sonnet-5`** (temperature=0.7, max_tokens=4000). 하네스 기본값(`claude-3-5-sonnet-latest`)은 실행 시 명시적으로 덮어썼다. 단, 실제 서빙 버전은 런타임 폴백·전환으로 다를 수 있다. 설치된 SDK 버전은 확증 실행 venv에서 확인했다: **anthropic 0.125.0, openai 1.59.9**(§4 전체 환경 표 참조).
 
 심판 모델 3종(JUDGE_MODELS)
 : **`claude-haiku-4-5`, `gpt-5.1`, `gpt-4.1-mini`** — 서로 다른 제공자의 3종(Anthropic 1 + OpenAI 2). **생성 모델(`claude-sonnet-5`)은 심판 집합에서 제외**(생성≠심판)하여 자기선호편향을 구조적으로 완화.
@@ -59,3 +59,26 @@ Claude-only 심판의 한계
 
 확증 실행에서의 실제 구성
 : 생성 `claude-sonnet-5`, 심판 3종 중 **2종이 비-Anthropic(`gpt-5.1`, `gpt-4.1-mini`)** + Anthropic 1종(`claude-haiku-4-5`). 생성≠심판이며 제공자 교차가 확보되어, 위 권장 최소 구성을 충족한다(모델군 수준 자기선호의 부분 완화; 완전 통제는 아님).
+
+---
+
+## 4. 실행 환경 (확증 실행, 2026-09-29)
+
+확증 실행에 실제로 사용한 하드웨어·OS·Python·패키지 버전을 투명 기록한다. 모든 생성·심판은 제공사 HTTPS API 호출이며, 로컬 연산(오케스트레이션, BAAI/bge-m3 합의 임베딩, 통계 분석)만 아래 노트북에서 수행했다.
+
+| 구성요소 | 값 |
+|---|---|
+| OS | Windows 10 Home |
+| CPU | Intel Core i7-8565U @ 1.80 GHz |
+| 메모리 | 16 GB RAM |
+| GPU | 없음(내장 Intel UHD 620; CPU 전용, `torch.cuda.is_available()=False`) |
+| Python | 3.13.14 (가상환경 `output/harness/.venv`) |
+| 제공사 SDK | anthropic 0.125.0, openai 1.59.9 |
+| 임베딩 스택 | sentence-transformers 6.1.0, torch 2.14.0 (CPU), transformers 5.17.0, huggingface_hub 1.33.0, tokenizers 0.23.2, safetensors 0.8.0 |
+| 분석 스택 | numpy 2.5.3, scipy 1.18.1, scikit-learn 1.9.1 |
+| TLS | truststore 0.10.4 (사내 MITM 프록시: OS 인증서 저장소 신뢰) |
+
+- 위 버전들은 확증 실행 **이전**에 설치되어 이후 변경되지 않았으며, 패키지 dist-info 설치 타임스탬프로 확인했다.
+- 직접 의존성 고정: `harness/requirements.txt` (정확한 `==` 고정).
+- 전체(전이적) 고정 스냅샷: 저장소 루트 `requirements-lock.txt` (전체 `pip freeze`, 55개 패키지).
+- 전역 Python(시스템)과 혼동 금지: 실험은 위 venv에서만 수행.

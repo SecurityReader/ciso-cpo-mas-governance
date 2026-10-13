@@ -1,5 +1,45 @@
 # Changelog
 
+## v1.0.5 (2026-10-13) — uniform token cap: confound-controlled confirmatory run (confirm_v3)
+- **Root cause.** The run archived as `confirm_v2` mixed per-call output caps across conditions
+  (most calls at 2,000 tokens; some role-separated calls at 4,000) and contained 12 mid-deliberation
+  truncations in condition C (8 in CFL), confounding the role-separation contrast with output length.
+- **Fix.** All 108 Phase-1 traces were regenerated from the frozen scenarios at a single uniform cap
+  (`MAX_TOKENS=8000`) for every condition. A new gate (`harness/validate_run.py`) plus a self-gate in
+  `harness/run_harness.py` verify count==108, one shared cap, zero `stop_reason==max_tokens`
+  truncations, clean JSON finals, and per-condition call counts (A7/B3/C4). The clean run is archived
+  as `outputs/confirm_v3/` and passes the gate GREEN.
+- **Scope.** Phase-1 (108 traces, 1,620 pointwise scores) and the Q03 corrected-rubric re-scoring were
+  regenerated/re-scored with the same 3-judge ensemble. Phase-2c trajectories, pairwise judgments, and
+  `phase2_continuous.json` are carried over unchanged from `confirm_v2` for a self-contained dataset.
+- **Result change.** Under the primary rubric A−C strengthened from the confounded +0.194 (δ 0.297, n.s.)
+  to **+0.722 (δ 0.812, sign-test Holm p 0.0078, 8/8 scenarios; TOST indeterminate)** — truncation had
+  masked the effect. Under the corrected/strict rubric A−C attenuates to **+0.167 (δ 0.328, Holm p 1.0,
+  TOST p 0.0008 equivalent)** — the corrected re-scoring was completed to 324/324 (three gpt-5.1/haiku
+  responses that initially failed JSON parsing were recovered via `reproduce/q03_backfill_3.py`); the format contrast B−C is null/equivalent under both rubrics. The
+  advantage is localized to M5 (residual-risk disclosure). Conclusions remain rubric-conditional.
+- **Environment pinning.** `harness/requirements.txt` pinned to the exact versions verified in the
+  confirmatory-run venv (anthropic 0.125.0, openai 1.59.9, sentence-transformers 6.1.0, torch 2.14.0,
+  truststore 0.10.4); added `requirements-lock.txt` (full `pip freeze`, 55 packages, Python 3.13.14)
+  and recorded hardware/OS/SDK versions in `docs/model_versions.md`.
+- **English accessibility.** The raw data is Korean (PIPA-grounded). Added English companions so
+  the study is followable without Korean: `scenarios/scenarios_min.en.json`,
+  `scenarios/scenarios_phase2_hardened.en.json` (structurally identical translations; Korean
+  originals remain authoritative and hash-frozen), `docs/PROMPTS_EN.md` (all generation/judging
+  prompts), and `docs/DATA_DICTIONARY.md` (every file and field). README and DATA_AVAILABILITY note this.
+- **Figures.** Added `analysis/make_figures.py` to regenerate Figures 1–3 from frozen data at 300 dpi
+  (PNG + vector PDF). Figures renumbered to match the manuscript (Figure 2 = ceiling by metric,
+  Figure 3 = sensitivity power) and renamed `docs/figures/Figure{1,2,3}.{png,pdf}` (old
+  `fig{1_pipeline,2_power,3_ceiling}.png` removed); corrected the M5 corrected-rubric ceiling
+  annotation to 59.6%.
+- `analysis/analyze.py`, `reproduce/q03_analyze.py`, `reproduce/reanalyze_noround.py`, `analysis/_paths.py`
+  now resolve to `outputs/confirm_v3/` by default (override via `EVAL_DIR`).
+- `harness/`: patched `run_harness.py` (stop_reason logging, `meta.truncated_calls`/`hit_max`, `--fresh`,
+  end-of-run self-gate); `run_all.py`/`run_confirmatory.sh` set uniform `MAX_TOKENS=8000`; added `validate_run.py`.
+- `outputs/confirm_v2/` retained as a superseded confounded run (do not cite), alongside `outputs/confirm_v1_invalid/`.
+- `CITATION.cff` bumped to 1.0.5; `MANIFEST.sha256` regenerated.
+
+
 ## v1.0.4 (2026-10-02) — Holm on unrounded p-values
 - `analysis/analyze.py`: the Holm adjustment now uses the **unrounded** sign-test p-values
   (`sign_test_p_raw`); values are rounded only for display/JSON. Previously the 4-digit

@@ -33,7 +33,7 @@ def contrasts(path):
             [float(cm[(s,cx)]) for s in scen if (s,cx) in cm],[float(cm[(s,cy)]) for s in scen if (s,cy) in cm]),4),
             tost_p=eqv["tost_p"],ci90=eqv["ci90_parametric"],verdict=eqv["verdict"])
     return out
-orig=ROOT/"outputs"/"confirm_v2"/"eval"/"pointwise.json"
-rev =ROOT/"outputs"/"confirm_v2"/"rubric_sensitivity"/"q03_pointwise.json"
+orig=ROOT/"outputs"/"confirm_v3"/"eval"/"pointwise.json"
+rev =ROOT/"outputs"/"confirm_v3"/"rubric_sensitivity"/"q03_pointwise.json"
 print("ORIGINAL :",contrasts(orig))
 print("CORRECTED:",contrasts(rev))

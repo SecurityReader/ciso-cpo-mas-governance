@@ -5,6 +5,7 @@ cd "$(dirname "$0")"
 
 # .env 있으면 로드(키는 파일·git에 커밋 금지)
 if [ -f .env ]; then set -a; . ./.env; set +a; echo "[.env 로드됨]"; fi
+export MAX_TOKENS="${MAX_TOKENS:-8000}"   # 상한 혼재/중간 잘림 방지(검증済)
 
 step(){ echo; echo "━━━ $* ━━━"; }
 
@@ -13,7 +14,7 @@ python3 preflight.py
 
 step "1) 실측 파일럿 1개 (CFL-08, 과금 <\$0.5)"
 read -r -p "실제 API로 CFL-08 1건을 생성합니다. 진행? [y/N] " a; [ "${a:-N}" = "y" ] || { echo "중단"; exit 0; }
-python3 run_harness.py --scenario CFL-08
+python3 run_harness.py --scenario CFL-08 --fresh
 echo "→ output/traces 의 CFL-08_* 확인. 토큰·JSON 준수·비용 점검 후 계속하세요."
 
 step "2) τ 캘리브레이션(선택) — 필요 시 EMBED_TAU 조정 후 진행"

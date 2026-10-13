@@ -96,7 +96,7 @@ def main():
         os.environ["REPS"] = prompt("반복 REPS", os.environ.get("REPS","3"))
         os.environ["EMBED_MODEL"] = prompt("consensus 임베딩 EMBED_MODEL", os.environ.get("EMBED_MODEL","BAAI/bge-m3"))
         os.environ["EMBED_TAU"] = prompt("임베딩 임계 EMBED_TAU", os.environ.get("EMBED_TAU","0.75"))
-        os.environ.setdefault("TEMPERATURE","0.7"); os.environ.setdefault("MAX_TOKENS","4000")
+        os.environ.setdefault("TEMPERATURE","0.7"); os.environ.setdefault("MAX_TOKENS","8000")  # 4000->8000: 상한 혼재/중간 잘림 방지(검증済)
         judges = [m.strip().lower() for m in os.environ["JUDGE_MODELS"].split(",")]
         need_openai = any(m.startswith(("gpt","o1","o3","o4","chatgpt","openai/")) for m in judges)
         if not ARGS.plan:
@@ -132,7 +132,7 @@ def main():
     # ── 실측 스모크(1개 시나리오) ──
     if backend == "api" and not ARGS.skip_smoke and not ARGS.plan:
         if ask("실제 API로 CFL-08 1건 실측(<$0.5)을 먼저 수행할까요?", "y"):
-            run([PY, "run_harness.py", "--scenario", "CFL-08"], "1) 실측 파일럿 CFL-08")
+            run([PY, "run_harness.py", "--scenario", "CFL-08", "--fresh"], "1) 실측 파일럿 CFL-08(기존 traces 백업 후 클린 시작)")
             if not ask("실측 결과(토큰·JSON·비용) OK. 전체 본실험을 진행할까요?", "y"):
                 print("여기서 멈춥니다(1건만 생성됨)."); return
 
