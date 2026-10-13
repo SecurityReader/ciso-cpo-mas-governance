@@ -1,0 +1,23 @@
+{
+  "upload_type": "software",
+  "title": "Role Separation Helps, Conditionally: A Rubric-Sensitive Multi-Agent Large Language Model (LLM) Study of Security-Privacy Policy Decisions under Korea's PIPA",
+  "version": "1.0.5",
+  "creators": [
+    { "name": "Moon, Kwangsuk", "affiliation": "Soongsil University, Seoul, South Korea" }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "multi-agent LLM systems",
+    "role-separated governance",
+    "CISO",
+    "CPO",
+    "information-security policy decision-making",
+    "LLM-as-judge",
+    "rubric sensitivity",
+    "equivalence testing",
+    "reproducibility",
+    "PIPA"
+  ],
+  "description": "<p>Replication package for the study <em>&quot;Role Separation Helps, Conditionally: A Rubric-Sensitive Multi-Agent Large Language Model (LLM) Study of Security-Privacy Policy Decisions under Korea's PIPA.&quot;</em></p><p>Contains the confound-controlled confirmatory run (<code>confirm_v3</code>): a single uniform per-call output cap across all conditions, 108 Phase-1 traces, and 324 per-judge responses under both the primary and the corrected (omission-penalizing) rubrics; the full generation, judging and analysis code; frozen scenarios with SHA-256 freeze hashes; token-usage logs; and <code>MANIFEST.sha256</code>. English companions (scenario and prompt translations, and a data dictionary) accompany the authoritative Korean-language record.</p><p>Licensing: code (Python, shell) is released under the MIT License; data, scenarios, prompts, model outputs and documentation are released under CC BY 4.0.</p>"
+}
