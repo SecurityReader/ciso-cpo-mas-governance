@@ -1,9 +1,9 @@
 # Changelog
 
 ## v1.0.5 (2026-10-13) — uniform token cap: confound-controlled confirmatory run (confirm_v3)
-- **Root cause.** The run archived as `confirm_v2` mixed per-call output caps across conditions
+- **Defect.** The run archived as `confirm_v2` mixed per-call output caps across conditions
   (most calls at 2,000 tokens; some role-separated calls at 4,000) and contained 12 mid-deliberation
-  truncations in condition C (8 in CFL), confounding the role-separation contrast with output length.
+  truncations in condition C (8 in CFL), so per-call output length was not held constant across conditions.
 - **Fix.** All 108 Phase-1 traces were regenerated from the frozen scenarios at a single uniform cap
   (`MAX_TOKENS=8000`) for every condition. A new gate (`harness/validate_run.py`) plus a self-gate in
   `harness/run_harness.py` verify count==108, one shared cap, zero `stop_reason==max_tokens`
@@ -12,9 +12,8 @@
 - **Scope.** Phase-1 (108 traces, 1,620 pointwise scores) and the Q03 corrected-rubric re-scoring were
   regenerated/re-scored with the same 3-judge ensemble. Phase-2c trajectories, pairwise judgments, and
   `phase2_continuous.json` are carried over unchanged from `confirm_v2` for a self-contained dataset.
-- **Result change.** Under the primary rubric A−C strengthened from the confounded +0.194 (δ 0.297, n.s.)
-  to **+0.722 (δ 0.812, sign-test Holm p 0.0078, 8/8 scenarios; TOST indeterminate)** — truncation had
-  masked the effect. Under the corrected/strict rubric A−C attenuates to **+0.167 (δ 0.328, Holm p 1.0,
+- **Result change.** Under the primary rubric the A−C estimate changed from the confounded +0.194 (δ 0.297, n.s.)
+  to **+0.722 (δ 0.812, sign-test Holm p 0.0078, 8/8 scenarios; TOST indeterminate)** under the uniform per-call cap. Under the corrected/strict rubric A−C attenuates to **+0.167 (δ 0.328, Holm p 1.0,
   TOST p 0.0008 equivalent)** — the corrected re-scoring was completed to 324/324 (three gpt-5.1/haiku
   responses that initially failed JSON parsing were recovered via `reproduce/q03_backfill_3.py`); the format contrast B−C is null/equivalent under both rubrics. The
   advantage is localized to M5 (residual-risk disclosure). Conclusions remain rubric-conditional.

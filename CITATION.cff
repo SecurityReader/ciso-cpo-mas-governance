@@ -1,11 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this software or data, please cite it as below."
-title: "Role-Separated versus Unified LLM Pipelines for Security-Privacy Policy Decisions: A Conditional Equivalence Study"
+title: "Role Separation Helps, Conditionally: A Rubric-Sensitive Multi-Agent Large Language Model (LLM) Study of Security-Privacy Policy Decisions under Korea's PIPA"
 authors:
   - family-names: "Moon"
     given-names: "Kwangsuk"
 version: "1.0.5"
 date-released: "2026-10-13"
-license: MIT
+license:
+  - MIT
+  - CC-BY-4.0
 repository-code: "https://github.com/SecurityReader/ciso-cpo-mas-governance"
 doi: "10.5281/zenodo.23094852"

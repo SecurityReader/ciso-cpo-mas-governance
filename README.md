@@ -34,8 +34,8 @@ primary analysis), each ×3 repetitions, and scored blind by a three-model judge
   not a joint claim over all three conditions.
 - The large keyless-pilot effect (Cliff's δ=0.918) is **largely recovered** under the
   confound-controlled design on the primary rubric (δ=0.812, Holm p=0.0078). The earlier mixed-cap
-  run understated it (δ=0.297, Holm p=0.69) because mid-deliberation truncation penalized the
-  role-separated condition (fixed in v1.0.5; see `CHANGELOG.md`). Protocol changes between pilot and
+  run gave a smaller estimate (δ=0.297, Holm p=0.69); under the uniform per-call cap (v1.0.5) the
+  estimate changed (see `CHANGELOG.md`). Protocol changes between pilot and
   confirmatory run (schema symmetry, length, self-preference, judge configuration) were **not**
   individually isolated.
 - **Rubric sensitivity (Q03) — the key caveat:** re-scoring all 108 answers with a corrected rubric
